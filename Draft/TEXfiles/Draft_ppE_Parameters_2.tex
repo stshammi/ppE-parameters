@@ -15,13 +15,18 @@
 \usepackage{comment} 
 \usepackage{bm}
 \usepackage{titlesec}
+\usepackage[usenames]{color}
+
+\newcommand{\ky}[1]{\textcolor{blue}{\it{\textbf{ky: #1}}} }
+
 \begin{document}
 \title{post-Einsteinian Parameters for Different Modified Gravity Theories}
 \maketitle
 \section{Introduction}
 
-\section{ppE Paramters}\label{section:intro}
+\section{ppE Waveform}\label{section:intro}
 \hspace*{15.5pt}Fourier waveform for inspiral phase in standard ppE framework is given by ~\cite{Yunes:2009ke}
+\ky{Let's change $\delta\Psi$ to $i \delta\Psi$ and remove $i$ from \eqref{eq:2}. I think this is indeed what you have in (16).}
 \begin{equation}\label{eq:1}
 \tilde{h}(f)=\tilde{h}_{GR}(1+\alpha u^a)e^{\delta\Psi}\,,
 \end{equation}
@@ -29,11 +34,11 @@ where $\delta \Psi$ is the modification to GW phase due to non-GR effects. We wa
 \begin{equation}\label{eq:2}
 \delta\Psi=i\beta u^b\,,
 \end{equation}
-where
+where \ky{Let's write $u$ in terms of $f$ instead of $\Omega$.}
 \begin{equation}
 u=(\mathcal{M}_c \Omega)^\frac{1}{3}\,.
 \end{equation}
-Here $\alpha$, $\beta$, $a$, and $b$ are ppE parameters. $\Omega$ is the orbital angular frequency and $\mathcal{M}_c$ is the chirp mass. In order to obtain the expressions of these parmeteres for different modified gravity theories we consider correction to binding energy $E$ and rate of change of binding energy $\dot{E}$. These corrections lead to the modification of Kepler's law and frequency evolution.\\
+Here $\alpha$, $\beta$, $a$, and $b$ are ppE parameters that capture non-GR effects in the gravitational waveform. $\Omega$ is the orbital angular frequency and $\mathcal{M}_c$ is the chirp mass \ky{Please define chirp mass.}. \ky{Let's explain here $(\alpha,\beta) = (0,0)$ corresponds to the GR case.} In order to obtain the expressions of these parmeteres for different modified gravity theories we consider corrections to the binding energy $E$ and the GW luminosity $\dot{E}$. These corrections lead to the modification of Kepler's law and frequency evolution.\\
 \begin{comment}
 \subsection{Disspative Correction Only}
 \hspace{15.5pt}First we want to  derive ppE parameters considering only correction to the rate of change of binding energy i.e. correction to frequency evolution. We want to write $\dot{f}$ as
@@ -78,30 +83,36 @@ b=c_{\dot{f}}-5
  %\subsection{Dissipative and Conservative Correction}
 \hspace*{15.5pt}For the conservative correction we need to consider modification to binding energy which can be parametrized as follows\cite{Chatziioannou:2012rf}
  \begin{equation}
- E=E_{GR}\left[1+A(\frac{m}{r})^p\right]\,,
+ E=E_{GR}\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
  \end{equation}
- where we assume A to be small, such that the correction represents a small deformation away from GR. Such a binding energy modifies Keplerâ€™s third law as
+ \ky{Please write down expression for $E_{GR}$. Since this is just a note, it's ok that you didn't include this, but we'd like to turn this into an actual paper eventually, and a paper should be as self-contained as possible.}
+ \ky{Please explain what $A$, $m$, $r$ and $p$ are. Please remember that you need to explain in words or formulas each variables that you introduce in your paper.}
+ where we assume A to be small, such that the correction represents a small deformation away from GR. Such a binding energy modifies the Kepler'€™s third law as
  \begin{equation}
- \Omega^2=\frac{m}{r^3} \left[1+\frac{1}{2} Ap\left(\frac{m}{r}\right)^p\right]\,.
+ \Omega^2=\frac{m}{r^3} \left[1+\frac{1}{2} A \, p\left(\frac{m}{r}\right)^p\right]\,.
  \end{equation}
-  Above equation gives the orbital seperation as
+  Above equation gives the orbital seperation as \ky{You should pick either $r$ or $a$ for the separation.}
  \begin{equation}\label{eq:g}
- a(t)=a_{GR}\left[1+\frac{1}{6}Apu^{2p}\eta^{-\frac{2p}{5}}\right]\,.
+ a(t)=a_{GR}\left[1+\frac{1}{6}A\, p\, \eta^{-\frac{2p}{5}}u^{2p}\right]\,.
  \end{equation}
+ \ky{Please write down expression for $a_{GR}$.} 
+ 
  
  \hspace*{15.5pt}Dissipative correction to the waveform comes from the modification of rate of change of binding energy. Let us assume a modification to the rate of change of binding energy of the form\cite{Chatziioannou:2012rf}
  
  \begin{equation}\label{eq:a}
- \dot{E}=\dot{E}_{GR}\left[1+B(\frac{m}{r})^q\right]\,,
+ \dot{E}=\dot{E}_{GR}\left[1+B\left(\frac{m}{r}\right)^q\right]\,,
  \end{equation}
- where $\dot{E}_{GR}$ is the GR energy flux and the second term is assumed small relative to the first, as we are interested in small deformations away from GR. By invoking energy balance law, Eq.~\eqref{eq:a} gives the frequency evolution as 
+ where $\dot{E}_{GR}$ \ky{Please write down the explicit expression for $\dot{E}_{GR}$. I think Katerina and Nico used slightly weird convention that this $\dot{E}_{GR}$ is proportional to $v^2/r^4$ (which can be obtained by using Kepler's law in GR), but please check their erratum.} is the GR energy flux and the second term is assumed small relative to the first, as we are interested in small deformations away from GR. By invoking energy balance law, Eq.~\eqref{eq:a} gives the frequency evolution as 
  \begin{equation}\label{eq:f}
  \dot{f}=\dot{f}_{GR}\left[1+B\eta^\frac{-2q}{5} u^{2q}+\frac{1}{3}A(2p^2-2p-3)\eta^{\frac{-2p}{5}}u^{2p}\right]\,.
  \end{equation}\label{eq:e}
+ \ky{Please write down expression for $\dot f_{GR}$.} 
+ 
  
  \subsubsection*{Correction to the Amplitude}
  
- \hspace{15.5pt}From stationary phase approximation\cite{Yunes:2009yz},
+ \hspace{15.5pt}From the stationary phase approximation\cite{Yunes:2009yz},
  \begin{equation}\label{eq:b}
  \tilde{h}(f)=\frac{\mathcal{A}(t_0)}{\sqrt{l\dot{F}}}e^{-i\Psi}\,.
  \end{equation}
@@ -110,31 +121,31 @@ Since we are interested in correction to the quadruple radiation only, we will c
 \begin{equation}\label{eq:c}
 \tilde{\mathcal{A}}(f)=\frac{\mathcal{A}(t_0)}{\sqrt{\dot{f}}}\,,
 \end{equation}
-where $\dot{f}$ is the frequency evolution of gravitational wave. $\mathcal{A}(t_0)\sim\ddot{Q}$ where $Q$ is the quadruple moment which is proportional to ${a(t_0)}^2$. So we can write
+where $\dot{f}$ is the frequency evolution of gravitational waves. $\mathcal{A}(t_0)\propto \ddot{Q}$ where $Q$ is the quadruple moment which is proportional to ${a^2(t_0)}$. So we can write
 
 \begin{equation}\label{eq:d}
-\mathcal{A}(f)\sim \frac{a(t)^2}{\sqrt{\dot{f}}}\,.
+\mathcal{A}(f)\propto \frac{a^2(t)}{\sqrt{\dot{f}}}\,.
 \end{equation}
-Using equation \eqref{eq:f} and \eqref{eq:g} in \eqref{eq:d} and keeping only leading order terms,
+Using Eqs.~\eqref{eq:f} and \eqref{eq:g} in \eqref{eq:d} and keeping only leading order terms, \ky{When you have negative fractions, let's write it as $-\frac{2q}{5}$ instead of $\frac{-2q}{5}$. Please make this correction throughout.}
 
 \begin{equation}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{1}{6}A(2p^2-2p-3)\eta^{\frac{-2p}{5}}u^{2p}+\frac{1}{3}Ap\eta^{\frac{-2p}{5}}u^{2p}\right]\,.
 \end{equation}
-When dissipative correction dominates $(q>p)$, comparing above equation with the ppE waveform in \eqref{eq:1} we find
+When dissipative correction dominates $(q>p)$ \ky{$q < p$? (The dominant one has to be at lower PN order.)}, comparing above equation with the ppE waveform in \eqref{eq:1} we find
 \begin{equation}
 \alpha=-\frac{1}{2}B\eta^{\frac{-2q}{5}},\hspace*{20pt}a=2q\,.
 \end{equation}
-When conservative correction dominates $(q<p)$,
+When conservative correction dominates $(q<p)$ \ky{$q > p$?},
 \begin{equation}
 \alpha=\frac{1}{6}A(4p-2p^2+3)\eta^{\frac{-2p}{5}},\hspace*{20pt}a=2p\,.
 \end{equation}
 If the modifications to the binding energy enter at the same PN order as the modifications to the energy flux, ie. $q=k=p$, then
 \begin{equation}\label{eq:2a}
-\alpha=\left(\frac{1}{6}A(4k-2k^2+3)-\frac{B}{2}\right)\eta^{\frac{-2k}{5}},\hspace*{20pt}a=2k\,.
+\alpha=\left[\frac{1}{6}A(4k-2k^2+3)-\frac{B}{2}\right]\eta^{\frac{-2k}{5}},\hspace*{20pt}a=2k\,.
 \end{equation}
  \subsubsection*{Correction to the Phase}
  
- \hspace*{15.5pt}Modification to the Fourier phase in the leading order can be calculated as \cite{Chatziioannou:2012rf}
+ \hspace*{15.5pt}Modification to the Fourier phase at the leading order can be calculated as \cite{Chatziioannou:2012rf} \ky{Please explain in more detail how $\delta \Psi$ is derived from $\dot f$.}
  \begin{equation}
  \delta\Psi=-\frac{5}{32}A\frac{2p^2-2p-3}{(4-p)(5-2p)}\eta^{\frac{-2p}{5}}u^{2p-5}-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{\frac{-2q}{5}}u^{2q-5}\,.
  \end{equation}
@@ -149,27 +160,34 @@ If the modifications to the binding energy enter at the same PN order as the mod
  q=p=k,\hspace*{20pt}\beta=-\left(\frac{5}{32}A\frac{2k^2-2k-3}{(4-k)(5-2k)}+\frac{15}{32}B\frac{1}{(4-k)(5-2k)}\right)\eta^{\frac{-2k}{5}}\,.
  \end{equation}
  
- When dissipative correction dominates $(q>p)$, there is a simple relation beween $\alpha$ and $\beta$ which is
+ When dissipative correction dominates $(q>p)$ \ky{Again, I think you mean $q<p$.}, there is a simple relation between $\alpha$ and $\beta$ by eliminating $B$ from Eqs.~(XX) and (XX) \ky{Please fill in.}, which is 
  
 \begin{equation}\label{eq:2c}
 \alpha=\frac{112}{3}\beta\,.
 \end{equation} 
+
+\ky{I guess you can also find a simple relation for the conservative-dominated case right? Although we don't have any concrete example theories for this, let's show this for completeness.}
  
  
  \section*{Alternative}
- \hspace*{15.5pt}We want to write orbital seperation as
+ 
+ \ky{In our paper, I suggest to show this alternative approach in the main text as this is simpler, and then we show only important formulas from Keterina and Nico's paper and mention that our alternative approach is consistent with theirs. Then all the remaining equations on PPE can go in the appendix.}
+ 
+ \hspace*{15.5pt}We want to write the orbital separation as
  \begin{equation}
+ \label{eq:a-2}
  a=a_{GR}(1+\gamma_au^{c_a})\,,
  \end{equation}
-and frequency evolution as
+and the frequency evolution as
 \begin{equation}
 \dot{f}=\dot{f}_{GR}\left(1+\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,.
 \end{equation} 
-Comparing with \eqref{eq:g},
+\ky{Please explain in words the meaning of the variables that you introduce here and in (21).}
+Comparing~\eqref{eq:a-2} with \eqref{eq:g},
 \begin{equation}
-c_{a}=2p \text{,\hspace{20pt}}\gamma_a=\frac{1}{6}Ap\eta^{-2p/5}\,.
+c_{a}=2p \text{,\hspace{20pt}}\gamma_a=\frac{1}{6}\,A\,p\,\eta^{-2p/5}\,.
 \end{equation}
-$\gamma_{\dot{f}}$ and $c_{\dot{f}}$ can take different forms depending on whether the dominative correction is dissipative or conservative.
+$\gamma_{\dot{f}}$ and $c_{\dot{f}}$ can take different forms depending on whether the dominant correction is dissipative or conservative.
 \subsubsection*{Dissipative $(p<q)$}
 \hspace*{15.5pt}Comparing with \eqref{eq:f},
 \begin{equation}
@@ -214,8 +232,14 @@ b=c_{\dot{f}}-5\text{,\hspace*{20pt}}a=c_{\dot{f}}\,,
 \alpha=2 \text{$\gamma_a $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,.
 \end{equation}
 \vspace{50pt}
+
+\ky{Since $\beta$ and $b$ are always the same among the above three cases, I suggest to explain $\beta$ and $b$ first, and then look at the three different cases and present $\alpha$ and $a$ for each case.}
+
+
  \section{Example Theories}
  \vspace*{20pt}
+
+\ky{At the beginning of each subsection below, you need to explain what each theory is, how it's different from GR, why we care about that theory, what are }
 
  \subsection{Scalar-Tensor Theories}
  Dissipative correction dominates.  From \cite{Yunes:2016jcc},
@@ -225,12 +249,12 @@ b=c_{\dot{f}}-5\text{,\hspace*{20pt}}a=c_{\dot{f}}\,,
  \begin{equation}
  \alpha_{ST}=\frac{-5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
  \end{equation}
- \subsection{DCS Theory}
-\hspace{15.5pt}BHs in dCS theory retain scalar dipole charge sourced by the Pontryagin invariant that induce modified quadrupolar emission \cite{Yagi:2011xp}\cite{Yunes:2016jcc}. In this theory dissipative and conservative corrections enter at the same order. Kepler's third law is modified as \cite{Yagi:2012vf}
+ \subsection{DCS Gravity}
+\hspace{15.5pt}BHs in dCS theory \ky{Let's use ``dCS gravity'' throughout.} retain scalar dipole charge sourced by the Pontryagin invariant that induce modified quadrupolar emission \cite{Yagi:2011xp,Yunes:2016jcc}. In this theory dissipative and conservative corrections enter at the same order. Kepler's third law is modified as \cite{Yagi:2012vf} \ky{I think we can just show $\gamma_a$ directly instead of (38) and (39).}
  \begin{equation}\label{eq:3.3a}
  a=\frac{m}{u^2}(1+\delta C_r v^4)\,,
  \end{equation}
-where $v=(\pi m f)^{1/3}$. $\delta C_r$ for  spin-aligned binaries is given as
+where $v=(\pi m f)^{1/3}$. $\delta C_r$ for  spin-aligned binaries is given as  \ky{Let's change $\zeta m^2 \left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)$ to $\frac{\zeta}{\eta^2}\left(\frac{m_2}{m_1}\chi_1^2+\frac{m_1}{m_2}\chi_2^2\right)$ so that each piece is dimensionless. Please do the same for (41).}
 \begin{align}
 \delta C_r=\frac{25}{256}\zeta \frac{\chi_1 \chi_2}{\eta}-\frac{201}{3584}\zeta m^2\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
 \end{align} 
@@ -238,15 +262,15 @@ where $v=(\pi m f)^{1/3}$. $\delta C_r$ for  spin-aligned binaries is given as
 Here, $m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter, and $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. The magnitude of the correction to the rate at which the binary inspirals is proportional to the dimensionless dCS coupling parameter $\zeta_{dCS}=16\pi \alpha_{\text{dCS}}^2/m^4$\footnote{$\alpha_{\text{dCS}}$ is a coupling constant in dCS theory which is different from ppE parameter $\alpha$} .
 
 
-Frequency evolution is given by \cite{Yagi:2012vf}
+Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{\dot f}$ directly.}
 \begin{equation}\label{eq:3.3b}
 \dot{f}=\dot{f}_{GR}\left(1+\delta C v^4\right)\,,
 \end{equation}
- where
+ where \ky{Let's write $\frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }$ as $\frac{38525}{39552} \frac{\zeta \chi_1 \chi_2}{\eta}$. Same comment applies to other equations as well. (And you're missing the subscript ``dCS'' under $\zeta$.)}
  \begin{equation}
  \delta C= \frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }-\frac{309845 \zeta  m^2 }{553728 }\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
  \end{equation}
- By comparing Eq.~\eqref{eq:3.3a} with Eq.~\eqref{eq:g} and Eq.~\eqref{eq:3.3b} with Eq.~\eqref{eq:f}, we can obtain $A$, $B$, $p$,  and $q$ for dCS theory. Then using Eq. \eqref{eq:2a} and \eqref{eq:2b} we can find $\alpha$ and $\beta$ as
+ By comparing Eq.~\eqref{eq:3.3a} with Eq.~\eqref{eq:g} and Eq.~\eqref{eq:3.3b} with Eq.~\eqref{eq:f}, we can obtain $A$, $B$, $p$,  and $q$ for dCS theory. Then using Eqs. \eqref{eq:2a} and \eqref{eq:2b} we can find $\alpha$ and $\beta$ as
  
  \begin{equation}
  \alpha_{\text{dCS}}=\frac{185627 \zeta_{\text{dCS}} }{1107456 \eta ^{14/5}}\left[-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{53408 \eta }{14279}\right) \text{$\chi_a$}^2+\left(1-\frac{3708 \eta }{14279}\right) \text{$\chi_s$}^2\right]\,,
@@ -258,16 +282,19 @@ Frequency evolution is given by \cite{Yagi:2012vf}
  respectively. Here we introduced the symmetric and antisymmetric dimensionless spin combinations\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}} $\chi_{s,a}=(\frac{a_{||1}}{m_1}\pm\frac{a_{||2}}{m_2})/2$ with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, and the dimensionless mass difference $\delta_m=(m_1-m_2)/m$.
  
  
-  \subsection{EdGB Theory}
- BHs in EDGB thoery have scalar monopole charge (a measure of the dependence of the BH mass on the scalar field) as sourced by the Kretchmann curvature \cite{Yunes:2016jcc}. Such charges induce scalar dipole radiation, which then speeds up the rate at which the binary inspirals. The mapping between $\beta$ and the system coupling parameters is given by \cite{Yunes:2016jcc} \cite{Yagi:2011xp}
+  \subsection{EdGB Gravity}
+
+\ky{I noticed that you literally just copied this paragraph from my paper with Nico and Frans. Since it's just a note, it's not a big deal, but let me tell you that if you do this in the actual paper, it's *really* bad. This is called plagiarism, and whenever arXiv detects it, it will add a note saying something like ``this paper has a substantial overlap with XXX" so that other people can be aware of. If you do this, you can screw up your career and sometimes it can affect you not getting Ph.D. (This did actually happen to my colleague in Kyoto when I was a grad student.) I'm not mad or anything since I think I didn't tell you this, but I strongly suggest to write things in your own words even at the level of the note. I suspect there might be other places that you just copied and pasted from other papers. If so, please change them in your own words now.}
+  
+ BHs in EDGB thoery  \ky{Let's use ``EdGB gravity'' throughout. (Notice also small ``d''.)} have scalar monopole charges (a measure of the dependence of the BH mass on the scalar field) as sourced by the Kretchmann curvature \cite{Yunes:2016jcc}. Such charges induce scalar dipole radiation, which then speeds up the rate at which the binary inspirals. The mapping between $\beta$ and the system coupling parameters is given by \cite{Yunes:2016jcc,Yagi:2011xp}
  
  \begin{equation}
  \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,,
  \end{equation}
- Here, $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges in EdGB gravity, which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2$ [174], with $\chi_A$ the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. $\zeta_{\text{EDGB}}$ is the dimensionless EDGB coupling paramater which is given by $\zeta_{\text{EDGB}}=16 \pi \alpha_{\text{EDGB}}^2/m^4$ \footnote{$\alpha_{\text{EDGB}}$ here  is a coupling constant of EDGB theory which is different from ppE parameter $\alpha$}.
+ Here, $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges in EdGB gravity, which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$\cite{}, with $\chi_A$ the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. $\zeta_{\text{EDGB}}$ is the dimensionless EDGB coupling paramater which is given by $\zeta_{\text{EdGB}}=16 \pi \alpha_{\text{EDGB}}^2/m^4$ \footnote{$\alpha_{\text{EDGB}}$ here  is a coupling constant of EDGB theory which is different from ppE parameter $\alpha$}.
 
 
- \hspace{15.5pt} In EDGB theory dissipative correction dominates. So we can use \eqref{eq:2c} to calculate ppE parameter $\alpha$ from $\beta_{\text{EDGB}}$ as  
+ \hspace{15.5pt} In EDGB theory dissipative correction dominates. So we can use \eqref{eq:2c} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EDGB}}$ as  
  \begin{equation}
  \alpha_{\text{EdGB}}=\frac{-5}{192}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
@@ -351,10 +378,13 @@ and
 %where the subscript $0$ denotes the quantity measured at time of coalescence.
 \hspace{15.5pt}The GW phase in the Fourier space is given by,
 
+\ky{I've fixed this equation.}
 
 \begin{align}\label{eq:3.7c}
-\Psi(f)=2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
-=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{6656M_0 {G_0}^{5/3}{\eta_0}^2}(\dot{M}_{1,0}M_{2,0}+M_{1,0}\dot{M}_{2,0}) \right. \right. \nonumber\\ \left. \left. -\frac{25}{19968{G_0}^{8/3}\eta_0}(11M_0\dot{G}_0+17\dot{M}_0G_0)\right]{u_0}^{-8}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0} \right. \nonumber\\ \left. -16\pi {x_0}^{3/2}+\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right){x_0}^2\right\}\,.
+\Psi(f)=&2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
+=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{6656M_0 {G_0}^{5/3}{\eta_0}^2}(\dot{M}_{1,0}M_{2,0}+M_{1,0}\dot{M}_{2,0}) \right. \right. \nonumber\\ 
+&\left. \left. -\frac{25}{19968{G_0}^{8/3}\eta_0}(11M_0\dot{G}_0+17\dot{M}_0G_0)\right]{u_0}^{-8}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0} \right. \nonumber\\ 
+& \left. -16\pi {x_0}^{3/2}+\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right){x_0}^2\right\}\,.
 \end{align}
 
 
