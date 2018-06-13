@@ -30,8 +30,7 @@
 \begin{equation}\label{eq:2a}
 \tilde{h}(f)=\tilde{h}_{GR}(1+\alpha u^a)e^{i\delta\Psi}\,,
 \end{equation}
-
- 
+% 
 in standard ppE framework. Here $\tilde{h}_{GR}$ is the gravitational waveform in GR and $\delta \Psi$ is the modification to GW phase due to non-GR effects. We want to write $\delta\Psi$ as 
 \begin{equation}\label{eq:2b}
 \delta\Psi=\beta u^b\,,
@@ -40,24 +39,25 @@ where
 \begin{equation}
 u=(\pi \mathcal{M} f)^\frac{1}{3}\,.
 \end{equation}
-Here $f$ is the frequency of gravitational wave and $\mathcal{M}$ is the chirp mass of the binary system. For a binary with component masses $m_1$ and $m_2$ the chirp mass is defined as $\mathcal{M}=\frac{(m_1m_2)^{3/5}}{(m_1+m_2)^{1/5}}$. $\alpha$, $\beta$, $a$, and $b$ are ppE parameters that capture non-GR effects in the gravitational waveform. When $(\alpha,\beta) = (0,0)$, Eq.~\eqref{eq:2a} reduces to $\tilde{h}(f)=\tilde{h}_{GR}$ which corresponds to the case of GR.\\
+Here $f$ is the frequency of gravitational wave and $\mathcal{M}$ is the chirp mass of the binary system. For a binary with component masses $m_1$ and $m_2$ the chirp mass is defined as $\mathcal{M}=(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$ \ky{Let's try not to use the frac command in equations that are embedded in the text, since this will make the font smaller. Same comment applies to other places, like when you define the reduced mass.}. $\alpha$, $\beta$, $a$, and $b$ are ppE parameters that capture non-GR effects in the gravitational waveform. When $(\alpha,\beta) = (0,0)$, Eq.~\eqref{eq:2a} reduces to $\tilde{h}(f)=\tilde{h}_{GR}$ which corresponds to the case of GR.\\
 
-\hspace{15.5pt} In order to obtain the expressions of ppE parmeters for different modified gravity theories, we consider corrections of binary orbital seperation and the frequency evolution. These corrections come from dissipative and conservative corrections which means modification of binding energy $E$ and the rate of change of binding energy $\dot{E}$ respectively. Modification of binary orbital seperation results from conservative correction where modification of frequency evolution can come from both conservative and dissipative corrections.\\
+\hspace{15.5pt} In order to obtain the expressions of ppE parmeters for different modified gravity theories, we consider corrections of binary orbital seperation and the frequency evolution. These corrections come from dissipative and conservative corrections which means modification of binding energy $E$ and the rate of change of binding energy $\dot{E}$ respectively. Modification of binary orbital seperation results from conservative correction while modification of frequency evolution can come from both conservative and dissipative corrections.\\
 
 
- \hspace*{15.5pt}We want to write the orbital separation $a$\footnote{Not to be confused with ppE parameter $a$} as
+ \hspace*{15.5pt}We want to write the orbital separation $a$\footnote{Not to be confused with ppE parameter $a$} \ky{Let's use $r$ for the separation so that you can remove the footnote.} as
  \begin{equation}
  \label{eq:2k}
  a=a_{GR}(1+\gamma_a u^{c_a})\,,
  \end{equation}
-
- where $\gamma_a$ and $c_a$ are parameters which show the deviation of orbital seperation $a$ from $a_{GR}$, with $a_{GR}$ being the orbital seperation in GR. Since any deviation from GR has to be small, we consider $\gamma_a$ and $c_a$ to be small as well. Using modified Kepler's law of GR, $a_{GR}$ for a non-spinning binary can be expressed upto 2PN order as \cite{Blanchet:1995ez} \cite{Blanchet:2013haa}
+\ky{No need to have an empty space after equations. This will make unnecessary space before the sentence. Same comment applies to other equations.}
+ where $\gamma_a$ and $c_a$ are parameters which show the deviation of orbital seperation $a$ from $a_{GR}$, with $a_{GR}$ being the orbital seperation in GR. Since any deviation from GR has to be small, we consider $\gamma_a$ and $c_a$ to be small as well. Using modified Kepler's law of GR, $a_{GR}$ for a non-spinning binary can be expressed upto 2PN order as \cite{Blanchet:1995ez} \cite{Blanchet:2013haa} \ky{Correct this to \cite{Blanchet:1995ez,Blanchet:2013haa}. Same comment applies to other places where you cite multiple refs. } \ky{Let's just show the leading contribution. Same for $\dot f_{GR}$.}
  
  \begin{equation}\label{eq:2l}
  a_{GR}=\left(\frac{m}{\Omega^2}\right)^{1/3}\left[1-\left(1-\frac{\eta}{3}\right)x-\left(1-\frac{65}{12}\eta\right)x^2\right]\,.
  \end{equation}
  
- Here, $m\equiv m_1+m_2$ is the total mass of the binary, $\Omega\equiv\pi f $ is the orbital angular frequency, $\eta\equiv\mu/m$ is the symmetric mass ratio where $\mu=\frac{m_1m_2}{m}$ is the reduced mass of the binary, and $x\equiv (\pi m f)^{2/3}$ is the PN expansion parameter. In Eq. \eqref{eq:2l}, $a_{GR}$ is expressed in geometrzied units (i.e., $c=G=1$ units). We will follow this unit system throughout this section. \st{Since we are going to use $G\neq 1$ in varying-G theory, I just wanted to clarify what convention we used here..}\\
+ Here, $m\equiv m_1+m_2$ is the total mass of the binary, $\Omega\equiv\pi f $ is the orbital angular frequency, $\eta\equiv\mu/m$ is the symmetric mass ratio where $\mu=\frac{m_1m_2}{m}$ is the reduced mass of the binary, and $x\equiv (\pi m f)^{2/3}$ is the PN expansion parameter. In Eq. \eqref{eq:2l}, $a_{GR}$ is expressed in geometrzied units (i.e., $c=G=1$ units). We will follow this unit system throughout this section. \st{Since we are going to use $G\neq 1$ in varying-G theory, I just wanted to clarify what convention we used here..}
+ \ky{I think at the end of the intro, we can say that we'll use the geometric units in most part of our paper, except for the vayring G section. Then in the varying G section, we can remind the reader again that we won't use the geometric units.}
  
  We want to parametrize the frequency evolution as
 \begin{equation}\label{eq:2m}
@@ -73,23 +73,23 @@ where all terms have their usual meanings. $\gamma_{\dot{f}}$ and $c_{\dot{f}}$ 
  
  \hspace{15.5pt}From the stationary phase approximation\cite{Yunes:2009yz}\cite{PhysRevD.62.084036}, the waveform in Fourier domain can be written as
  \begin{equation}\label{eq:2g}
- \tilde{h}(f)=\frac{\mathcal{A}(t_0)}{\sqrt{l\dot{F}}}e^{i\Psi}\,,
+ \tilde{h}(f)=\frac{\mathcal{A}(t_0)}{\sqrt{\ell \dot{F}}}e^{i\Psi}\,,
  \end{equation}
  
-where $l>0$ is the harmonic number, $\Psi$ is GW phase, $\dot{F}$ is the orbital frequency evolution, $t_0$ is the time of coalescence, and $\mathcal{A}(t_0)$ is the amplitude of gravitational wave at the time of coalescence. Since we are interested in correction to the quadruple radiation only, we will consider $l=2$ in \eqref{eq:2g} which gives the amplitude of Fourier waveform as
+where $\ell >0$ is the harmonic number, $\Psi$ is GW phase, $\dot{F}$ is the orbital frequency evolution, $t_0$ is the time of coalescence \ky{$t_0$ is not the time of coalescence. It's the stationary point. Please take a look at [16] again.}, and $\mathcal{A}(t_0)$ is the amplitude of gravitational wave at the time of coalescence. Since we are interested in correction to the quadruple radiation only, we will consider $\ell =2$ in \eqref{eq:2g} which gives the amplitude of Fourier waveform as
 \begin{equation}\label{eq:2h1}
 \tilde{\mathcal{A}}(f)=\frac{\mathcal{A}(t_0)}{\sqrt{\dot{f}}}\,,
 \end{equation}
 with $\dot{f}=2\dot{F}$ the frequency evolution of gravitational wave.\\
-\hspace{15.5pt}For a two-body quasi-circular orbit, the trace-reversed metric perturbation can be written as \cite{Blanchet:2002av}
+\hspace{15.5pt}For a two-body quasi-circular orbit, the trace-reversed metric perturbation can be written as \cite{Blanchet:2002av} \ky{No need to use the mathrm command on d. Same comment applies to other equations.}
  \begin{equation}\label{eq:2h2}
-\bar{h}^{ij}(t)\propto \frac{1}{D_L}\frac{\mathrm{d^2} }{\mathrm{d} t^2}Q^{ij}\,,
+\bar{h}^{ij}(t)\propto \frac{1}{D_L}\frac{d^2}{d t^2}Q^{ij}\,,
  \end{equation}
- where $D_L$ is the luminosity distance and $Q^{ij}$ is the quadruple moment tensor. $Q^{ij}$ is proportional to the binary seperation squared, i.e., $a^2$. Using this fact we can conclude, from Eqs. \eqref{eq:2h1} and \eqref{eq:2h2}, 
+ where $D_L$ is the luminosity distance and $Q^{ij}$ is the quadruple moment tensor. $Q^{ij}$ is proportional to the binary seperation squared, i.e., $a^2$. Using this fact we can conclude, from Eqs. \eqref{eq:2h1} and \eqref{eq:2h2},
 \begin{equation}\label{eq:2e}
 \tilde{\mathcal{A}}(f)\propto \frac{a^2(t)}{\sqrt{\dot{f}}}\,.
 \end{equation}
-Using Eqs.~\eqref{eq:2l} and \eqref{eq:2m} in \eqref{eq:2e} and keeping only leading order terms,
+Using Eqs.~\eqref{eq:2l} and \eqref{eq:2m} in \eqref{eq:2e} and keeping only leading order terms,  \ky{Use ordinary brackets instead of square ones. Same for (13).}
 
 \begin{equation}\label{eq:2n}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1+2\gamma_au^{c_a}-\frac{1}{2}\gamma_{\dot{f}}u^{c_{\dot{f}}}\right]\,.
@@ -107,13 +107,13 @@ Comparing above equation with the standard ppE waveform given by Eq.~\eqref{eq:2
 \subsubsection*{Conservative Dominant Correction}
 \hspace{15.5pt}Correction to the frequency evolution $\dot{f}$ is not independent of correction to the binary seperation $a$, since both dissipatve and conservative correction contribute to the correction of $\dot{f}$. \st{I have some confusions here. I am planning to write this part after our meeting...}
 \subsubsection*{Dissipative and Conservative at Same Order}
-\hspace{15.5pt}If dissipative and conservative corrections enter at the same order, in Eq.~\eqref{eq:2n} we can set $c_a=c_{\dot{f}}$ which gives
+\hspace{15.5pt}If dissipative and conservative corrections enter at the same order, in Eq.~\eqref{eq:2n} we can set $c_a=c_{\dot{f}}$ which gives \ky{We should still write what $a$ is.}
 \begin{equation}
 \alpha=2 \text{$\gamma_a $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,.
 \end{equation}
 
 \subsection{Correction to GW phase}
-\hspace{15.5pt}Energy balance equation for quadruple radiation is given by\cite{Stein:2013wza}
+\hspace{15.5pt}Energy balance equation \ky{This is not the energy balance law. This is just the relation between $\Psi$ and $\Omega$.} for quadruple radiation is given by\cite{Stein:2013wza}
 \begin{equation}
 \frac{\mathrm{d^2}\Psi}{\mathrm{d} t^2}=2\frac{\mathrm{d} t}{\mathrm{d}\Omega}\,,
 \end{equation}
@@ -121,15 +121,15 @@ which can be rewritten as
 \begin{equation}
 \frac{\mathrm{d^2}\Psi}{\mathrm{d} t^2}=\frac{2}{\pi \dot{f}}\,.
 \end{equation}
-Using Eq.~\eqref{eq:2m} in the right side of above equation and keeping only leading order terms we get
+Using Eq.~\eqref{eq:2m} in the right side of above equation and keeping only leading order \ky{Leading order in what? PN? non-GR correction?} terms we get
 \begin{equation}\label{eq:2q}
 \frac{\mathrm{d^2}\Psi}{\mathrm{d} t^2}=\frac{2}{\pi\dot{f}_{GR}}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
-In leading order, $\dot{f}_{GR}$ is given by \cite{VanDenBroeck:2006qu}
+To leading PN order, $\dot{f}_{GR}$ is given by \cite{VanDenBroeck:2006qu}
 \begin{equation}\label{eq:2p}
-\dot{f}_{GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}
+\dot{f}_{GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}\,.
 \end{equation}
-Using Eq.~\eqref{eq:2p} in Eq.~\eqref{eq:2q} gives
+Using Eq.~\eqref{eq:2p} in Eq.~\eqref{eq:2q} gives \ky{Are you sure?}
 \begin{equation}
 \frac{\mathrm{d^2}\Psi}{\mathrm{d} t^2}=\frac{1}{\dot{f}_{GR}}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
@@ -137,7 +137,7 @@ Now we want to write GW phase $\Psi$ as
 \begin{equation}\label{eq:2o}
 \Psi=\Psi_{GR}+\delta\Psi\,,
 \end{equation}
-where $\Psi_{GR}$ is the GW phase in GR and $\delta\Psi$ is given by Eq.~\eqref{eq:2b}. Using \eqref{eq:2o} in the left side of Eq.~\eqref{eq:2q} and comparing with the right side we get
+where $\Psi_{GR}$ is the GW phase in GR and $\delta\Psi$ is given by Eq.~\eqref{eq:2b}. Using \eqref{eq:2o} in the left side of Eq.~\eqref{eq:2q} and comparing with the right side we get \ky{So you don't use (20)? Then why did you introduce it...?}
 \begin{equation}
 \frac{\beta b}{3}\left(\frac{b}{3}-1\right)u^{b-6}=-\frac{5\pi}{48}\gamma_{\dot{f}}u^{c_{\dot{f}}-11}
 \end{equation}
@@ -147,8 +147,9 @@ b=c_{\dot{f}}-5\,,
 \end{equation}
 and
 \begin{equation}
-\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,.
+\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,,
 \end{equation}
+for $c_{\dot{f}} \neq 5$ and $c_{\dot{f}} \neq 8$.
 
 \subsection{Relation Among ppE Parameters}
 \st{Here I want to show $\alpha$ as a function of $\beta$, but after our meeting.}
