@@ -1,0 +1,541 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[prd,aps,twocolumn,nofootinbib,showpacs,superscriptaddress]{revtex4-1}
+\documentclass[prd,aps,twocolumn,nofootinbib,showpacs]{revtex4-1}
+%\documentclass[prd,aps,nofootinbib,showpacs]{revtex4-1}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{dcolumn}
+\usepackage[dvips]{graphicx}
+\usepackage{graphics}
+\usepackage[latin1]{inputenc}
+\usepackage{latexsym}
+\usepackage{rotating}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{xspace} % Sensible space treatment at end of simple macros
+\usepackage[usenames]{color}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{color}
+%\usepackage{ulem}
+\usepackage{appendix}
+%\usepackage[toc,page]{appendix}
+\usepackage{comment}
+%% Try to control orphans, widows, and extra whitespace
+\widowpenalty=1000
+\clubpenalty=1000
+\raggedbottom
+
+\definecolor {darkgreen}{rgb}{0.2,0.7,0.2}
+\definecolor{purple}{rgb}{0.5,0,0.5}
+
+
+\newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
+\newcommand{\GR}{{\mbox{\tiny GR}}}
+\newcommand{\GW}{{\mbox{\tiny GW}}}
+\newcommand{\ky}[1]{\textcolor{blue}{\it{\textbf{ky: #1}}} }
+\newcommand{\st}[1]{\textcolor{cyan}{\it{\textbf{st: #1}}} }
+
+
+\begin{document}
+\title{post-Einsteinian Parameters for Different Modified Gravity Theories}
+\maketitle
+\section{Introduction}
+
+\section{ppE Waveform}\label{section:ppE}
+Fourier waveform for the inspiral phase of a binary black hole coalescence is given by ~\cite{Yunes:2009ke}
+\begin{equation}\label{eq:2a}
+\tilde{h}(f)=\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}\,,
+\end{equation}
+% 
+in standard ppE framework. Here $\tilde{h}_{\GR}$ is the gravitational waveform in GR and $\delta \Psi$ is the modification to GW phase due to non-GR effects. We want to write $\delta\Psi$ as 
+\begin{equation}\label{eq:2b}
+\delta\Psi=\beta u^b\,,
+\end{equation}
+where
+\begin{equation}
+u=(\pi \mathcal{M} f)^\frac{1}{3}\,.
+\end{equation}
+Here $f$ is the frequency of gravitational wave and $\mathcal{M}$ is the chirp mass of the binary system. For a binary with component masses $m_1$ and $m_2$ the chirp mass is defined as $\mathcal{M}=(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$. $\alpha$, $\beta$, $a$, and $b$ are ppE parameters that capture non-GR effects in the gravitational waveform. When $(\alpha,\beta) = (0,0)$, Eq.~\eqref{eq:2a} reduces to $\tilde{h}(f)=\tilde{h}_{\GR}$ which corresponds to the case of GR.
+
+In order to obtain the expressions of ppE parmeters for different modified gravity theories, we consider corrections of binary orbital seperation and the frequency evolution. These corrections come from dissipative and conservative corrections which means modification of binding energy $E$ and the rate of change of binding energy $\dot{E}$ respectively. Modification of binary orbital seperation results from conservative correction while modification of frequency evolution can come from both conservative and dissipative corrections.
+
+We want to write the orbital separation $r$ as
+ \begin{equation}
+ \label{eq:2k}
+ r=r_{\GR}(1+\gamma_r u^{c_r})\,,
+ \end{equation}
+where $\gamma_r$ and $c_r$ are parameters which show the deviation of orbital seperation $r$ from $r_{\GR}$, with $r_{\GR}$ being the orbital seperation in GR. Since any deviation from GR has to be small, we consider $\gamma_r$ and $c_r$ to be small as well. In leading PN order $r_{\GR}$ is simply given by Kepler's law as $r_{\GR}=\left(m/\Omega^2\right)^{1/3}$.
+Here, $m\equiv m_1+m_2$ is the total mass of the binary, $\Omega\equiv\pi f $ is the orbital angular frequency, and $\eta\equiv\mu/m$ is the symmetric mass ratio where $\mu=(m_1m_2)/m$ is the reduced mass of the binary.
+
+We want to parametrize the frequency evolution as
+\begin{equation}\label{eq:2m}
+\dot{f}=\dot{f}_{\GR}\left(1+\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,,
+\end{equation}
+where $\gamma_{\dot{f}}$ and $c_{\dot{f}}$ give the deviation of frequency evolution from that of GR. $\dot{f}_{\GR}$ is the frequency evolution in GR which is given in leading PN order by \cite{Blanchet:1995ez}
+\begin{align}\label{eq:2s}
+\dot{f}_{\GR}=\frac{96}{5}\pi^{8/3}\mathcal{M}^{5/3}f^{11/3}\,,
+\end{align}
+where all terms have their usual meanings. $\gamma_{\dot{f}}$ and $c_{\dot{f}}$ can take different forms depending on whether the dominant correction is dissipative or conservative.
+ 
+ \subsection{Correction to the Amplitude}
+ 
+From the stationary phase approximation\cite{PhysRevD.62.084036,Yunes:2009yz}, the waveform in Fourier domain can be written as
+ \begin{equation}\label{eq:2g}
+ \tilde{h}(f)=\frac{\mathcal{A}(\bar{t})}{\sqrt{\ell \dot{F}}}e^{i\Psi}\,,
+ \end{equation}
+where $\ell >0$ is the harmonic number, $\Psi$ is GW phase, $\dot{F}\equiv\dot{f}/2$ is the orbital frequency evolution, $\bar{t}$ is the stationary point, and $\mathcal{A}(\bar{t})$ is the amplitude of gravitational wave at time $t=\bar{t}$. Since we are interested in correction to the quadruple radiation only, we will consider $\ell =2$ in \eqref{eq:2g} which gives the amplitude of Fourier waveform as
+\begin{equation}\label{eq:2h1}
+\tilde{\mathcal{A}}(f)=\frac{\mathcal{A}(\bar{t})}{\sqrt{\dot{f}}}\,.
+\end{equation}
+For a two-body quasi-circular orbit, the trace-reversed metric perturbation can be written as \cite{Blanchet:2002av} 
+ \begin{equation}\label{eq:2h2}
+\bar{h}^{ij}(t)\propto \frac{G}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,,
+ \end{equation}
+where $D_L$ is the luminosity distance, $G$ is gravitational constant, and $Q^{ij}$ is the quadruple moment tensor. From Eqs. \eqref{eq:2h1} and \eqref{eq:2h2} we find
+\begin{align}\label{eq:2e}
+\tilde{\mathcal{A}}(f)&\propto\frac{1}{\sqrt{\dot{f}}}\frac{G}{D_L}\mu r^2f^2\nonumber\\&\propto \frac{r^2}{\sqrt{\dot{f}}}  \,.
+\end{align}
+Using Eqs.~\eqref{eq:2k} and \eqref{eq:2m} in Eq.~\eqref{eq:2e} and keeping only leading order non-GR correction terms we get
+\begin{equation}\label{eq:2n}
+\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR} \left(1+2\gamma_ru^{c_r}-\frac{1}{2}\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,,
+\end{equation}
+where $\tilde{\mathcal{A}}_{\GR} $ is the amplitude of Fourier waveform in GR. Now we will show the expressions of ppE parameters $\alpha$ and $a$ for three different cases using Eq.~\eqref{eq:2n}.
+\subsubsection*{Dissipative Dominant Correction}
+When dissipative correction dominates, we can ignore correction to binary seperation $a$ and Eq. \eqref{eq:2n} reduces to
+\begin{equation}
+\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR} \left(1-\frac{1}{2}\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,.
+\end{equation}
+Comparing above equation with the standard ppE waveform given by Eq.~\eqref{eq:2a} we find
+\begin{equation}\label{eq:2t}
+\alpha=-\frac{\gamma_{\dot{f}}}{2},\hspace*{20pt}a=c_{\dot{f}}\,.
+\end{equation}
+\subsubsection*{Conservative Dominant Correction}
+Correction to $\dot{f}$ is not independent of correction to the binary seperation $a$, since both dissipatve and conservative corrections contribute to the correction of $\dot{f}$. In appendix \ref{appendix} \st{I don't know why it's showing appendix IIIG instead of appendix A, I'll fix it later}, we derived the expressions of $\dot{f}$ and ppE amplitude in Fourier space showing contribution of dissipative and conservative corrections explicitly.\st{plagiarigm alert: It's not ``our" derivation, right? What would be the best way to refer to it?} From Eq. \eqref{eq:o}, setting $B=0$ we find the ppE parameters for conservative dominant correction as
+
+\begin{align}\label{eq:2u}
+\alpha=-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)\,,
+\end{align} 
+and
+\begin{equation}\label{eq:2x}
+a=c_r\,.
+\end{equation}
+\subsubsection*{Dissipative and Conservative at the Same Order}
+If dissipative and conservative corrections enter at the same order, in Eq.~\eqref{eq:2n} we can set $c_r=c_{\dot{f}}$ which gives 
+\begin{equation}
+\alpha=2 \text{$\gamma_r $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,,
+\end{equation}
+and
+\begin{equation}
+a=c_{r}=c_{\dot{f}}\,.
+\end{equation}
+
+\subsection{Correction to GW phase}
+For quadruple radiation, the relation between GW phase $\Psi$ and orbital frequency $\Omega$ is given by\cite{Yunes:2009yz}
+\begin{equation}
+\frac{d^2\Psi}{d t^2}=2\frac{d t}{d\Omega}\,,
+\end{equation}
+which can be rewritten as
+\begin{equation}
+\frac{d^2\Psi}{d t^2}=\frac{2}{\pi \dot{f}}\,.
+\end{equation}
+Using Eq.~\eqref{eq:2m} in the right side of above equation and keeping only leading order non-GR correction term we get
+\begin{equation}\label{eq:2q}
+\frac{d^2\Psi}{d t^2}=\frac{2}{\pi\dot{f}_{\GR}}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
+\end{equation}
+To leading PN order, $\dot{f}_{\GR}$ can be written as a function of GW frequency as \cite{VanDenBroeck:2006qu}
+\begin{equation}\label{eq:2p}
+\dot{f}_{\GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}=\frac{96}{5\pi\mathcal{M}^2}u^{11}\,.
+\end{equation}
+Using Eq.~\eqref{eq:2p} in Eq.~\eqref{eq:2q} gives
+\begin{equation}\label{eq:2r}
+\frac{d^2\Psi}{d t^2}=5\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
+\end{equation}
+We want to write GW phase $\Psi$ as 
+\begin{equation}\label{eq:2o}
+\Psi=\Psi_{\GR}+\delta\Psi\,,
+\end{equation}
+where $\Psi_{\GR}$ is the GW phase in GR and $\delta\Psi$ is given by Eq.~\eqref{eq:2b}. Using \eqref{eq:2o} in the left side of Eq.~\eqref{eq:2r} and comparing with the right side we get
+\begin{equation}
+\frac{\beta b}{3}\left(\frac{b}{3}-1\right)u^{b-6}=-\frac{5\pi}{48}\gamma_{\dot{f}}u^{c_{\dot{f}}-11}
+\end{equation}
+which gives
+\begin{equation}
+b=c_{\dot{f}}-5\,,
+\end{equation}
+and
+\begin{equation}\label{eq:2v}
+\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,,
+\end{equation}
+for $c_{\dot{f}} \neq 5$ and $c_{\dot{f}} \neq 8$. Above relation is valid for all three types of corrections. In appendix we derived $\delta\Psi$ in an alternative approach showing dissipative and conservative corrections explicitly. Using Eq. \eqref{eq:p} we can find $\beta$ for all three cases seperately.
+
+When dissipative correction dominates, we set $\gamma_r=0$ and Eq. \eqref{eq:p} gives
+\begin{equation}
+\beta=-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
+\end{equation}
+and
+\begin{equation}
+b=2q-5\,,
+\end{equation}
+with $B$ and $q$ defined by Eq.~\eqref{eq:a}.
+For conservative dominant correction, we set $B=0$ in \eqref{eq:p} which gives
+\begin{equation}\label{eq:2w}
+\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}\,,
+\end{equation}
+with
+\begin{equation}
+b=c_r-5\,.
+\end{equation}
+When dissipative and conservative correction enter at the same order, $\beta$ is given by Eq.~\eqref{eq:p} as
+\begin{align}
+\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
+\end{align}
+with
+\begin{equation}
+ b=2q-5=c_r-5\,.
+\end{equation}
+\subsection{Relation among ppE Parameters}
+In all three cases the relation between ppE parameters $a$ and $b$ is given by
+\begin{equation}
+b=a-5\,.
+\end{equation}
+When dissipitive correction dominates, comparing Eq. \eqref{eq:2t} with \eqref{eq:2v}, ppE parameter $\beta$ can be written in terms $a$ and $\alpha$ as
+\begin{equation}
+\beta=\frac{15}{8}\frac{1}{(a-8)(a-5)}\,\alpha\,.
+\end{equation}
+Similarly for conservative dominant correction, comparing Eq.~\eqref{eq:2w} with \eqref{eq:2u} and \eqref{eq:2x} gives,
+\begin{equation}
+\beta=\frac{15}{8}\frac{a^2-2a-6}{(8-a)(5-a)(a^2-4a-6)}\,\alpha\,.
+\end{equation}
+\st{Our goal was to write $\beta$ and $b$ as a function of $\alpha$ and $a$, which is apparently difficult for dissipative=conservative case, since there are $B$ and $\gamma_r$ in the expression of $\beta$ and I cannot write $\gamma_r$ in terms of ppE parameters in this case.}
+ \section{Example Theories}
+ \vspace*{20pt}
+
+\ky{At the beginning of each subsection below, you need to explain what each theory is, how it's different from GR, why we care about that theory, what are }
+
+ \subsection{Scalar-Tensor Theories}
+ Dissipative correction dominates.  From \cite{Yunes:2016jcc},
+ \begin{equation}
+ \beta_{SC}=\frac{-5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
+ \end{equation}
+ \begin{equation}
+ \alpha_{ST}=\frac{-5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
+ \end{equation}
+ 
+ \subsection{dCS Gravity}
+ 
+ \ky{I would move this subsection after EdGB.}
+ 
+\hspace{15.5pt}BHs in dCS theory \ky{Let's use ``dCS gravity'' throughout.} retain scalar dipole charge sourced by the Pontryagin invariant that induce modified quadrupolar emission \cite{Yagi:2011xp,Yunes:2016jcc}. In this theory dissipative and conservative corrections enter at the same order. Kepler's third law is modified as \cite{Yagi:2012vf} \ky{I think we can just show $\gamma_r$ directly instead of (38) and (39).}
+ \begin{equation}\label{eq:3.3a}
+ a=\frac{m}{u^2}(1+\delta C_r v^4)\,,
+ \end{equation}
+where $v=(\pi m f)^{1/3}$. $\delta C_r$ for  spin-aligned binaries is given as  \ky{Let's change $\zeta m^2 \left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)$ to $\frac{\zeta}{\eta^2}\left(\frac{m_2}{m_1}\chi_1^2+\frac{m_1}{m_2}\chi_2^2\right)$ so that each piece is dimensionless. Please do the same for (41).}
+\begin{align}
+\delta C_r=\frac{25}{256}\zeta \frac{\chi_1 \chi_2}{\eta}-\frac{201}{3584}\zeta m^2\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
+\end{align} 
+
+Here, $m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter, and $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. The magnitude of the correction to the rate at which the binary inspirals is proportional to the dimensionless dCS coupling parameter $\zeta_{dCS}=16\pi \alpha_{\text{dCS}}^2/m^4$\footnote{$\alpha_{\text{dCS}}$ is a coupling constant in dCS theory which is different from ppE parameter $\alpha$} .
+
+
+Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{\dot f}$ directly.}
+\begin{equation}\label{eq:3.3b}
+\dot{f}=\dot{f}_{\GR}\left(1+\delta C v^4\right)\,,
+\end{equation}
+ where \ky{Let's write $\frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }$ as $\frac{38525}{39552} \frac{\zeta \chi_1 \chi_2}{\eta}$. Same comment applies to other equations as well. (And you're missing the subscript ``dCS'' under $\zeta$.)}
+ \begin{equation}
+ \delta C= \frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }-\frac{309845 \zeta  m^2 }{553728 }\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
+ \end{equation}
+ By comparing Eq.~\eqref{eq:3.3a} with Eq.~\eqref{eq:2c} and Eq.~\eqref{eq:3.3b} with Eq.~\eqref{eq:2e}, we can obtain $A$, $B$, $p$,  and $q$ for dCS theory. Then using Eqs. \eqref{eq:2a} and \eqref{eq:2b} we can find $\alpha$ and $\beta$ as
+ 
+ \begin{align}
+ \alpha_{\text{dCS}}=\frac{185627 \zeta_{\text{dCS}} }{1107456 \eta ^{14/5}}\left[-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{53408 \eta }{14279}\right) \text{$\chi_a$}^2\right. \nonumber\\ \left.+\left(1-\frac{3708 \eta }{14279}\right) \text{$\chi_s$}^2\right]\,,
+ \end{align}
+ and
+ \begin{equation}
+ \beta_{\text{dCS}}=\frac{1549225 \zeta_{\text{dCS}} }{11812864 \eta ^{14/5}}\left[-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{16068 \eta }{61969}\right) \text{$\chi_a$}^2+\left(1-\frac{231808 \eta }{61969}\right) \text{$\chi_s$}^2\right]\,,
+ \end{equation}
+ respectively. Here we introduced the symmetric and antisymmetric dimensionless spin combinations\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}} $\chi_{s,a}=(\frac{a_{||1}}{m_1}\pm\frac{a_{||2}}{m_2})/2$ with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, and the dimensionless mass difference $\delta_m=(m_1-m_2)/m$.
+ 
+ 
+  \subsection{EdGB Gravity}
+
+\ky{I noticed that you literally just copied this paragraph from my paper with Nico and Frans. Since it's just a note, it's not a big deal, but let me tell you that if you do this in the actual paper, it's *really* bad. This is called plagiarism, and whenever arXiv detects it, it will add a note saying something like ``this paper has a substantial overlap with XXX" so that other people can be aware of. If you do this, you can screw up your career and sometimes it can affect you not getting Ph.D. (This did actually happen to my colleague in Kyoto when I was a grad student.) I'm not mad or anything since I think I didn't tell you this, but I strongly suggest to write things in your own words even at the level of the note. I suspect there might be other places that you just copied and pasted from other papers. If so, please change them in your own words now.}
+  
+ BHs in EdGB thoery  \ky{Let's use ``EdGB gravity'' throughout. (Notice also small ``d''.)} have scalar monopole charges (a measure of the dependence of the BH mass on the scalar field) as sourced by the Kretchmann curvature \cite{Yunes:2016jcc}. Such charges induce scalar dipole radiation, which then speeds up the rate at which the binary inspirals. The mapping between $\beta$ and the system coupling parameters is given by \cite{Yunes:2016jcc,Yagi:2011xp}
+ 
+ \begin{equation}
+ \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,,
+ \end{equation}
+ Here, $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges in EdGB gravity, which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$\cite{Berti:2018cxi,Prabhu:2018aun}, with $\chi_A$ the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which is given by $\zeta_{\text{EdGB}}=16 \pi \alpha_{\text{EdGB}}^2/m^4$ \footnote{$\alpha_{\text{EdGB}}$ here  is a coupling constant of EdGB theory which is different from ppE parameter $\alpha$}.
+
+
+ \hspace{15.5pt} In EdGB theory dissipative correction dominates. So we can use \eqref{eq:2c} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
+ \begin{equation}
+ \alpha_{\text{EdGB}}=\frac{-5}{192}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
+ \end{equation}
+ 
+ 
+ 
+ \subsection{Einstein-$\AE$ther Theory}
+ Dissipative correction dominates. From \cite{Hansen:2014ewa},
+ \begin{equation}
+ \beta_{\AE}=-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{3584 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}
+ \end{equation}
+ \begin{equation}
+ \alpha_{\AE}=-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{96 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}
+ \end{equation}
+ 
+ \subsection{KG Theory}
+ Dissipative correction dominates. From \cite{Hansen:2014ewa},
+ \begin{equation}
+ \alpha_{KG}=-\frac{5 \sqrt{\alpha^{KG}}\bigg(\frac{(\beta^{KG}-1)(2+\beta^{KG}+3\lambda^{KG})}{(\alpha^{KG}-2)(\beta^{KG}+\lambda^{KG})}\bigg)^{3/2}\eta ^{2/5} (\text{$s_1$}-\text{$s_2$})^2}{96 (\text{$G_N$} (\text{$s_1$}-1) (\text{$s_2$}-1))^{4/3}}
+ \end{equation}
+ \begin{equation}
+ \beta_{KG}=-\frac{5 \sqrt{\alpha^{KG}}\bigg(\frac{(\beta^{KG}-1)(2+\beta^{KG}+3\lambda^{KG})}{(\alpha^{KG}-2)(\beta^{KG}+\lambda^{KG})}\bigg)^{3/2}\eta ^{2/5} (\text{$s_1$}-\text{$s_2$})^2}{3584(\text{$G_N$} (\text{$s_1$}-1) (\text{$s_2$}-1))^{4/3}}
+ \end{equation}
+
+ \subsection{Non-Commutative Gravity}
+ Dissipative and conservative correction enters at same order. \cite{Kobakhidze:2016cqh}
+ \begin{equation}
+ \alpha_{NC}=-\frac{3 (2 \eta -1) \Lambda ^2}{8 \eta ^{4/5}}
+ \end{equation}
+ \begin{equation}
+ \beta_{NC}=-\frac{75 (2 \eta -1) \Lambda ^2}{256 \eta ^{4/5}}
+ \end{equation}
+ \newpage
+ 
+ \subsection{Varying-G Theory}\label{gdot}
+\st{Reminder: I have to change the first sentence- it's been taken directly from the cited paper}In varying $G$ theories, masses and Newton's constant $G$ are time dependent. The mass of the bodies with appreciable gravitational self-energy vary in time at a rate proportional to any time variation of gravitational coupling constant\cite{PhysRevLett.65.953}. Since the formalism of section \ref{section:ppE} requires $G$ and the masses to be constant, we cannot use it for varying-G theories. Rather we will promote binary masses and the Newton's constant to a time dependent form in the following way
+ 
+ \begin{eqnarray}\label{eq:3.7a2}
+ m_1(t)\approx m_{1,0}+\dot{m}_{1,0}(t-t_0)\,, \\
+ \label{eq:3.7a3}  m_2(t)\approx m_{2,0}+\dot{m}_{2,0}(t-t_0)\,, \\
+   \label{eq:3.7a4}  G(t)\approx  G_0+\dot{G}_0(t-t_0)\, , 
+ \end{eqnarray}
+ 
+ where $t_0$ is the time of coalescence. Subscript $0$ denotes the quantity measured at time $t=t_0$. Total mass of the binary varies as
+ \begin{equation}
+ m(t)=m_0+\dot{m}_0(t-t_0)\,.
+ \end{equation}
+ 
+ \hspace*{15.5pt}GW emission makes the orbital seperation $r$ smaller with the orbital decay rate given by \cite{PhysRevD.49.2658}
+ \begin{equation}
+ \dot{r}_{GW}=-\frac{64}{5}\frac{G^3 \mu m^2}{r^3}\,,
+ \end{equation}
+ in $c=1$ unit. On the other hand, time variation of mass and grvatitaional coupling constant changes $r$ at a rate of 
+ \begin{equation}
+ \dot{r}_H=-\left(\frac{\dot{G}_0}{G}+\frac{\dot{m}_0}{m}\right)\,,
+ \end{equation}
+ which is derived from the conservation of specific angular momentum $j=\sqrt{Gmr}$. From Kepler's law, evolution of orbital angular frequency is given by
+ \begin{equation}\label{eq:3.7a}
+ \dot{\Omega}=\frac{1}{2\Omega r^3}\left(m\dot{G}_0+\dot{m}_0G-3mG\frac{\dot{r}}{a}\right)\,.
+ \end{equation}
+ \hspace*{15.5pt} Using binary seperation shift $\dot{r}=\dot{r}_{GW}+\dot{r}_H$ in equation \eqref{eq:3.7a} we can find the GW frequency evolution upto 2PN order as
+\begin{align} \label{eq:3.7b}
+ \dot{f}=\frac{\dot{\Omega}}{\pi}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\left[1+\frac{5}{48 G^{8/3}\eta}(\dot{m}_0G+m\dot{G}_0)x^{-4} \right. \nonumber\\ \left.  -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x+4\pi x^{3/2}+\left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right]\,,
+ \end{align}
+ 
+where $x=v^2=(\pi M f)^{2/3}$ is the squared velocity of the relative motion. Here we considered only leading order correction to frequency evolution which enters in -4PN order. We can integrate equation \eqref{eq:3.7b} to obtain time before coalescence $t(f)$ and the GW phase $\phi(f)=\int 2 \pi f dt=\int\frac{2\pi f}{\dot{f}}df$ as
+
+
+\begin{align}
+t(f)=t_0-\frac{5}{256}\mathcal{M}_0{G_0}^{-5/3}{u_0}^{-8}\left\{1+\left[\frac{5}{512 {m}_0{G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0})\right. \right. \nonumber \\ \left. \left. -\frac{5}{1536{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4}+\frac{4}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right)x_0 \right. \nonumber\\ \left. -\frac{32}{5}\pi {x_0}^{3/2}+2\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^2\right){x_0}^2 \right\}\,,
+\end{align}
+
+
+and
+\begin{align}
+\phi(f)=\phi_0-\frac{1}{16}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{3328 m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0}) \right. \right. \nonumber\\ \left. \left. -\frac{25}{9984{G_0}^{8/3} \eta_0}(11m_0 \dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4}+\frac{5}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right){x_0} \right. \nonumber\\ \left. -10 \pi {x_0}^{3/2}+5\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^{2}\right){x_0}^2\right\}\,.
+\end{align}
+
+
+%where the subscript $0$ denotes the quantity measured at time of coalescence.
+\hspace{15.5pt}The GW phase in the Fourier space is given by,
+
+\ky{I've fixed this equation.}
+
+\begin{align}\label{eq:3.7c}
+\Psi(f)=&2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
+=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{6656m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0}) \right. \right. \nonumber\\ 
+&\left. \left. -\frac{25}{19968{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{M}_0G_0)\right]{u_0}^{-8}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0} \right. \nonumber\\ 
+& \left. -16\pi {x_0}^{3/2}+\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right){x_0}^2\right\}\,.
+\end{align}
+
+
+\hspace*{15.5pt}From equation \eqref{eq:3.7c}, $b=-13$  and we can find $\beta$ as
+
+ \begin{equation}
+ \beta_{\dot{G}}=\frac{-75 \mathcal{M}_0}{851968 {G_0}^{10/3}} \left(\frac{11 \dot{G}_0}{3 G_0} + \frac{17 \dot{m}_0}{3m_0}-\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
+  \end{equation}
+ 
+ \hspace*{15.5pt}\st{reminder:I have to change this part since following equations have already been explained in section 2}In order to calculate $\alpha$ we have to write metric perturbation explicitlty in terms of $G$ and binary mass parameters. For a two-body quasi-circular orbit we can write metric perturbation as \cite{Blanchet:2002av}
+ \begin{equation}
+\bar{h}^{ij}(t)\propto \frac{G(t)}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,,
+ \end{equation}
+which gives the amplitude in Fourier space
+\begin{align}\label{eq:3.7d}
+\tilde{\mathcal{A}}(f)&\propto\frac{1}{\sqrt{\dot{f}}}\frac{G(t)}{D_L}\mu(t) r(t)^2f^2\nonumber\\&\propto\frac{1}{\sqrt{\dot{f}}}{G(t)}^{5/3}\mu(t){m(t)}^{2/3}\nonumber\\ &\propto \frac{1}{\sqrt{\dot{f}}}  \,.
+\end{align} 
+ 
+
+Here $Q^{ij}$ is the quadruple moment tensor and $D_L$ is the luminosity distance. Using equations \eqref{eq:3.7a2}, \eqref{eq:3.7a3}, and \eqref{eq:3.7a4} in equation \eqref{eq:3.7d} and keeping only leading order correction terms, we can write the amplitude in Fourier space as
+\begin{equation}
+\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR}\left(1+\alpha_{\dot{G}}{u_0}^{-8}\right)\,,
+\end{equation}
+where
+\begin{equation}\label{eq:3.7d2}
+ \alpha_{\dot{G}}=\frac{-5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
+ \end{equation}
+ \hspace{15.5pt} $\alpha_{\dot{G}}$ in equation \eqref{eq:3.7d2} does not match with the previously obtained $\alpha$ for varying-$G$ theory in Ref. \cite{Yunes:2009bv}.
+ 
+ \subsubsection*{GW Frequency Evolution: Energy-Balance Equation}
+ 
+  \hspace{15.5pt} We now show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying the energy balance law used in~\cite{Yunes:2009bv}. Total energy of the binary is given by $E=-(G\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution, we can use Kepler's law to rewrite the binding energy as 
+ \begin{equation}\label{eq:3.7e}
+ E(f,G,m_1,m_2)=-\frac{1}{2}\mu (Gm\Omega)^{2/3}\,,
+ \end{equation}
+ where $\Omega=\pi f$ is the orbital angular frequency. Using \eqref{eq:3.7a2} - \eqref{eq:3.7a4} in  \eqref{eq:3.7e}, the rate of change of energy becomes
+ \begin{align}\label{eq:3.7j}
+ \frac{d E}{d t}=\frac{\pi^{2/3}}{6f^{1/3}G^{1/3}m^{4/3}}\left[-3fGm(\dot{m}_1m_2+m_1\dot{m}_2)\right.\nonumber\\ \left.-2m^3\eta(G\dot{f}+f\dot{G})+m^2fG\eta\dot{m}\right]\,.
+ \end{align}
+ 
+In GR, such time variation in the binding energy needs to be balanced with the GW luminosity emitted from the system. In varying-$G$ theories, there is an additional contribution due to the variation in $G$ and masses. Namely, the binding energy is not conserved even in the absence of GW emission. To estimate such additional contribution, we rewrite the binding energy in terms of specific angular momentum as
+ \begin{equation}\label{eq:3.7f}
+ E(G,m_1,m_2,j)=-\frac{G^2 \mu  m^2}{2 j^2}\,.
+ \end{equation}
+ \hspace*{15.5pt} Taking the time variation of the above binding energy and adding the GW luminosity, the energy-balance equation for varying-$G$ theories then becomes
+ \begin{equation}\label{eq:3.7g}
+\frac{d E}{d t}=-\dot{E}_{GW}+\frac{\partial E}{\partial m_1}\dot{m_1}+\frac{\partial E}{\partial m_2}\dot{m_2}+\frac{\partial E}{\partial G}\dot{G}\,,
+ \end{equation}
+ where $E$ is given by equation \eqref{eq:3.7f} and $\dot{E}_{GW}$ is the energy radiated by GWs. Using the quadruple formula, the first term in the above equation is given by
+ \begin{equation}\label{eq:3.7h}
+ \dot{E}_{GW}=\frac{1}{5}\left \langle\dddot{Q}_{ij}\dddot{Q}_{ij}-\frac{1}{3}(\dddot{Q}_{kk})^2\right \rangle=\frac{32}{5} r^4 G \mu ^2 \Omega ^6\,.
+ \end{equation}
+ The last term in Eq.~\eqref{eq:3.7g} was missing in~\cite{Yunes:2009bv}.
+ %
+%\hspace{15.5pt}
+ Using \eqref{eq:3.7f} and \eqref{eq:3.7h} in \eqref{eq:3.7g},
+ \begin{align}\label{eq:3.7i}
+\frac{d E}{d t}=- \frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G^{7/3} m^{10/3}-\frac{G^2}{2j^2}({m_1}^2\dot{m}_2+\dot{m}_1{m_2}^2)-\frac{Gm^2\eta}{j^2}(m\dot{G}+\dot{m}G)\,.
+ \end{align}
+ \hspace{15.5pt}Solving equation \eqref{eq:3.7i} and \eqref{eq:3.7j} we can find frequency evolution upto -4PN order as
+ 
+ \begin{align} 
+ \dot{f}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}[1+\frac{5\eta^{3/5}}{48 G^{8/3}}(\dot{m}G+m\dot{G})u^{-8}]\,,
+ \end{align} 
+ 
+ 
+ where $u=(\pi \mathcal{M}f)^{1/3}$. Including higher order GR corrections we can write frequency evolution upto 2PN order, which matches with Eq.~\eqref{eq:3.7b}.
+ 
+ %\begin{align}
+% \dot{f}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\bigg[1+\frac{5\eta^{3/5}}{48 G^{8/3}}(\dot{M}G+M\dot{G})u^{-8}-(\frac{743}{336\eta^{2/5}}+\frac{11}{4}\eta^{3/5})u^2\\+4\pi\eta^{-3/5}u^3+(\frac{34103}{18144\eta^{4/5}}+\frac{13661}{2016}\eta^{1/5}+\frac{59}{18}\eta^{6/5})u^4\bigg]
+% \end{align}
+
+
+
+
+\begin{comment}
+  \newpage
+ \section{Table}
+\begin{tabular}{ |p{1cm}|p{6.9cm}|p{0.4cm}|p{6cm}|p{0.3cm}|}
+ \hline
+ \multicolumn{5}{|c|}{ppE Parameters}\\
+ \hline
+ \tiny Theories& $\beta$ & $b$ & $\alpha$& a\\
+ \hline
+ \vspace{20pt}
+   \tiny EdGB &\rule{0pt}{4ex}\tiny$\frac{-5}{7168}\zeta_{EdGB}\frac{(m_1^2s_2^{EdGB}-m_2^2s_1^{EdGB})^2}{m^4\eta^{\frac{18}{5}}}$&\tiny-7& \tiny $\bm{\frac{-5}{192}\zeta_{EdGB}\frac{(m_1^2s_2^{EdGB}-m_2^2s_1^{EdGB})^2}{m^4\eta^{\frac{18}{5}}}}$ &\tiny-2\\  
+    \hline
+   \vspace{20pt}
+\tiny Scalar-Tensor&\rule{0pt}{4ex}\tiny$\frac{-5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2$&\tiny-7&\tiny $\frac{-5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2$ &\tiny-2\\
+ \hline
+  \vspace{20pt}
+\tiny dCS& \rule{0pt}{4ex}\tiny$\frac{1549225 \zeta_{dCS} }{11812864 \eta ^{14/5}}(-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{16068 \eta }{61969}\right) \text{$\chi_a$}^2+\left(1-\frac{231808 \eta }{61969}\right) \text{$\chi_s$}^2)$ &\tiny -1 &\tiny $\bm{\frac{185627 \zeta_{dCS} }{1107456 \eta ^{14/5}}(-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{53408 \eta }{14279}\right) \text{$\chi_a$}^2+\left(1-\frac{3708 \eta }{14279}\right) \text{$\chi_s$}^2)}$& \tiny 4\\
+\hline
+ \vspace{20pt}
+\tiny KG&\rule{0pt}{4ex}\tiny$\bm{\frac{-5 \sqrt{\alpha^{KG}}\bigg(\frac{(\beta^{KG}-1)(2+\beta^{KG}+3\lambda^{KG})}{(\alpha^{KG}-2)(\beta^{KG}+\lambda^{KG})}\bigg)^{3/2}\eta ^{2/5} (\text{$s_1$}-\text{$s_2$})^2}{3584(\text{$G_N$} (\text{$s_1$}-1) (\text{$s_2$}-1))^{4/3}}}$&\tiny-7 &\tiny$\bm{\frac{112 }{3}\beta_{KG}}$&\tiny-2\\
+\hline
+ \vspace{20pt}
+ \tiny NC&\rule{0pt}{4ex}\tiny${-\frac{75 (2 \eta -1) \Lambda ^2}{256 \eta ^{4/5}}}$&\tiny-1&\tiny$\bm{-\frac{3 (2 \eta -1) \Lambda ^2}{8 \eta ^{4/5}}}$&\tiny4\\
+ \hline
+  \vspace{20pt}
+\tiny Einstein-$\AE$ther&\rule{0pt}{4ex}\tiny$\bm{-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{3584 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}}$&\tiny-7&\tiny$\bm{-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{96 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}}$&\tiny-2\\
+
+ \hline
+ \vspace{20pt}
+ \tiny Varying-G Theory&\rule{0pt}{4ex}\tiny $\bm{-\frac{75 m_0 {\eta_0}^{3/5}}{851968 {G_0}^{10/3}} \bigg(\frac{11 \dot{G}}{3 G_0} + \frac{17 \dot{M}}{3M_0}-\frac{m_{1,0}\dot{m_2}+m_{2,0}\dot{m_1}}{{m_0}^2 \eta0}\bigg)}$&\tiny-13&\tiny$\bm{\frac{-5 m_0 {\eta_0}^{3/5}}{512 {G_0}^{5/3}} \bigg(\frac{7 \dot{G}}{ G_0} + \frac{5\dot{M}}{m_0}+\frac{m_{1,0}\dot{m_2}+m_{2,0}\dot{m_1}}{{m_0}^2 \eta0}\bigg)}$&\tiny-8\\
+\hline
+\end{tabular}
+\end{comment}
+ \appendix \label{appendix}
+
+ \section{Nico's Foramlism \st{we can give it a better name later...}}
+For the conservative correction, let us modify the reduced effective potential as \cite{Chatziioannou:2012rf}
+ \begin{equation}\label{eq:h}
+ V_{\text{eff}}=\left(-\frac{m}{r}+\frac{{L}^2_{z}}{2r^2}\right)\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
+ \end{equation}
+where $m$ is the total mass of the binary and $L_{z}$ is the $z$-compnent of the angular momentum. $A$ and $p$ are the ppE amplitude and exponent corrections respectively. Any change in effctive potential is going to modify the Kepler's law as well. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and setting it to zero gives the modified Kepler's law as
+ \begin{equation}
+ \Omega^2=\frac{m}{r^3} \left[1+\frac{1}{2} A \, p\left(\frac{m}{r}\right)^p\right]\,.
+ \end{equation}
+ Above equation gives the orbital seperation as
+ \begin{equation}\label{eq:g}
+ r(t)=r_{\GR}\left[1+\frac{1}{6}A\, p\, \eta^{-\frac{2p}{5}}u^{2p}\right]\,,
+ \end{equation}
+where in leading PN order $r_{\GR}$ is given by Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
+\begin{equation}
+p=\frac{c_r}{2}\,,
+\end{equation}
+and
+\begin{equation}\label{eq:i}
+A=\frac{12\gamma_r}{c_r}\eta^{\frac{c_r}{5}}\,.
+\end{equation}
+For a circular orbit, there is no radial kinetic energy and effective potential energy is same as the binding energy. Using Eqs. \eqref{eq:g}-\eqref{eq:i} in Eq. \eqref{eq:h} and keeping only leading order non-GR correction terms, the binding energy becomes
+\begin{align}\label{eq:j}
+E=-\frac{1}{2}\eta^{-2/5}u^2\left[1-\frac{4}{c_r}(c_r-3)\gamma_ru^{c_r}\right]\,,
+\end{align}
+where $u=(\pi \mathcal{M} f)^{1/3}$.
+\st{I did the calculation and for binding energy I got something different from Nico's. Perhaps I am doing something wrong. For now I assume his calculation is correct and write his equation in terms of our variables and move on. I can show you my calculation in next meeting}
+Dissipative correction to the waveform comes from the modification of rate of change of binding energy. Let us write the rate of change of binding energy as \cite{Chatziioannou:2012rf}
+ \begin{equation}\label{eq:a}
+ \dot{E}=\dot{E}_{\GR}\left[1+B\left(\frac{m}{r}\right)^q\right]\,,
+ \end{equation}
+ where $\dot{E}_{GR}$ is the GR energy flux which is proportional to $v^2(m/r)^4$ where $v=\Omega r$ is the velocity of the relative motion\footnote{If we assume $\dot{E}_{\GR}$ to be proportional to $r^4\Omega^6$, we will get slightly different expressions for $\dot{f}$ and the waveform \cite{Chatziioannou:2012rf}}. Using Eqs. \eqref{eq:j} and \eqref{eq:a} and implying chain rule, GW frequency evolution becomes
+ \begin{align}\label{eq:f}
+ \dot{f}&=\frac{df}{dE}\frac{dE}{dt}\nonumber\\ &=\dot{f}_{GR}\left[1+B\eta^{-\frac{2q}{5}} u^{2q}+\frac{4 \gamma_r}{c_r}\left(\frac{c_r^2}{2}-c_r-3\right)u^{c_r}\right]\,,
+ \end{align}
+where $\dot{f}_{\GR}$ is given by Eq. \eqref{eq:2s}. Using Eqs.~\eqref{eq:g} and \eqref{eq:f} in Eq. \eqref{eq:2e} and keeping only leading order non-GR correction terms, GW amplitude in Fourier space becomes
+\begin{align}\label{eq:o}
+\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)u^{c_r}\right]\,.
+\end{align}
+
+GW phase in Fourier space is given by
+\begin{equation}\label{eq:n}
+\Psi(f)=2\pi f t(f)-\phi(f)-\frac{\pi}{4}\,,
+\end{equation}
+where $t(f)$ can be obtained by integrating \eqref{eq:f} as
+\begin{align}\label{eq:l}
+t(f)=&\int \dot{f}^{-1} dt\nonumber\\=&-\frac{5 \mathcal{M}}{256 u^8}\left[1+16\frac{\gamma_r}{c_r}\frac{(c_r^2-2c_r-6)}{(c_r-8)}u^{c_r}\right.\nonumber\\ &\left. +\frac{4 B}{q-4}\eta ^{-\frac{2q}{5}} u^{2q}\right]\,,
+\end{align}
+and $\phi(f)$ can be calculated from \eqref{eq:f} as
+\begin{align}\label{eq:m}
+\phi(f)&=\int 2 \pi f dt\nonumber\\&=\int\frac{2\pi f}{\dot{f}}df\nonumber\\&=-\frac{1}{16 u^5}\left[1+10\frac{\gamma_r}{c_r}\frac{\left(c_r^2-2 c_r-6\right)}{(c_r-5)}u^{c_r}+\frac{5B \eta ^{-\frac{2 q}{5}} u^{2 q}}{2 q-5}\right]\,,
+\end{align}
+with only Newtonian terms and leading order non-GR corrections. Using Eqs. \eqref{eq:l} and \eqref{eq:m} in Eq. \eqref{eq:n} and writing $\Psi(f)$ as $\Psi_{\GR}(f)+\delta\Psi(f)$, non-GR modification to the phase can be calculated as
+ \begin{align}\label{eq:p}
+\delta\Psi(f)=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}u^{c_r-5}\nonumber\\ -\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,,
+ \end{align}
+where $\Psi_{GR}$ in leading PN order is given by \cite{Blanchet:1995ez}
+\begin{equation}
+\Psi_{\GR}=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}u^{-5}\,,
+\end{equation}
+where $t_0$ the time of coalescence and $\phi_0$ is measured at $t=t_0$.
+
+\include{reference}
+\bibliographystyle{plain}
+\bibliography{bibfile}
+\end{document}
