@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\documentclass[prd,aps,twocolumn,nofootinbib,showpacs,superscriptaddress]{revtex4-1}
-\documentclass[prd,aps,twocolumn,nofootinbib,showpacs]{revtex4-1}
+\documentclass[prd,twocolumn,nofootinbib]{revtex4-1}
 %\documentclass[prd,aps,nofootinbib,showpacs]{revtex4-1}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -32,6 +32,12 @@
 \definecolor {darkgreen}{rgb}{0.2,0.7,0.2}
 \definecolor{purple}{rgb}{0.5,0,0.5}
 
+\newcommand\be{\begin{equation}}
+\newcommand\ba{\begin{eqnarray}}
+\newcommand\ee{\end{equation}}
+\newcommand\ea{\end{eqnarray}}
+\newcommand\bw{\begin{widetext}}
+\newcommand\ew{\end{widetext}}
 
 \newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
 \newcommand{\GR}{{\mbox{\tiny GR}}}
@@ -41,176 +47,282 @@
 
 
 \begin{document}
-\title{post-Einsteinian Parameters for Different Modified Gravity Theories}
+\title{Parameterized Post-Einsteinian Gravitational Waveforms in \\ Various Modified Theories of Gravity}
+
+\author{Sharaban Tahura}
+\affiliation{Department of Physics, University of Virginia, Charlottesville, Virginia 22904, USA.}
+
+\author{Kent Yagi}
+\affiliation{Department of Physics, University of Virginia, Charlottesville, Virginia 22904, USA.}
+
+\begin{abstract} 
+
+Something goes here 
+
+\end{abstract}
+
+\date{\today}
+
+
 \maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{ppE Waveform}\label{section:ppE}
-Fourier waveform for the inspiral phase of a binary black hole coalescence is given by ~\cite{Yunes:2009ke}
+
+\ky{One thing to remember: Each paragraph should have a meaning, and the first sentence of each paragraph should be a summary of that paragraph. This is called a topic sentence. You sometimes do this, and sometimes don't. Please keep this in mind and try to have topic sentence in each paragraph.}
+
+
+\ky{At the beginning of each section, it's a good idea to explain what we'll do in that section. I added this paragraph.}
+We begin by reviewing the ppE formalism. The original formalism (that we explain in detail in App.~\ref{appendix}) was developed by considering non-GR corrections to the binding energy $E$ and GW luminosity $\dot E$~\cite{Yunes:2009ke,Chatziioannou:2012rf}. The former (latter) correspond to conservative (dissipative) corrections. Here, we take a slightly different approach and consider corrections to the GW frequency evolution $\dot f$ and the Kepler's law $r(f)$, where $r$ is the orbital separation while $f$ is the GW frequency. This is because these two quantities directly determine the amplitude and phase corrections away from GR, and hence, the final expression are simpler than the original ones. Moreover, non-GR corrections to $\dot f$ and $r(f)$ have already been derived in the literature for many modified theories of gravity.
+
+PPE gravitational waveform for a compact binary inspiral in the Fourier domain is given by ~\cite{Yunes:2009ke}
 \begin{equation}\label{eq:2a}
 \tilde{h}(f)=\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}\,,
 \end{equation}
 % 
-in standard ppE framework. Here $\tilde{h}_{\GR}$ is the gravitational waveform in GR and $\delta \Psi$ is the modification to GW phase due to non-GR effects. We want to write $\delta\Psi$ as 
-\begin{equation}\label{eq:2b}
-\delta\Psi=\beta u^b\,,
-\end{equation}
-where
+where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\alpha u^a$ corresponds to the non-GR correction to the GW amplitude while  $\delta \Psi$ is that to the GW phase with 
 \begin{equation}
 u=(\pi \mathcal{M} f)^\frac{1}{3}\,.
 \end{equation}
-Here $f$ is the frequency of gravitational wave and $\mathcal{M}$ is the chirp mass of the binary system. For a binary with component masses $m_1$ and $m_2$ the chirp mass is defined as $\mathcal{M}=(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$. $\alpha$, $\beta$, $a$, and $b$ are ppE parameters that capture non-GR effects in the gravitational waveform. When $(\alpha,\beta) = (0,0)$, Eq.~\eqref{eq:2a} reduces to $\tilde{h}(f)=\tilde{h}_{\GR}$ which corresponds to the case of GR.
+$\mathcal{M}=(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass for the binary with component masses $m_1$ and $m_2$. $u$ is proportional to the relative velocity of the binary components. $\alpha$ represents the overall magnitude of the amplitude correction while $a$ gives the velocity dependence of the correction term. In a similar manner, one can rewrite the phase correction as 
+\begin{equation}\label{eq:2b}
+\delta\Psi=\beta u^b\,,
+\end{equation}
+$\alpha$, $\beta$, $a$, and $b$ are called ppE parameters. When $(\alpha,\beta) = (0,0)$, Eq.~\eqref{eq:2a} reduces to the waveform in GR.
 
-In order to obtain the expressions of ppE parmeters for different modified gravity theories, we consider corrections of binary orbital seperation and the frequency evolution. These corrections come from dissipative and conservative corrections which means modification of binding energy $E$ and the rate of change of binding energy $\dot{E}$ respectively. Modification of binary orbital seperation results from conservative correction while modification of frequency evolution can come from both conservative and dissipative corrections.
+%In order to obtain the expressions of ppE parmeters for different modified gravity theories, we consider corrections of binary orbital seperation and the frequency evolution. These corrections come from dissipative and conservative corrections which means modification of binding energy $E$ and the rate of change of binding energy $\dot{E}$ respectively. Modification of binary orbital seperation results from conservative correction while modification of frequency evolution can come from both conservative and dissipative corrections.
 
-We want to write the orbital separation $r$ as
+As we mentioned earlier, the ppE modifications in Eq.~\eqref{eq:2a} enter through corrections to the orbital separation and the frequency evolution.
+We parameterize the former as
  \begin{equation}
  \label{eq:2k}
  r=r_{\GR}(1+\gamma_r u^{c_r})\,,
  \end{equation}
-where $\gamma_r$ and $c_r$ are parameters which show the deviation of orbital seperation $r$ from $r_{\GR}$, with $r_{\GR}$ being the orbital seperation in GR. Since any deviation from GR has to be small, we consider $\gamma_r$ and $c_r$ to be small as well. In leading PN order $r_{\GR}$ is simply given by Kepler's law as $r_{\GR}=\left(m/\Omega^2\right)^{1/3}$.
-Here, $m\equiv m_1+m_2$ is the total mass of the binary, $\Omega\equiv\pi f $ is the orbital angular frequency, and $\eta\equiv\mu/m$ is the symmetric mass ratio where $\mu=(m_1m_2)/m$ is the reduced mass of the binary.
+where $\gamma_r$ and $c_r$ are non-GR parameters which show the deviation of the orbital separation $r$ away from the GR contribution $r_{\GR}$. To leading PN order, $r_{\GR}$ is simply given by the Newtonian Kepler's law as $r_{\GR}=\left(m/\Omega^2\right)^{1/3}$. Here $m\equiv m_1+m_2$ is the total mass of the binary while $\Omega\equiv\pi f $ is the orbital angular frequency. The above correction to the orbital separation comes purely from conservative corrections (namely corrections to the binding energy).
 
-We want to parametrize the frequency evolution as
+%Since any deviation from GR has to be small, we consider $\gamma_r$ and $c_r$ to be small as well.
+%$\eta\equiv\mu/m$ is the symmetric mass ratio where $\mu=(m_1m_2)/m$ is the reduced mass of the binary.
+
+Similarly, we parameterize the GW frequency evolution with non-GR parameters $\gamma_{\dot{f}}$ and $c_{\dot{f}}$  as
 \begin{equation}\label{eq:2m}
-\dot{f}=\dot{f}_{\GR}\left(1+\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,,
+\dot{f}=\dot{f}_{\GR}\left(1+\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,.
 \end{equation}
-where $\gamma_{\dot{f}}$ and $c_{\dot{f}}$ give the deviation of frequency evolution from that of GR. $\dot{f}_{\GR}$ is the frequency evolution in GR which is given in leading PN order by \cite{Blanchet:1995ez}
+Here $\dot{f}_{\GR}$ is the frequency evolution in GR which, to leading PN order, is given by~\cite{cutlerflanagan,Blanchet:1995ez}
 \begin{align}\label{eq:2s}
-\dot{f}_{\GR}=\frac{96}{5}\pi^{8/3}\mathcal{M}^{5/3}f^{11/3}\,,
+\dot{f}_{\GR}=\frac{96}{5}\pi^{8/3}\mathcal{M}^{5/3}f^{11/3}=\frac{96}{5\pi\mathcal{M}^2}u^{11}\,.
 \end{align}
-where all terms have their usual meanings. $\gamma_{\dot{f}}$ and $c_{\dot{f}}$ can take different forms depending on whether the dominant correction is dissipative or conservative.
+%$\gamma_{\dot{f}}$ and $c_{\dot{f}}$ can take different forms depending on whether the dominant correction is dissipative or conservative.
+Unlike the correction to the orbital separation, the one to the frequency evolution originates corrections from both the conservative and dissipative sectors.
+
+Below, we will derive how the ppE parameters $(\alpha, \beta, a, b)$ are given in terms of $(\gamma_r,c_r)$ and $(\gamma_{\dot{f}},c_{\dot{f}})$. We will also show how the amplitude ppE parameters $(\alpha, a)$ can be related to the phase ppE ones $(\beta,b)$ in certain cases. We will assume that non-GR corrections are always smaller than the GR contribution and keep only to leading order in such corrections at the leading PN order.
+
+%------------------------------------------------------- 
+ \subsection{Amplitude Corrections}
  
- \subsection{Correction to the Amplitude}
- 
-From the stationary phase approximation\cite{PhysRevD.62.084036,Yunes:2009yz}, the waveform in Fourier domain can be written as
- \begin{equation}\label{eq:2g}
- \tilde{h}(f)=\frac{\mathcal{A}(\bar{t})}{\sqrt{\ell \dot{F}}}e^{i\Psi}\,,
- \end{equation}
-where $\ell >0$ is the harmonic number, $\Psi$ is GW phase, $\dot{F}\equiv\dot{f}/2$ is the orbital frequency evolution, $\bar{t}$ is the stationary point, and $\mathcal{A}(\bar{t})$ is the amplitude of gravitational wave at time $t=\bar{t}$. Since we are interested in correction to the quadruple radiation only, we will consider $\ell =2$ in \eqref{eq:2g} which gives the amplitude of Fourier waveform as
-\begin{equation}\label{eq:2h1}
+Let us first look at the amplitude corrections.  Within the stationary phase approximation~\cite{PhysRevD.62.084036,Yunes:2009yz} the waveform amplitude for the dominant quadrupolar radiation in Fourier domain is given by
+ \begin{equation}\label{eq:2h1}
 \tilde{\mathcal{A}}(f)=\frac{\mathcal{A}(\bar{t})}{\sqrt{\dot{f}}}\,.
 \end{equation}
-For a two-body quasi-circular orbit, the trace-reversed metric perturbation can be written as \cite{Blanchet:2002av} 
+Here $\mathcal A$ is the waveform amplitude in the time domain while $\bar t (f)$ represents time at the stationary point. $A(\bar t)$ can be obtained by using the quadrupole formula for the metric perturbation in the transverse-traceless gauge given by~\cite{Blanchet:2002av}
  \begin{equation}\label{eq:2h2}
-\bar{h}^{ij}(t)\propto \frac{G}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,,
+h^{ij}(t)\propto \frac{G}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,.
  \end{equation}
-where $D_L$ is the luminosity distance, $G$ is gravitational constant, and $Q^{ij}$ is the quadruple moment tensor. From Eqs. \eqref{eq:2h1} and \eqref{eq:2h2} we find
-\begin{align}\label{eq:2e}
-\tilde{\mathcal{A}}(f)&\propto\frac{1}{\sqrt{\dot{f}}}\frac{G}{D_L}\mu r^2f^2\nonumber\\&\propto \frac{r^2}{\sqrt{\dot{f}}}  \,.
-\end{align}
-Using Eqs.~\eqref{eq:2k} and \eqref{eq:2m} in Eq.~\eqref{eq:2e} and keeping only leading order non-GR correction terms we get
+Here $D_L$ is the source's luminosity distance and $Q^{ij}$ is the source's quadruple moment tensor. 
+
+For a quasi-circular compact binary, $\tilde{\mathcal{A}}$ in Eq.~\eqref{eq:2h1} then becomes
+\begin{equation}\label{eq:2e}
+\tilde{\mathcal{A}}(f) \propto\frac{1}{\sqrt{\dot{f}}}\frac{G}{D_L}\mu r^2f^2 \propto \frac{r^2}{\sqrt{\dot{f}}}  \,,
+\end{equation}
+where $\mu$ is the reduced mass of the binary.
+Substituting Eqs.~\eqref{eq:2k} and \eqref{eq:2m} into Eq.~\eqref{eq:2e} and keeping only to leading order in non-GR corrections, we find
 \begin{equation}\label{eq:2n}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR} \left(1+2\gamma_ru^{c_r}-\frac{1}{2}\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,,
 \end{equation}
-where $\tilde{\mathcal{A}}_{\GR} $ is the amplitude of Fourier waveform in GR. Now we will show the expressions of ppE parameters $\alpha$ and $a$ for three different cases using Eq.~\eqref{eq:2n}.
-\subsubsection*{Dissipative Dominant Correction}
-When dissipative correction dominates, we can ignore correction to binary seperation $a$ and Eq. \eqref{eq:2n} reduces to
+where $\tilde{\mathcal{A}}_{\GR} $ is the amplitude of Fourier waveform in GR. Notice that this expression is much simpler than that in the original formalism in Eq.~\eqref{eq:o}.
+
+Let us now show the expressions for the ppE parameters $\alpha$ and $a$ for three different cases using Eq.~\eqref{eq:2n}:
+
+\begin{itemize}
+
+%\subsubsection*{Dissipative Dominant Correction}
+\item
+\emph{Dissipative-dominated Case}
+
+When dissipative corrections dominate, we can neglect corrections to the binary separation $(\gamma_{r} = 0)$ and Eq.~\eqref{eq:2n} reduces to
 \begin{equation}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR} \left(1-\frac{1}{2}\gamma_{\dot{f}}u^{c_{\dot{f}}}\right)\,.
 \end{equation}
-Comparing above equation with the standard ppE waveform given by Eq.~\eqref{eq:2a} we find
+Comparing this with the ppE waveform in Eq.~\eqref{eq:2a}, we find
 \begin{equation}\label{eq:2t}
-\alpha=-\frac{\gamma_{\dot{f}}}{2},\hspace*{20pt}a=c_{\dot{f}}\,.
+\alpha=-\frac{\gamma_{\dot{f}}}{2},\quad a=c_{\dot{f}}\,.
 \end{equation}
-\subsubsection*{Conservative Dominant Correction}
-Correction to $\dot{f}$ is not independent of correction to the binary seperation $a$, since both dissipatve and conservative corrections contribute to the correction of $\dot{f}$. In appendix \ref{appendix} \st{I don't know why it's showing appendix IIIG instead of appendix A, I'll fix it later}, we derived the expressions of $\dot{f}$ and ppE amplitude in Fourier space showing contribution of dissipative and conservative corrections explicitly.\st{plagiarigm alert: It's not ``our" derivation, right? What would be the best way to refer to it?} From Eq. \eqref{eq:o}, setting $B=0$ we find the ppE parameters for conservative dominant correction as
 
+%\subsubsection*{Conservative Dominant Correction}
+\item
+\emph{Conservative-dominated Case}
+
+When conservative corrections dominate, $c_r = c_{\dot f}$ and there is an explicit relation between $\gamma_{r}$ and $\gamma_{\dot f}$. Though finding such a relation is quite involved and one needs to go back to the original ppE formalism as explained in App.~\ref{appendix}. Non-GR corrections to the GW amplitude in such a formalism is shown in Eq. \eqref{eq:o}. Setting the dissipative correction to zero, one finds 
+%Correction to $\dot{f}$ is not independent of correction to the binary seperation $a$, since both dissipatve and conservative corrections contribute to the correction of $\dot{f}$. In App.~\ref{appendix}, we derived the expressions of $\dot{f}$ and ppE amplitude in Fourier space showing contribution of dissipative and conservative corrections explicitly.\st{plagiarigm alert: It's not ``our" derivation, right? What would be the best way to refer to it?} From Eq. \eqref{eq:o}, setting $B=0$ we find the ppE parameters for conservative dominant correction as
+\ky{I changed $c_r$ to $a$ in the $\alpha$ expression below. I also added $c_{\dot f}$ in the $a$ expression.}
 \begin{align}\label{eq:2u}
-\alpha=-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)\,,
+\alpha=-\frac{\gamma_r}{a}(a^2-4a-6)\,, \quad a=c_r = c_{\dot f}\,.
 \end{align} 
-and
-\begin{equation}\label{eq:2x}
-a=c_r\,.
-\end{equation}
-\subsubsection*{Dissipative and Conservative at the Same Order}
-If dissipative and conservative corrections enter at the same order, in Eq.~\eqref{eq:2n} we can set $c_r=c_{\dot{f}}$ which gives 
-\begin{equation}
-\alpha=2 \text{$\gamma_r $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,,
-\end{equation}
-and
-\begin{equation}
-a=c_{r}=c_{\dot{f}}\,.
-\end{equation}
 
-\subsection{Correction to GW phase}
-For quadruple radiation, the relation between GW phase $\Psi$ and orbital frequency $\Omega$ is given by\cite{Yunes:2009yz}
+%and
+%\begin{equation}\label{eq:2x}
+%a=c_r\,.
+%\end{equation}
+
+%\subsubsection*{Dissipative and Conservative at the Same Order}
+\item
+\emph{Comparable Dissipative and Conservative Case}
+
+If dissipative and conservative corrections enter at the same PN order, we can set $c_r=c_{\dot{f}}$ in Eq.~\eqref{eq:2n}, which gives 
 \begin{equation}
-\frac{d^2\Psi}{d t^2}=2\frac{d t}{d\Omega}\,,
+\label{eq:amp-PPE-comparable}
+\alpha=2 \text{$\gamma_r $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,, \quad a=c_{r}=c_{\dot{f}}\,.
+\end{equation}
+%and
+%\begin{equation}
+%a=c_{r}=c_{\dot{f}}\,.
+%\end{equation}
+
+\end{itemize}
+
+%------------------------------------------------------- 
+\subsection{Phase Corrections}
+
+Next, let us study corrections to the GW phase. The phase in the Fourier domain $\Psi$ is related to the frequency evolution as~\cite{Tichy:1999pv} \ky{I've changed $\frac{d^2\Psi}{d t^2}$ to $\frac{d^2\Psi}{d \Omega^2}$ throughout.}
+\begin{equation}
+\frac{d^2\Psi}{d \Omega^2}=2\frac{d t}{d\Omega}\,,
 \end{equation}
 which can be rewritten as
 \begin{equation}
-\frac{d^2\Psi}{d t^2}=\frac{2}{\pi \dot{f}}\,.
+\frac{d^2\Psi}{d \Omega^2}=\frac{2}{\pi \dot{f}}\,.
 \end{equation}
-Using Eq.~\eqref{eq:2m} in the right side of above equation and keeping only leading order non-GR correction term we get
+Substituting Eq.~\eqref{eq:2m} to the right hand side of the above equation and keeping only to leading non-GR correction, we find 
 \begin{equation}\label{eq:2q}
-\frac{d^2\Psi}{d t^2}=\frac{2}{\pi\dot{f}_{\GR}}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
+\frac{d^2\Psi}{d \Omega^2}=\frac{2}{\pi\dot{f}_{\GR}}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
-To leading PN order, $\dot{f}_{\GR}$ can be written as a function of GW frequency as \cite{VanDenBroeck:2006qu}
-\begin{equation}\label{eq:2p}
-\dot{f}_{\GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}=\frac{96}{5\pi\mathcal{M}^2}u^{11}\,.
-\end{equation}
-Using Eq.~\eqref{eq:2p} in Eq.~\eqref{eq:2q} gives
+%To leading PN order, $\dot{f}_{\GR}$ can be written as a function of GW frequency as \cite{VanDenBroeck:2006qu}
+%\begin{equation}\label{eq:2p}
+%\dot{f}_{\GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}=\frac{96}{5\pi\mathcal{M}^2}u^{11}\,.
+%\end{equation}
+Using further Eq.~\eqref{eq:2s} to Eq.~\eqref{eq:2q} gives \ky{Shouldn't 5 be 5/32?}
 \begin{equation}\label{eq:2r}
-\frac{d^2\Psi}{d t^2}=5\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
+\frac{d^2\Psi}{d \Omega^2}=5\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
-We want to write GW phase $\Psi$ as 
-\begin{equation}\label{eq:2o}
-\Psi=\Psi_{\GR}+\delta\Psi\,,
-\end{equation}
-where $\Psi_{\GR}$ is the GW phase in GR and $\delta\Psi$ is given by Eq.~\eqref{eq:2b}. Using \eqref{eq:2o} in the left side of Eq.~\eqref{eq:2r} and comparing with the right side we get
-\begin{equation}
-\frac{\beta b}{3}\left(\frac{b}{3}-1\right)u^{b-6}=-\frac{5\pi}{48}\gamma_{\dot{f}}u^{c_{\dot{f}}-11}
-\end{equation}
-which gives
-\begin{equation}
-b=c_{\dot{f}}-5\,,
-\end{equation}
-and
-\begin{equation}\label{eq:2v}
-\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,,
-\end{equation}
-for $c_{\dot{f}} \neq 5$ and $c_{\dot{f}} \neq 8$. Above relation is valid for all three types of corrections. In appendix we derived $\delta\Psi$ in an alternative approach showing dissipative and conservative corrections explicitly. Using Eq. \eqref{eq:p} we can find $\beta$ for all three cases seperately.
 
-When dissipative correction dominates, we set $\gamma_r=0$ and Eq. \eqref{eq:p} gives
+\ky{I changed this paragraph slightly.}
+We are now ready to derive $\Psi$ and extract the ppE parameter $\beta$ and $b$. Using $\Omega = \pi f$, we can integrate Eq.~\eqref{eq:2r} twice to find 
+\be
+\label{eq:Psi}
+\Psi = \Psi_\GR  -\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)} u^{c_{\dot{f}}-5}\,,
+\ee
+for $c_{\dot{f}} \neq 5$ and $c_{\dot{f}} \neq 8$. Here we only keep to leading non-GR correction and $\Psi_{\GR}$ is the GR contribution given in Eq.~\eqref{eq:Psi_GR} to leading PN order. Similar to the amplitude case, the above expression is much simpler than that in the original formalism in Eq.~\eqref{eq:p}.
+Comparing this with Eqs.~\eqref{eq:2a} and~\eqref{eq:2b}, we find
+%The phase can be split into the GR contribution $\Psi_{\GR}$ (given in Eq.~\eqref{eq:Psi_GR} to leading PN order) and the non-GR correction $\delta\Psi$ as
+%\begin{equation}\label{eq:2o}
+%\Psi=\Psi_{\GR}+\delta\Psi\,,
+%\end{equation}
+%Substituting this into the left hand side of Eq.~\eqref{eq:2r} and comparing it with the right hand side, we find
+%\begin{equation}
+%\frac{b}{3}\left(\frac{b}{3}-1\right) \beta \, u^{b-6}=-\frac{5\pi}{48}\gamma_{\dot{f}}u^{c_{\dot{f}}-11}\,,
+%\end{equation}
+%which gives
 \begin{equation}
-\beta=-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
+\label{eq:2v}
+\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,, \quad b=c_{\dot{f}}-5\,.
 \end{equation}
-and
+%and
+%\begin{equation}\label{eq:2v}
+%\beta=-\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)}\,,
+%\end{equation}
+%for $c_{\dot{f}} \neq 5$ and $c_{\dot{f}} \neq 8$. 
+The above relation is valid for all three types of corrections considered for the GW amplitude case. 
+
+In App.~\ref{appendix}, we review $\delta\Psi$ derived in the original ppE formalism, where we show dissipative and conservative contributions explicitly. In particular, one can use Eq.~\eqref{eq:p} to find $\beta$ for all three cases separately.
+
+\ky{I commented out $\beta$ for each case since in the main part of the paper, we should only present results without $B$.}
+
+%When dissipative correction dominates, we set $\gamma_r=0$ and Eq. \eqref{eq:p} gives
+%\begin{equation}
+%\beta=-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
+%\end{equation}
+%and
+%\begin{equation}
+%b=2q-5\,,
+%\end{equation}
+%with $B$ and $q$ defined by Eq.~\eqref{eq:a}.
+%For conservative dominant correction, we set $B=0$ in \eqref{eq:p} which gives
+%\begin{equation}\label{eq:2w}
+%\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}\,,
+%\end{equation}
+%with
+%\begin{equation}
+%b=c_r-5\,.
+%\end{equation}
+%When dissipative and conservative correction enter at the same order, $\beta$ is given by Eq.~\eqref{eq:p} as
+%\begin{align}
+%\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
+%\end{align}
+%with
+%\begin{equation}
+% b=2q-5=c_r-5\,.
+%\end{equation}
+
+
+
+%------------------------------------------------------- 
+\subsection{Relations among ppE Parameters}
+
+Finally, we study relations among ppE parameters. From Eqs.~\eqref{eq:2t}--\eqref{eq:amp-PPE-comparable} and~\eqref{eq:2v}, one can easily see 
 \begin{equation}
-b=2q-5\,,
+b=a-5\,,
 \end{equation}
-with $B$ and $q$ defined by Eq.~\eqref{eq:a}.
-For conservative dominant correction, we set $B=0$ in \eqref{eq:p} which gives
+which holds in all three cases considered previously. Let us consider such three cases in turn below to derive relations between $\alpha$ and $\beta$. 
+\ky{I rewrote below expressions to $\alpha(\beta)$.}
+
+\begin{itemize}
+
+\item
+\emph{Dissipative-dominated Case}
+
+When dissipative corrections dominate, we can use Eqs.~\eqref{eq:2t} and~\eqref{eq:2v} to find $\alpha$ in terms of $\beta$ and $a$ as
+\begin{equation}
+\alpha = \frac{8}{15} (a-8)(a-5) \, \beta\,.
+\end{equation}
+
+
+\item
+\emph{Conservative-dominated Case}
+
+When conservative corrections dominate, we can set the dissipative correction to vanish in Eq.~\eqref{eq:p} to find 
 \begin{equation}\label{eq:2w}
-\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}\,,
+\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}\,, \quad b=c_r-5\,.
 \end{equation}
-with
+Using this equation together with Eq.~\eqref{eq:2u}, we find
 \begin{equation}
-b=c_r-5\,.
+\alpha =\frac{8}{15} \frac{(8-a)(5-a)(a^2-4a-6)}{a^2-2a-6} \beta\,.
 \end{equation}
-When dissipative and conservative correction enter at the same order, $\beta$ is given by Eq.~\eqref{eq:p} as
-\begin{align}
-\beta=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}\,,
-\end{align}
-with
-\begin{equation}
- b=2q-5=c_r-5\,.
-\end{equation}
-\subsection{Relation among ppE Parameters}
-In all three cases the relation between ppE parameters $a$ and $b$ is given by
-\begin{equation}
-b=a-5\,.
-\end{equation}
-When dissipitive correction dominates, comparing Eq. \eqref{eq:2t} with \eqref{eq:2v}, ppE parameter $\beta$ can be written in terms $a$ and $\alpha$ as
-\begin{equation}
-\beta=\frac{15}{8}\frac{1}{(a-8)(a-5)}\,\alpha\,.
-\end{equation}
-Similarly for conservative dominant correction, comparing Eq.~\eqref{eq:2w} with \eqref{eq:2u} and \eqref{eq:2x} gives,
-\begin{equation}
-\beta=\frac{15}{8}\frac{a^2-2a-6}{(8-a)(5-a)(a^2-4a-6)}\,\alpha\,.
-\end{equation}
-\st{Our goal was to write $\beta$ and $b$ as a function of $\alpha$ and $a$, which is apparently difficult for dissipative=conservative case, since there are $B$ and $\gamma_r$ in the expression of $\beta$ and I cannot write $\gamma_r$ in terms of ppE parameters in this case.}
+
+
+\item
+\emph{Comparable Dissipative and Conservative Case}
+
+When dissipative and conservative corrections enter at the same PN order, there is no explicit relation between $\alpha$ and $\beta$. This is because $\alpha$ depends both on $\gamma_r$ and $\gamma_{\dot f}$ (see Eq.~\eqref{eq:amp-PPE-comparable}) while $\beta$ depends only on the latter (see Eq.~\eqref{eq:Psi}), and there is no relation between the former and the latter. Thus, one can rewrite $\gamma_{\dot f}$ in terms of $\beta$ and substitute into Eq.~\eqref{eq:amp-PPE-comparable} but cannot eliminate $\gamma_r$ from the expression for $\alpha$. 
+
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
  \section{Example Theories}
  \vspace*{20pt}
 
@@ -471,71 +583,89 @@ In GR, such time variation in the binding energy needs to be balanced with the G
 \hline
 \end{tabular}
 \end{comment}
- \appendix \label{appendix}
 
- \section{Nico's Foramlism \st{we can give it a better name later...}}
-For the conservative correction, let us modify the reduced effective potential as \cite{Chatziioannou:2012rf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusions}
+\label{sec:conclusions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\acknowledgments
+We would like to thank Nicol\' as Yunes for fruitful discussions.
+K.Y. would like to acknowledge networking support by the COST Action GWverse CA16104.
+
+%%%%%%%%%%%%%%%%%%
+ \appendix 
+ 
+ \section{Original PPE Formalism}
+ \label{appendix}
+
+In this appendix, we review the original ppE formalism. In particular, we will show how the amplitude and phase corrections depend on the conservative and dissipative corrections, where the former are corrections to the effective potential while the latter are those to the GW luminosity. We will mostly follow~\cite{Chatziioannou:2012rf}.
+
+First, let us introduce the conservative corrections. We modify the reduced effective potential as
  \begin{equation}\label{eq:h}
  V_{\text{eff}}=\left(-\frac{m}{r}+\frac{{L}^2_{z}}{2r^2}\right)\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
  \end{equation}
-where $m$ is the total mass of the binary and $L_{z}$ is the $z$-compnent of the angular momentum. $A$ and $p$ are the ppE amplitude and exponent corrections respectively. Any change in effctive potential is going to modify the Kepler's law as well. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and setting it to zero gives the modified Kepler's law as
+where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of the angular momentum. $A$ and $p$ show the magnitude and exponent of the non-GR correction term respectively. Such a modification to the effective potential also modifies the Kepler's law. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and equating it to zero gives the modified Kepler's law as
  \begin{equation}
  \Omega^2=\frac{m}{r^3} \left[1+\frac{1}{2} A \, p\left(\frac{m}{r}\right)^p\right]\,.
  \end{equation}
- Above equation gives the orbital seperation as
+ The above equation further gives the orbital separation as
  \begin{equation}\label{eq:g}
  r(t)=r_{\GR}\left[1+\frac{1}{6}A\, p\, \eta^{-\frac{2p}{5}}u^{2p}\right]\,,
  \end{equation}
-where in leading PN order $r_{\GR}$ is given by Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
-\begin{equation}
-p=\frac{c_r}{2}\,,
-\end{equation}
-and
+where to leading PN order, $r_{\GR}$ is given by the Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
 \begin{equation}\label{eq:i}
-A=\frac{12\gamma_r}{c_r}\eta^{\frac{c_r}{5}}\,.
+A=\frac{12\gamma_r}{c_r}\eta^{\frac{c_r}{5}}\,, \quad p=\frac{c_r}{2}\,.
 \end{equation}
-For a circular orbit, there is no radial kinetic energy and effective potential energy is same as the binding energy. Using Eqs. \eqref{eq:g}-\eqref{eq:i} in Eq. \eqref{eq:h} and keeping only leading order non-GR correction terms, the binding energy becomes
+\ky{Since this section is supposed to be a review for the original formalism, I think it's better to show all the expressions below in terms of $A$ and $p$. Let's chat about this on Monday.}
+For a circular orbit, radial kinetic energy does not exist and the effective potential energy is same as the binding energy of the binary. Using Eqs. \eqref{eq:g}-\eqref{eq:i} in Eq. \eqref{eq:h} and keeping only to leading order in non-GR corrections, the binding energy becomes
 \begin{align}\label{eq:j}
 E=-\frac{1}{2}\eta^{-2/5}u^2\left[1-\frac{4}{c_r}(c_r-3)\gamma_ru^{c_r}\right]\,,
 \end{align}
 where $u=(\pi \mathcal{M} f)^{1/3}$.
-\st{I did the calculation and for binding energy I got something different from Nico's. Perhaps I am doing something wrong. For now I assume his calculation is correct and write his equation in terms of our variables and move on. I can show you my calculation in next meeting}
-Dissipative correction to the waveform comes from the modification of rate of change of binding energy. Let us write the rate of change of binding energy as \cite{Chatziioannou:2012rf}
+\st{I did the calculation and for binding energy I got something different from Nico's. Perhaps I am doing something wrong. For now I assume his calculation is correct and write his equation in terms of our variables and move on. I can show you my calculation in next meeting.} \ky{ok.}
+
+Next, let us introduce dissipative corrections. Such corrections to the GW luminosity can be parameterized by
  \begin{equation}\label{eq:a}
  \dot{E}=\dot{E}_{\GR}\left[1+B\left(\frac{m}{r}\right)^q\right]\,,
  \end{equation}
- where $\dot{E}_{GR}$ is the GR energy flux which is proportional to $v^2(m/r)^4$ where $v=\Omega r$ is the velocity of the relative motion\footnote{If we assume $\dot{E}_{\GR}$ to be proportional to $r^4\Omega^6$, we will get slightly different expressions for $\dot{f}$ and the waveform \cite{Chatziioannou:2012rf}}. Using Eqs. \eqref{eq:j} and \eqref{eq:a} and implying chain rule, GW frequency evolution becomes
+ where $\dot{E}_{GR}$ is the GR luminosity which is proportional to $v^2(m/r)^4$ with $v=\Omega r = (\pi m f)^{1/3}$ is the relative velocity of binary components\footnote{If we assume $\dot{E}_{\GR}$ to be proportional to $r^4\Omega^6$, we will find slightly different expressions for $\dot{f}$ and the waveform~\cite{Chatziioannou:2012rf}}. 
+ 
+ Let us now derive the amplitude corrections. First, using Eqs.~\eqref{eq:j} and~\eqref{eq:a} and applying the chain rule, the GW frequency evolution is given by
  \begin{align}\label{eq:f}
  \dot{f}&=\frac{df}{dE}\frac{dE}{dt}\nonumber\\ &=\dot{f}_{GR}\left[1+B\eta^{-\frac{2q}{5}} u^{2q}+\frac{4 \gamma_r}{c_r}\left(\frac{c_r^2}{2}-c_r-3\right)u^{c_r}\right]\,,
  \end{align}
-where $\dot{f}_{\GR}$ is given by Eq. \eqref{eq:2s}. Using Eqs.~\eqref{eq:g} and \eqref{eq:f} in Eq. \eqref{eq:2e} and keeping only leading order non-GR correction terms, GW amplitude in Fourier space becomes
+where $\dot{f}_{\GR}$ is given by Eq. \eqref{eq:2s}. 
+Next, using Eqs.~\eqref{eq:g} and~\eqref{eq:f} to Eq.~\eqref{eq:2e} and keeping only to leading order in non-GR corrections, the GW amplitude in Fourier domain becomes
 \begin{align}\label{eq:o}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)u^{c_r}\right]\,.
 \end{align}
 
-GW phase in Fourier space is given by
+Next, we move onto deriving phase corrections. One can derive the GW phase in the Fourier domain by integrating Eq.~\eqref{eq:2r} twice. Equivalently, one can use the following expression
 \begin{equation}\label{eq:n}
 \Psi(f)=2\pi f t(f)-\phi(f)-\frac{\pi}{4}\,,
 \end{equation}
-where $t(f)$ can be obtained by integrating \eqref{eq:f} as
+where $t(f)$ gives the relation between time and frequency and can be obtained by integrating~\eqref{eq:f} as
 \begin{align}\label{eq:l}
-t(f)=&\int \dot{f}^{-1} dt\nonumber\\=&-\frac{5 \mathcal{M}}{256 u^8}\left[1+16\frac{\gamma_r}{c_r}\frac{(c_r^2-2c_r-6)}{(c_r-8)}u^{c_r}\right.\nonumber\\ &\left. +\frac{4 B}{q-4}\eta ^{-\frac{2q}{5}} u^{2q}\right]\,,
+t(f)=&\int \frac{dt}{df} \, df\nonumber\\=&t_0 -\frac{5 \mathcal{M}}{256 u^8}\left[1+16\frac{\gamma_r}{c_r}\frac{(c_r^2-2c_r-6)}{(c_r-8)}u^{c_r}\right.\nonumber\\ &\left. +\frac{4 B}{q-4}\eta ^{-\frac{2q}{5}} u^{2q}\right]\,,
 \end{align}
-and $\phi(f)$ can be calculated from \eqref{eq:f} as
+with $t_0$ representing the time of coalescence and keeping only the Newtonian term and leading order non-GR corrections. On the other hand, $\phi(f)$ in Eq.~\eqref{eq:n} corresponds to the GW phase in the time domain and can be calculated from Eq.~\eqref{eq:f} as
 \begin{align}\label{eq:m}
-\phi(f)&=\int 2 \pi f dt\nonumber\\&=\int\frac{2\pi f}{\dot{f}}df\nonumber\\&=-\frac{1}{16 u^5}\left[1+10\frac{\gamma_r}{c_r}\frac{\left(c_r^2-2 c_r-6\right)}{(c_r-5)}u^{c_r}+\frac{5B \eta ^{-\frac{2 q}{5}} u^{2 q}}{2 q-5}\right]\,,
+\phi(f)&=\int 2 \pi f dt=\int\frac{2\pi f}{\dot{f}}df\nonumber\\
+&=\phi_0 -\frac{1}{16 u^5}\left[1+10\frac{\gamma_r}{c_r}\frac{\left(c_r^2-2 c_r-6\right)}{(c_r-5)}u^{c_r} \right. \nonumber \\
+& \left. +\frac{5B \eta ^{-\frac{2 q}{5}} u^{2 q}}{2 q-5}\right]\,,
 \end{align}
-with only Newtonian terms and leading order non-GR corrections. Using Eqs. \eqref{eq:l} and \eqref{eq:m} in Eq. \eqref{eq:n} and writing $\Psi(f)$ as $\Psi_{\GR}(f)+\delta\Psi(f)$, non-GR modification to the phase can be calculated as
+with $\phi_0$ representing the coalescence phase. Using Eqs.~\eqref{eq:l} and~\eqref{eq:m} into~\eqref{eq:n} and writing $\Psi(f)$ as $\Psi_{\GR}(f)+\delta\Psi(f)$, non-GR modifications to the phase can be found as
  \begin{align}\label{eq:p}
 \delta\Psi(f)=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}u^{c_r-5}\nonumber\\ -\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,,
  \end{align}
-where $\Psi_{GR}$ in leading PN order is given by \cite{Blanchet:1995ez}
+with $\Psi_{\GR}$ to leading PN order is given by \cite{Blanchet:1995ez}
 \begin{equation}
-\Psi_{\GR}=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}u^{-5}\,,
+\label{eq:Psi_GR}
+\Psi_{\GR}=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}u^{-5}\,.
 \end{equation}
-where $t_0$ the time of coalescence and $\phi_0$ is measured at $t=t_0$.
 
-\include{reference}
-\bibliographystyle{plain}
+%\include{reference}
+%\bibliographystyle{plain}
 \bibliography{bibfile}
 \end{document}
