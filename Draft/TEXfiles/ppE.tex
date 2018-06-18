@@ -197,7 +197,7 @@ If dissipative and conservative corrections enter at the same PN order, we can s
 %------------------------------------------------------- 
 \subsection{Phase Corrections}
 
-Next, let us study corrections to the GW phase. The phase in the Fourier domain $\Psi$ is related to the frequency evolution as~\cite{Tichy:1999pv} \ky{I've changed $\frac{d^2\Psi}{d t^2}$ to $\frac{d^2\Psi}{d \Omega^2}$ throughout.}
+Next, let us study corrections to the GW phase. The phase in the Fourier domain $\Psi$ is related to the frequency evolution as~\cite{Tichy:1999pv}
 \begin{equation}
 \frac{d^2\Psi}{d \Omega^2}=2\frac{d t}{d\Omega}\,,
 \end{equation}
@@ -213,13 +213,11 @@ Substituting Eq.~\eqref{eq:2m} to the right hand side of the above equation and 
 %\begin{equation}\label{eq:2p}
 %\dot{f}_{\GR}=\frac{96}{5\pi\mathcal{M}^2}(\pi \mathcal{M}f)^{11/3}=\frac{96}{5\pi\mathcal{M}^2}u^{11}\,.
 %\end{equation}
-Using further Eq.~\eqref{eq:2s} to Eq.~\eqref{eq:2q} gives \ky{Shouldn't 5 be 5/32?}
+Using further Eq.~\eqref{eq:2s} to Eq.~\eqref{eq:2q} gives
 \begin{equation}\label{eq:2r}
-\frac{d^2\Psi}{d \Omega^2}=5\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
+\frac{d^2\Psi}{d \Omega^2}=\frac{5}{48}\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
-
-\ky{I changed this paragraph slightly.}
-We are now ready to derive $\Psi$ and extract the ppE parameter $\beta$ and $b$. Using $\Omega = \pi f$, we can integrate Eq.~\eqref{eq:2r} twice to find 
+We are now ready to derive $\Psi$ and extract the ppE parameters $\beta$ and $b$. Using $\Omega = \pi f$, we can integrate Eq.~\eqref{eq:2r} twice to find 
 \be
 \label{eq:Psi}
 \Psi = \Psi_\GR  -\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)} u^{c_{\dot{f}}-5}\,,
@@ -247,8 +245,6 @@ Comparing this with Eqs.~\eqref{eq:2a} and~\eqref{eq:2b}, we find
 The above relation is valid for all three types of corrections considered for the GW amplitude case. 
 
 In App.~\ref{appendix}, we review $\delta\Psi$ derived in the original ppE formalism, where we show dissipative and conservative contributions explicitly. In particular, one can use Eq.~\eqref{eq:p} to find $\beta$ for all three cases separately.
-
-\ky{I commented out $\beta$ for each case since in the main part of the paper, we should only present results without $B$.}
 
 %When dissipative correction dominates, we set $\gamma_r=0$ and Eq. \eqref{eq:p} gives
 %\begin{equation}
@@ -294,7 +290,7 @@ which holds in all three cases considered previously. Let us consider such three
 \emph{Dissipative-dominated Case}
 
 When dissipative corrections dominate, we can use Eqs.~\eqref{eq:2t} and~\eqref{eq:2v} to find $\alpha$ in terms of $\beta$ and $a$ as
-\begin{equation}
+\begin{equation}\label{eq:2w2}
 \alpha = \frac{8}{15} (a-8)(a-5) \, \beta\,.
 \end{equation}
 
@@ -374,18 +370,17 @@ Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{
  
  
   \subsection{EdGB Gravity}
+EdGB gravity is a well-known extension of GR. It emerges naturally in the framework of low-energy effective string theories  and it gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}. One obtains EdGB action by adding a real scalar field (dilaton) to the Einstein-Hilbert action, where the scalar field is non-minimally coupled to the Gauss-Bonnet term\cite{Kanti:1995vq}.
 
-\ky{I noticed that you literally just copied this paragraph from my paper with Nico and Frans. Since it's just a note, it's not a big deal, but let me tell you that if you do this in the actual paper, it's *really* bad. This is called plagiarism, and whenever arXiv detects it, it will add a note saying something like ``this paper has a substantial overlap with XXX" so that other people can be aware of. If you do this, you can screw up your career and sometimes it can affect you not getting Ph.D. (This did actually happen to my colleague in Kyoto when I was a grad student.) I'm not mad or anything since I think I didn't tell you this, but I strongly suggest to write things in your own words even at the level of the note. I suspect there might be other places that you just copied and pasted from other papers. If so, please change them in your own words now.}
-  
- BHs in EdGB thoery  \ky{Let's use ``EdGB gravity'' throughout. (Notice also small ``d''.)} have scalar monopole charges (a measure of the dependence of the BH mass on the scalar field) as sourced by the Kretchmann curvature \cite{Yunes:2016jcc}. Such charges induce scalar dipole radiation, which then speeds up the rate at which the binary inspirals. The mapping between $\beta$ and the system coupling parameters is given by \cite{Yunes:2016jcc,Yagi:2011xp}
- 
- \begin{equation}
- \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,,
+BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative EdGB BH solution is available for slowly rotating BHs and also an exact solution exists for static BH, while Rapidly rotating BH solutions have been found numerically as well \cite{Berti:2015itd,Kanti:1995vq,Kleihaus:2011tg,Pani:2011gy}. Compared to the BHs in GR, there are signficant differences in the ISCO location and orbital frequency of EdGB BHs , which can be detected through astrophysical observations\cite{Pani:2009wy} \st{I am not sure if these properties are related to GW observations.}.
+
+% BHs in EdGB theory differs from their GR counterparts in a number of significant ways.For instance, they possess a minimal size and mass for a given coupling, their angular momentum can exceed the Kerr bound, and their quadruple moment can be far bigger.EdGB theory has higher curvature correction which is relevant in strong-curvature regime like BBH coalescence. 
+ %the Parametrized Post-Newtonian [12] expansion of this theory is identical (to lowest order) to that of GR, which makes it a viable candidate as an alternative theory of gravity \cite{Pani:2009wy}
+One of the prominant non-GR characteristics of EdGB BHs is that they have scalar monopole charge which can generate dipole radiation which in turn changes the speed of binary inspiral. This effect can modify the GW phase and such modification is given by ppE parameter $\beta$ as a function of system parameters as \cite{Yunes:2016jcc,Yagi:2011xp}
+\begin{equation}
+ \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges in EdGB gravity, which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$\cite{Berti:2018cxi,Prabhu:2018aun}, with $\chi_A$ the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which is given by $\zeta_{\text{EdGB}}=16 \pi \alpha_{\text{EdGB}}^2/m^4$ \footnote{$\alpha_{\text{EdGB}}$ here  is a coupling constant of EdGB theory which is different from ppE parameter $\alpha$}.
-
-
- \hspace{15.5pt} In EdGB theory dissipative correction dominates. So we can use \eqref{eq:2c} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
+ Here, $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which is given by $\zeta_{\text{EdGB}}=16 \pi \alpha^2/m^4$ \cite{Yunes:2016jcc}. \st{I feel like I need to explain what $\alpha$ is in EdGB theory. But I am not sure and we can talk about it in the meeting}. $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$\cite{Berti:2018cxi,Prabhu:2018aun}. Here, $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. In EdGB theory the correction to the phase enters through the correction of GW eneregy flux hence it's a dissipative-dominated case, which means we can use Eq. \eqref{eq:2w2} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
  \begin{equation}
  \alpha_{\text{EdGB}}=\frac{-5}{192}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
