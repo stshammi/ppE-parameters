@@ -418,20 +418,19 @@ Now we are going to show the expressions of ppE parameters for EdGB gravity. The
  \newpage
  
  \subsection{Varying-G Theory}\label{gdot}
-\st{Reminder: I have to change the first sentence- it's been taken directly from the cited paper}In varying $G$ theories, masses and Newton's constant $G$ are time dependent. The mass of the bodies with appreciable gravitational self-energy vary in time at a rate proportional to any time variation of gravitational coupling constant\cite{PhysRevLett.65.953}. Since the formalism of section \ref{section:ppE} requires $G$ and the masses to be constant, we cannot use it for varying-G theories. Rather we will promote binary masses and the Newton's constant to a time dependent form in the following way
- 
+ \st{Reminder: This subsection needs to be rewritten keeping topic sentences in mind}
+In varying $G$ theories, masses and Newton's constant $G$ are time dependent. If the object has enough gravitational self-energy, the rate at which the mass of the object varies in time is proportional to the rate at which the gravitational coupling constant changes \cite{PhysRevLett.65.953}. Since the formalism of section \ref{section:ppE} requires $G$ and the masses to be constant, we cannot use it for varying-G theories. Rather we will promote binary masses and the Newton's constant to a time dependent form in the following way
+
  \begin{eqnarray}\label{eq:3.7a2}
  m_1(t)\approx m_{1,0}+\dot{m}_{1,0}(t-t_0)\,, \\
  \label{eq:3.7a3}  m_2(t)\approx m_{2,0}+\dot{m}_{2,0}(t-t_0)\,, \\
    \label{eq:3.7a4}  G(t)\approx  G_0+\dot{G}_0(t-t_0)\, , 
  \end{eqnarray}
- 
- where $t_0$ is the time of coalescence. Subscript $0$ denotes the quantity measured at time $t=t_0$. Total mass of the binary varies as
+where $t_0$ is the time of coalescence. Subscript $0$ denotes the quantity measured at time $t=t_0$. Total mass of the binary varies as
  \begin{equation}
  m(t)=m_0+\dot{m}_0(t-t_0)\,.
  \end{equation}
- 
- \hspace*{15.5pt}GW emission makes the orbital seperation $r$ smaller with the orbital decay rate given by \cite{PhysRevD.49.2658}
+ GW emission makes the orbital seperation $r$ smaller with the orbital decay rate given by \cite{PhysRevD.49.2658}
  \begin{equation}
  \dot{r}_{GW}=-\frac{64}{5}\frac{G^3 \mu m^2}{r^3}\,,
  \end{equation}
@@ -443,45 +442,37 @@ Now we are going to show the expressions of ppE parameters for EdGB gravity. The
  \begin{equation}\label{eq:3.7a}
  \dot{\Omega}=\frac{1}{2\Omega r^3}\left(m\dot{G}_0+\dot{m}_0G-3mG\frac{\dot{r}}{a}\right)\,.
  \end{equation}
- \hspace*{15.5pt} Using binary seperation shift $\dot{r}=\dot{r}_{GW}+\dot{r}_H$ in equation \eqref{eq:3.7a} we can find the GW frequency evolution upto 2PN order as
+Using binary seperation shift $\dot{r}=\dot{r}_{GW}+\dot{r}_H$ in equation \eqref{eq:3.7a} we can find the GW frequency evolution upto 2PN order as
 \begin{align} \label{eq:3.7b}
- \dot{f}=\frac{\dot{\Omega}}{\pi}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\left[1+\frac{5}{48 G^{8/3}\eta}(\dot{m}_0G+m\dot{G}_0)x^{-4} \right. \nonumber\\ \left.  -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x+4\pi x^{3/2}+\left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right]\,,
- \end{align}
- 
+ \dot{f}=\frac{\dot{\Omega}}{\pi}=& \frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\left[1+\frac{5}{48 G^{8/3}\eta}(\dot{m}_0G+ \right.\nonumber\\ & \left. m\dot{G}_0)x^{-4} -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x+4\pi x^{3/2}\right.\nonumber\\ & \left. + \left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right]\,,
+\end{align}
 where $x=v^2=(\pi M f)^{2/3}$ is the squared velocity of the relative motion. Here we considered only leading order correction to frequency evolution which enters in -4PN order. We can integrate equation \eqref{eq:3.7b} to obtain time before coalescence $t(f)$ and the GW phase $\phi(f)=\int 2 \pi f dt=\int\frac{2\pi f}{\dot{f}}df$ as
 
-
+\bw
 \begin{align}
-t(f)=t_0-\frac{5}{256}\mathcal{M}_0{G_0}^{-5/3}{u_0}^{-8}\left\{1+\left[\frac{5}{512 {m}_0{G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0})\right. \right. \nonumber \\ \left. \left. -\frac{5}{1536{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4}+\frac{4}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right)x_0 \right. \nonumber\\ \left. -\frac{32}{5}\pi {x_0}^{3/2}+2\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^2\right){x_0}^2 \right\}\,,
+t(f)=t_0 	-\frac{5}{256}\mathcal{M}_0{G_0}^{-5/3}{u_0}^{-8}\left\{1 \right. & \left. +\left[\frac{5}{512 {m}_0{G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0})-\frac{5}{1536{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4}\right.\nonumber\\&\left. +\frac{4}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right)x_0 -\frac{32}{5}\pi {x_0}^{3/2}+2\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^2\right){x_0}^2 \right\}\,,
 \end{align}
-
 
 and
 \begin{align}
-\phi(f)=\phi_0-\frac{1}{16}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{3328 m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0}) \right. \right. \nonumber\\ \left. \left. -\frac{25}{9984{G_0}^{8/3} \eta_0}(11m_0 \dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4}+\frac{5}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right){x_0} \right. \nonumber\\ \left. -10 \pi {x_0}^{3/2}+5\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^{2}\right){x_0}^2\right\}\,.
+\phi(f)=\phi_0  -\frac{1}{16}{G_0}^{-5/3}{u_0}^{-5}\left\{1 \right. & \left. +\left[\frac{25}{3328 m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0})-\frac{25}{9984{G_0}^{8/3} \eta_0}(11m_0 \dot{G}_0+17\dot{m}_0 G_0)\right]{x_0}^{-4} \right.\nonumber\\& \left. +\frac{5}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right){x_0} -10 \pi {x_0}^{3/2} +5\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^{2}\right){x_0}^2\right\}\,.
 \end{align}
 
 
 %where the subscript $0$ denotes the quantity measured at time of coalescence.
-\hspace{15.5pt}The GW phase in the Fourier space is given by,
-
-\ky{I've fixed this equation.}
+The GW phase in the Fourier space is given by,
 
 \begin{align}\label{eq:3.7c}
 \Psi(f)=&2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
-=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{6656m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0}) \right. \right. \nonumber\\ 
-&\left. \left. -\frac{25}{19968{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{M}_0G_0)\right]{u_0}^{-8}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0} \right. \nonumber\\ 
-& \left. -16\pi {x_0}^{3/2}+\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right){x_0}^2\right\}\,.
+=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}{u_0}^{-5}\left\{1+\left[\frac{25}{6656m_0 {G_0}^{5/3}{\eta_0}^2}(\dot{m}_{1,0}m_{2,0}+m_{1,0}\dot{m}_{2,0}) \right.\right.\nonumber\\ &\left.\left. -\frac{25}{19968{G_0}^{8/3}\eta_0}(11m_0\dot{G}_0+17\dot{M}_0G_0)\right]{u_0}^{-8}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0}-16\pi {x_0}^{3/2} \right. \nonumber\\ &\left. +\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right){x_0}^2\right\}\,.
 \end{align}
 
-
-\hspace*{15.5pt}From equation \eqref{eq:3.7c}, $b=-13$  and we can find $\beta$ as
-
- \begin{equation}
- \beta_{\dot{G}}=\frac{-75 \mathcal{M}_0}{851968 {G_0}^{10/3}} \left(\frac{11 \dot{G}_0}{3 G_0} + \frac{17 \dot{m}_0}{3m_0}-\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
-  \end{equation}
- 
- \hspace*{15.5pt}\st{reminder:I have to change this part since following equations have already been explained in section 2}In order to calculate $\alpha$ we have to write metric perturbation explicitlty in terms of $G$ and binary mass parameters. For a two-body quasi-circular orbit we can write metric perturbation as \cite{Blanchet:2002av}
+From equation \eqref{eq:3.7c}, $b=-13$  and we can find $\beta$ as
+ \begin{align}
+ \beta_{\dot{G}}=\frac{-75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
+  \end{align}
+ \ew
+\st{reminder:I have to change this part since following equations have already been explained in section 2}In order to calculate $\alpha$ we have to write metric perturbation explicitlty in terms of $G$ and binary mass parameters. For a two-body quasi-circular orbit we can write metric perturbation as \cite{Blanchet:2002av}
  \begin{equation}
 \bar{h}^{ij}(t)\propto \frac{G(t)}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,,
  \end{equation}
@@ -499,11 +490,11 @@ where
 \begin{equation}\label{eq:3.7d2}
  \alpha_{\dot{G}}=\frac{-5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
  \end{equation}
- \hspace{15.5pt} $\alpha_{\dot{G}}$ in equation \eqref{eq:3.7d2} does not match with the previously obtained $\alpha$ for varying-$G$ theory in Ref. \cite{Yunes:2009bv}.
+$\alpha_{\dot{G}}$ in equation \eqref{eq:3.7d2} does not match with the previously obtained $\alpha$ for varying-$G$ theory in Ref. \cite{Yunes:2009bv}.
  
  \subsubsection*{GW Frequency Evolution: Energy-Balance Equation}
  
-  \hspace{15.5pt} We now show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying the energy balance law used in~\cite{Yunes:2009bv}. Total energy of the binary is given by $E=-(G\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution, we can use Kepler's law to rewrite the binding energy as 
+We now show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying the energy balance law used in~\cite{Yunes:2009bv}. Total energy of the binary is given by $E=-(G\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution, we can use Kepler's law to rewrite the binding energy as 
  \begin{equation}\label{eq:3.7e}
  E(f,G,m_1,m_2)=-\frac{1}{2}\mu (Gm\Omega)^{2/3}\,,
  \end{equation}
@@ -516,7 +507,7 @@ In GR, such time variation in the binding energy needs to be balanced with the G
  \begin{equation}\label{eq:3.7f}
  E(G,m_1,m_2,j)=-\frac{G^2 \mu  m^2}{2 j^2}\,.
  \end{equation}
- \hspace*{15.5pt} Taking the time variation of the above binding energy and adding the GW luminosity, the energy-balance equation for varying-$G$ theories then becomes
+Taking the time variation of the above binding energy and adding the GW luminosity, the energy-balance equation for varying-$G$ theories then becomes
  \begin{equation}\label{eq:3.7g}
 \frac{d E}{d t}=-\dot{E}_{GW}+\frac{\partial E}{\partial m_1}\dot{m_1}+\frac{\partial E}{\partial m_2}\dot{m_2}+\frac{\partial E}{\partial G}\dot{G}\,,
  \end{equation}
@@ -529,9 +520,9 @@ In GR, such time variation in the binding energy needs to be balanced with the G
 %\hspace{15.5pt}
  Using \eqref{eq:3.7f} and \eqref{eq:3.7h} in \eqref{eq:3.7g},
  \begin{align}\label{eq:3.7i}
-\frac{d E}{d t}=- \frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G^{7/3} m^{10/3}-\frac{G^2}{2j^2}({m_1}^2\dot{m}_2+\dot{m}_1{m_2}^2)-\frac{Gm^2\eta}{j^2}(m\dot{G}+\dot{m}G)\,.
+\frac{d E}{d t}=- \frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G^{7/3} m^{10/3}-\frac{G^2}{2j^2}(m_1^2\dot{m}_2+\dot{m}_1 m_2^2)\nonumber\\-\frac{Gm^2\eta}{j^2}(m\dot{G}+\dot{m}G)\,.
  \end{align}
- \hspace{15.5pt}Solving equation \eqref{eq:3.7i} and \eqref{eq:3.7j} we can find frequency evolution upto -4PN order as
+Solving equation \eqref{eq:3.7i} and \eqref{eq:3.7j} we can find frequency evolution upto -4PN order as
  
  \begin{align} 
  \dot{f}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}[1+\frac{5\eta^{3/5}}{48 G^{8/3}}(\dot{m}G+m\dot{G})u^{-8}]\,,
@@ -545,7 +536,7 @@ In GR, such time variation in the binding energy needs to be balanced with the G
 % \end{align}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{comment}
   \newpage
@@ -581,7 +572,7 @@ In GR, such time variation in the binding energy needs to be balanced with the G
 \end{tabular}
 \end{comment}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
 
