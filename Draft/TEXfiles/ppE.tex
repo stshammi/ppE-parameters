@@ -80,7 +80,7 @@ Something goes here
 \ky{At the beginning of each section, it's a good idea to explain what we'll do in that section. I added this paragraph.}
 We begin by reviewing the ppE formalism. The original formalism (that we explain in detail in App.~\ref{appendix}) was developed by considering non-GR corrections to the binding energy $E$ and GW luminosity $\dot E$~\cite{Yunes:2009ke,Chatziioannou:2012rf}. The former (latter) correspond to conservative (dissipative) corrections. Here, we take a slightly different approach and consider corrections to the GW frequency evolution $\dot f$ and the Kepler's law $r(f)$, where $r$ is the orbital separation while $f$ is the GW frequency. This is because these two quantities directly determine the amplitude and phase corrections away from GR, and hence, the final expression are simpler than the original ones. Moreover, non-GR corrections to $\dot f$ and $r(f)$ have already been derived in the literature for many modified theories of gravity.
 
-PPE gravitational waveform for a compact binary inspiral in the Fourier domain is given by ~\cite{Yunes:2009ke}
+ppE gravitational waveform for a compact binary inspiral in the Fourier domain is given by ~\cite{Yunes:2009ke}
 \begin{equation}\label{eq:2a}
 \tilde{h}(f)=\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}\,,
 \end{equation}
@@ -184,7 +184,7 @@ When conservative corrections dominate, $c_r = c_{\dot f}$ and there is an expli
 
 If dissipative and conservative corrections enter at the same PN order, we can set $c_r=c_{\dot{f}}$ in Eq.~\eqref{eq:2n}, which gives 
 \begin{equation}
-\label{eq:amp-PPE-comparable}
+\label{eq:amp-ppE-comparable}
 \alpha=2 \text{$\gamma_r $}-\frac{\text{$\gamma_{\dot{f}} $}}{2}\,, \quad a=c_{r}=c_{\dot{f}}\,.
 \end{equation}
 %and
@@ -277,12 +277,11 @@ In App.~\ref{appendix}, we review $\delta\Psi$ derived in the original ppE forma
 %------------------------------------------------------- 
 \subsection{Relations among ppE Parameters}
 
-Finally, we study relations among ppE parameters. From Eqs.~\eqref{eq:2t}--\eqref{eq:amp-PPE-comparable} and~\eqref{eq:2v}, one can easily see 
+Finally, we study relations among ppE parameters. From Eqs.~\eqref{eq:2t}--\eqref{eq:amp-ppE-comparable} and~\eqref{eq:2v}, one can easily see 
 \begin{equation}
 b=a-5\,,
 \end{equation}
 which holds in all three cases considered previously. Let us consider such three cases in turn below to derive relations between $\alpha$ and $\beta$. 
-\ky{I rewrote below expressions to $\alpha(\beta)$.}
 
 \begin{itemize}
 
@@ -311,7 +310,7 @@ Using this equation together with Eq.~\eqref{eq:2u}, we find
 \item
 \emph{Comparable Dissipative and Conservative Case}
 
-When dissipative and conservative corrections enter at the same PN order, there is no explicit relation between $\alpha$ and $\beta$. This is because $\alpha$ depends both on $\gamma_r$ and $\gamma_{\dot f}$ (see Eq.~\eqref{eq:amp-PPE-comparable}) while $\beta$ depends only on the latter (see Eq.~\eqref{eq:Psi}), and there is no relation between the former and the latter. Thus, one can rewrite $\gamma_{\dot f}$ in terms of $\beta$ and substitute into Eq.~\eqref{eq:amp-PPE-comparable} but cannot eliminate $\gamma_r$ from the expression for $\alpha$. 
+When dissipative and conservative corrections enter at the same PN order, there is no explicit relation between $\alpha$ and $\beta$. This is because $\alpha$ depends both on $\gamma_r$ and $\gamma_{\dot f}$ (see Eq.~\eqref{eq:amp-ppE-comparable}) while $\beta$ depends only on the latter (see Eq.~\eqref{eq:Psi}), and there is no relation between the former and the latter. Thus, one can rewrite $\gamma_{\dot f}$ in terms of $\beta$ and substitute into Eq.~\eqref{eq:amp-ppE-comparable} but cannot eliminate $\gamma_r$ from the expression for $\alpha$. 
 
 \end{itemize}
 
@@ -370,17 +369,20 @@ Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{
  
  
   \subsection{EdGB Gravity}
-EdGB gravity is a well-known extension of GR. It emerges naturally in the framework of low-energy effective string theories  and it gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}. One obtains EdGB action by adding a real scalar field (dilaton) to the Einstein-Hilbert action, where the scalar field is non-minimally coupled to the Gauss-Bonnet term\cite{Kanti:1995vq}.
+EdGB gravity is a well-known extension of GR, which emerges naturally in the framework of low-energy effective string theories  and gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}. One obtains EdGB action by adding a real scalar field (dilaton) to the Einstein-Hilbert action, where the scalar field is non-minimally coupled to the Gauss-Bonnet term with a coupling constant $\bar{\alpha}$ \cite{Kanti:1995vq}. So far the strongest upper bound on this coupling constant has been placed using the observation of  BH low-mass X-ray binaries and is given by $\sqrt{|\bar{\alpha}|} < 1.9\times10^5$ cm \cite{Yagi:2012gp}.
 
-BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative EdGB BH solution is available for slowly rotating BHs and also an exact solution exists for static BH, while Rapidly rotating BH solutions have been found numerically as well \cite{Berti:2015itd,Kanti:1995vq,Kleihaus:2011tg,Pani:2011gy}. Compared to the BHs in GR, there are signficant differences in the ISCO location and orbital frequency of EdGB BHs , which can be detected through astrophysical observations\cite{Pani:2009wy} \st{I am not sure if these properties are related to GW observations.}.
+
+BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative solutions are available for static and slowly rotating EdGB BHs while Rapidly rotating solutions can be obtained numerically             
+ \cite{Berti:2015itd,Kleihaus:2011tg,Pani:2011gy}. One of the reasons why EdGB BHs are important is because they can acquire scalar monopole charge, unlike neutron stars in EdGB gravity which do not have any monopole charge \cite{Yagi:2011xp}. This means new constraints on EdGB gravity can be obtained by observing coalescence of binaries containing at least one BH.
 
 % BHs in EdGB theory differs from their GR counterparts in a number of significant ways.For instance, they possess a minimal size and mass for a given coupling, their angular momentum can exceed the Kerr bound, and their quadruple moment can be far bigger.EdGB theory has higher curvature correction which is relevant in strong-curvature regime like BBH coalescence. 
  %the Parametrized Post-Newtonian [12] expansion of this theory is identical (to lowest order) to that of GR, which makes it a viable candidate as an alternative theory of gravity \cite{Pani:2009wy}
-One of the prominant non-GR characteristics of EdGB BHs is that they have scalar monopole charge which can generate dipole radiation which in turn changes the speed of binary inspiral. This effect can modify the GW phase and such modification is given by ppE parameter $\beta$ as a function of system parameters as \cite{Yunes:2016jcc,Yagi:2011xp}
+ 
+Now we are going to show the expressions of ppE parameters for EdGB gravity. The scalar monopole charge of EdGB BH generates dipole radiation which increases the speed at which the binaries inspiral. This effect can modify the GW phase and such modification is given by ppE parameter $\beta$ as a function of system parameters as \cite{Yunes:2016jcc,Yagi:2011xp}
 \begin{equation}
  \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which is given by $\zeta_{\text{EdGB}}=16 \pi \alpha^2/m^4$ \cite{Yunes:2016jcc}. \st{I feel like I need to explain what $\alpha$ is in EdGB theory. But I am not sure and we can talk about it in the meeting}. $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges which are given by $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$\cite{Berti:2018cxi,Prabhu:2018aun}. Here, $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. In EdGB theory the correction to the phase enters through the correction of GW eneregy flux hence it's a dissipative-dominated case, which means we can use Eq. \eqref{eq:2w2} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
+ Here, $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which in terms of $\bar{\alpha}$ is given by $\zeta_{\text{EdGB}}=16 \pi \bar{\alpha}^2/m^4$ \cite{Yunes:2016jcc}. $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges and can be written as $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In case of EdGB gravity the leading order correction to the phase enters through the correction of GW eneregy flux, hence it's a dissipative-dominated case and we can use Eq. \eqref{eq:2w2} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
  \begin{equation}
  \alpha_{\text{EdGB}}=\frac{-5}{192}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
@@ -591,14 +593,14 @@ K.Y. would like to acknowledge networking support by the COST Action GWverse CA1
 %%%%%%%%%%%%%%%%%%
  \appendix 
  
- \section{Original PPE Formalism}
+ \section{Original ppE Formalism}
  \label{appendix}
 
 In this appendix, we review the original ppE formalism. In particular, we will show how the amplitude and phase corrections depend on the conservative and dissipative corrections, where the former are corrections to the effective potential while the latter are those to the GW luminosity. We will mostly follow~\cite{Chatziioannou:2012rf}.
 
 First, let us introduce the conservative corrections. We modify the reduced effective potential as
  \begin{equation}\label{eq:h}
- V_{\text{eff}}=\left(-\frac{m}{r}+\frac{{L}^2_{z}}{2r^2}\right)\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
+ V_{\text{eff}}=\left(-\frac{m}{r}+\frac{{L}^2_{z}}{2\mu^2r^2}\right)\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
  \end{equation}
 where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of the angular momentum. $A$ and $p$ show the magnitude and exponent of the non-GR correction term respectively. Such a modification to the effective potential also modifies the Kepler's law. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and equating it to zero gives the modified Kepler's law as
  \begin{equation}
@@ -618,7 +620,6 @@ For a circular orbit, radial kinetic energy does not exist and the effective pot
 E=-\frac{1}{2}\eta^{-2/5}u^2\left[1-\frac{4}{c_r}(c_r-3)\gamma_ru^{c_r}\right]\,,
 \end{align}
 where $u=(\pi \mathcal{M} f)^{1/3}$.
-\st{I did the calculation and for binding energy I got something different from Nico's. Perhaps I am doing something wrong. For now I assume his calculation is correct and write his equation in terms of our variables and move on. I can show you my calculation in next meeting.} \ky{ok.}
 
 Next, let us introduce dissipative corrections. Such corrections to the GW luminosity can be parameterized by
  \begin{equation}\label{eq:a}
