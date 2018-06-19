@@ -20,7 +20,7 @@
 \usepackage{pifont}
 \usepackage{enumitem}
 \usepackage{color}
-%\usepackage{ulem}
+\usepackage{ulem}
 \usepackage{appendix}
 %\usepackage[toc,page]{appendix}
 \usepackage{comment}
@@ -369,22 +369,21 @@ Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{
  
  
   \subsection{EdGB Gravity}
-EdGB gravity is a well-known extension of GR, which emerges naturally in the framework of low-energy effective string theories  and gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}. One obtains EdGB action by adding a real scalar field (dilaton) to the Einstein-Hilbert action, where the scalar field is non-minimally coupled to the Gauss-Bonnet term with a coupling constant $\bar{\alpha}$ \cite{Kanti:1995vq}. So far the strongest upper bound on this coupling constant has been placed using the observation of  BH low-mass X-ray binaries and is given by $\sqrt{|\bar{\alpha}|} < 1.9\times10^5$ cm \cite{Yagi:2012gp}.
+EdGB gravity is a well-known extension of GR, which emerges naturally in the framework of low-energy effective string theories  and gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}, which is the most generic scalar-tensor theory with at most second-order derivatives in the field equations. One obtains the EdGB action by adding a quadratic-curvature term to the Einstein-Hilbert action, where the scalar field (dilaton) is non-minimally coupled to the Gauss-Bonnet term with a coupling constant $\bar{\alpha}_\EDGB$ \cite{Kanti:1995vq}. A stringent upper bound on such a coupling constant has been placed using the orbital decay measurement of a BH low-mass X-ray binary (LMXB) as $\sqrt{|\bar{\alpha}_\EDGB|} < 1.9\times10^5$ cm~\cite{Yagi:2012gp}. A similar upper bound has been placed from the existence of BHs~\cite{Pani:2009wy}. Equation-of-state-dependent bounds from the maximum mass of neutron stars have also been derived in~\cite{pani-EDGB-NS}. 
 
 
-BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative solutions are available for static and slowly rotating EdGB BHs while Rapidly rotating solutions can be obtained numerically             
- \cite{Berti:2015itd,Kleihaus:2011tg,Pani:2011gy}. One of the reasons why EdGB BHs are important is because they can acquire scalar monopole charge, unlike neutron stars in EdGB gravity which do not have any monopole charge \cite{Yagi:2011xp}. This means new constraints on EdGB gravity can be obtained by observing coalescence of binaries containing at least one BH.
+BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative but analytic solutions are available for static~\cite{Mignemi:1992nt,Mignemi:1993ce,Yunes:2011we,Sotiriou:2014pfa} and slowly rotating EdGB BHs~\cite{Pani:2011gy,Ayzenberg:2014aka,Maselli:2015tta} while numerical solutions have been found for static~\cite{Kanti:1995vq,Torii:1996yi,Alexeev:1996vs} and rotating~\cite{Pani:2009wy,Kleihaus:2011tg,Kleihaus:2014lba} BHs. One of the important reasons for considering BHs in EdGB is that BHs acquire scalar monopole charge~\cite{Yagi:2011xp,Sotiriou:2014pfa,Berti:2018cxi,Prabhu:2018aun} while ordinary stars such as neutron stars do not if the scalar field is coupled linearly to the Gauss-Bonnet term in the action~\cite{Yagi:2011xp,Yagi:2015oca}. This means that binary pulsars are inefficient to constrain the theory, and one needs systems such as BH-LMXBs~\cite{Yagi:2012gp} or BH/pulsar binaries~\cite{Yagi:2015oca} to have better probes on the theory.
 
 % BHs in EdGB theory differs from their GR counterparts in a number of significant ways.For instance, they possess a minimal size and mass for a given coupling, their angular momentum can exceed the Kerr bound, and their quadruple moment can be far bigger.EdGB theory has higher curvature correction which is relevant in strong-curvature regime like BBH coalescence. 
  %the Parametrized Post-Newtonian [12] expansion of this theory is identical (to lowest order) to that of GR, which makes it a viable candidate as an alternative theory of gravity \cite{Pani:2009wy}
  
-Now we are going to show the expressions of ppE parameters for EdGB gravity. The scalar monopole charge of EdGB BH generates dipole radiation which increases the speed at which the binaries inspiral. This effect can modify the GW phase and such modification is given by ppE parameter $\beta$ as a function of system parameters as \cite{Yunes:2016jcc,Yagi:2011xp}
+We now show the expressions of ppE parameters for EdGB gravity. The scalar monopole charge of EdGB BHs in binaries generates scalar dipole radiation, which leads to an earlier coalescence of BH binaries compared to GR. Such scalar radiation modifies the GW phase with the ppE parameter $\beta$ as~\cite{Yunes:2016jcc,Yagi:2011xp}
 \begin{equation}
- \beta_{\text{EdGB}}=\frac{-5}{7168}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
+ \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $\zeta_{\text{EdGB}}$ is the dimensionless EdGB coupling paramater which in terms of $\bar{\alpha}$ is given by $\zeta_{\text{EdGB}}=16 \pi \bar{\alpha}^2/m^4$ \cite{Yunes:2016jcc}. $s_{A}^{\text{EdGB}}$ are the spin-dependent factors of the BH scalar charges and can be written as $s_{A}^{\text{EdGB}}\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In case of EdGB gravity the leading order correction to the phase enters through the correction of GW eneregy flux, hence it's a dissipative-dominated case and we can use Eq. \eqref{eq:2w2} to calculate ppE parameter $\alpha_{\text{EdGB}}$ from $\beta_{\text{EdGB}}$ as  
+ Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter. $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence \sout{it's} \ky{Avoid using short-hands like ``it's''} the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
  \begin{equation}
- \alpha_{\text{EdGB}}=\frac{-5}{192}\zeta_{\text{EdGB}}\frac{(m_1^2s_2^{\text{EdGB}}-m_2^2s_1^{\text{EdGB}})^2}{m^4\eta^{\frac{18}{5}}}\,.
+ \alpha_\EDGB=-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
  
  
