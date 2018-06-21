@@ -40,6 +40,7 @@
 \newcommand\ew{\end{widetext}}
 
 \newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
+\newcommand{\DCS}{{\mbox{\tiny dCS}}}
 \newcommand{\GR}{{\mbox{\tiny GR}}}
 \newcommand{\GW}{{\mbox{\tiny GW}}}
 \newcommand{\ky}[1]{\textcolor{blue}{\it{\textbf{ky: #1}}} }
@@ -62,6 +63,8 @@ Something goes here
 \end{abstract}
 
 \date{\today}
+
+
 
 
 \maketitle
@@ -332,40 +335,7 @@ When dissipative and conservative corrections enter at the same PN order, there 
  \alpha_{ST}=\frac{-5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
  \end{equation}
  
- \subsection{dCS Gravity}
- 
- \ky{I would move this subsection after EdGB.}
- 
-\hspace{15.5pt}BHs in dCS theory \ky{Let's use ``dCS gravity'' throughout.} retain scalar dipole charge sourced by the Pontryagin invariant that induce modified quadrupolar emission \cite{Yagi:2011xp,Yunes:2016jcc}. In this theory dissipative and conservative corrections enter at the same order. Kepler's third law is modified as \cite{Yagi:2012vf} \ky{I think we can just show $\gamma_r$ directly instead of (38) and (39).}
- \begin{equation}\label{eq:3.3a}
- a=\frac{m}{u^2}(1+\delta C_r v^4)\,,
- \end{equation}
-where $v=(\pi m f)^{1/3}$. $\delta C_r$ for  spin-aligned binaries is given as  \ky{Let's change $\zeta m^2 \left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)$ to $\frac{\zeta}{\eta^2}\left(\frac{m_2}{m_1}\chi_1^2+\frac{m_1}{m_2}\chi_2^2\right)$ so that each piece is dimensionless. Please do the same for (41).}
-\begin{align}
-\delta C_r=\frac{25}{256}\zeta \frac{\chi_1 \chi_2}{\eta}-\frac{201}{3584}\zeta m^2\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
-\end{align} 
 
-Here, $m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter, and $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. The magnitude of the correction to the rate at which the binary inspirals is proportional to the dimensionless dCS coupling parameter $\zeta_{dCS}=16\pi \alpha_{\text{dCS}}^2/m^4$\footnote{$\alpha_{\text{dCS}}$ is a coupling constant in dCS theory which is different from ppE parameter $\alpha$} .
-
-
-Frequency evolution is given by \cite{Yagi:2012vf} \ky{Let's just show $\gamma_{\dot f}$ directly.}
-\begin{equation}\label{eq:3.3b}
-\dot{f}=\dot{f}_{\GR}\left(1+\delta C v^4\right)\,,
-\end{equation}
- where \ky{Let's write $\frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }$ as $\frac{38525}{39552} \frac{\zeta \chi_1 \chi_2}{\eta}$. Same comment applies to other equations as well. (And you're missing the subscript ``dCS'' under $\zeta$.)}
- \begin{equation}
- \delta C= \frac{38525 \zeta \chi_1 \chi_2}{39552 \eta }-\frac{309845 \zeta  m^2 }{553728 }\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
- \end{equation}
- By comparing Eq.~\eqref{eq:3.3a} with Eq.~\eqref{eq:2c} and Eq.~\eqref{eq:3.3b} with Eq.~\eqref{eq:2e}, we can obtain $A$, $B$, $p$,  and $q$ for dCS theory. Then using Eqs. \eqref{eq:2a} and \eqref{eq:2b} we can find $\alpha$ and $\beta$ as
- 
- \begin{align}
- \alpha_{\text{dCS}}=\frac{185627 \zeta_{\text{dCS}} }{1107456 \eta ^{14/5}}\left[-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{53408 \eta }{14279}\right) \text{$\chi_a$}^2\right. \nonumber\\ \left.+\left(1-\frac{3708 \eta }{14279}\right) \text{$\chi_s$}^2\right]\,,
- \end{align}
- and
- \begin{equation}
- \beta_{\text{dCS}}=\frac{1549225 \zeta_{\text{dCS}} }{11812864 \eta ^{14/5}}\left[-2 \text{$\delta_m$} \text{$\chi_a$} \text{$\chi_s$}+\left(1-\frac{16068 \eta }{61969}\right) \text{$\chi_a$}^2+\left(1-\frac{231808 \eta }{61969}\right) \text{$\chi_s$}^2\right]\,,
- \end{equation}
- respectively. Here we introduced the symmetric and antisymmetric dimensionless spin combinations\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}} $\chi_{s,a}=(\frac{a_{||1}}{m_1}\pm\frac{a_{||2}}{m_2})/2$ with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, and the dimensionless mass difference $\delta_m=(m_1-m_2)/m$.
  
  
   \subsection{EdGB Gravity}
@@ -374,19 +344,65 @@ EdGB gravity is a well-known extension of GR, which emerges naturally in the fra
 
 BHs in EdGB theory are of particular interest since they are fundamentally different from their GR counterparts. Perturbative but analytic solutions are available for static~\cite{Mignemi:1992nt,Mignemi:1993ce,Yunes:2011we,Sotiriou:2014pfa} and slowly rotating EdGB BHs~\cite{Pani:2011gy,Ayzenberg:2014aka,Maselli:2015tta} while numerical solutions have been found for static~\cite{Kanti:1995vq,Torii:1996yi,Alexeev:1996vs} and rotating~\cite{Pani:2009wy,Kleihaus:2011tg,Kleihaus:2014lba} BHs. One of the important reasons for considering BHs in EdGB is that BHs acquire scalar monopole charge~\cite{Yagi:2011xp,Sotiriou:2014pfa,Berti:2018cxi,Prabhu:2018aun} while ordinary stars such as neutron stars do not if the scalar field is coupled linearly to the Gauss-Bonnet term in the action~\cite{Yagi:2011xp,Yagi:2015oca}. This means that binary pulsars are inefficient to constrain the theory, and one needs systems such as BH-LMXBs~\cite{Yagi:2012gp} or BH/pulsar binaries~\cite{Yagi:2015oca} to have better probes on the theory.
 
-% BHs in EdGB theory differs from their GR counterparts in a number of significant ways.For instance, they possess a minimal size and mass for a given coupling, their angular momentum can exceed the Kerr bound, and their quadruple moment can be far bigger.EdGB theory has higher curvature correction which is relevant in strong-curvature regime like BBH coalescence. 
- %the Parametrized Post-Newtonian [12] expansion of this theory is identical (to lowest order) to that of GR, which makes it a viable candidate as an alternative theory of gravity \cite{Pani:2009wy}
- 
 We now show the expressions of ppE parameters for EdGB gravity. The scalar monopole charge of EdGB BHs in binaries generates scalar dipole radiation, which leads to an earlier coalescence of BH binaries compared to GR. Such scalar radiation modifies the GW phase with the ppE parameter $\beta$ as~\cite{Yunes:2016jcc,Yagi:2011xp}
 \begin{equation}
  \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter. $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence \sout{it's} \ky{Avoid using short-hands like ``it's''} the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
+ Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter. $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
  \begin{equation}
  \alpha_\EDGB=-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
  
  
+ 
+  \subsection{dCS Gravity}
+  
+dCS gravity is described by Einstein-Hilbert action with a dynamical (pseudo) scalar field which is non-minimally coupled to the Pontryagin densiy or Chern-Simons (CS) term with a coupling constant $\bar{\alpha}_{\DCS}$\cite{Alexander:2009tp,Jackiw:2003pm}. Similar to EdGB gravity, dCS gravity can be obtained as an effective field theory from the compactification of  heterotic string theory \cite{GREEN1984117,McNees:2015srl}. It is also important in the context of particle physics \cite{Alexander:2009tp,Mariz:2004cv,MARIZ2008312,PhysRevD.78.025029}, loop quantum gravity  \cite{PhysRevD.80.104007,Taveras:2008yf}, and inflationary cosmology \cite{Weinberg:2008hq}. Considering a cut-off scale for the energy, the upper bound of the coupling constant $\bar{\alpha}_{\DCS}$ is determined by table-top experiment as $\sqrt{|\bar{\alpha}_{\DCS}|} < \mathcal{O}(10^8 \text{km})$ \cite{Yagi:2012ya}. Same constraint has been found from the measurement of frame-dragging effect by Gravity Probe B and LAGEOS satellites \cite{AliHaimoud:2011fw}.
+
+dCS gravity reduces to GR in weak-field limit, hence stringent constraint cannot be obtained from weak-field experiments \cite{Yagi:2012vf}. A large-curvature environment is required to distinguish the theory from GR which makes binary black hole mergers a promising sector for this purpose. Also, dCS gravity only predicts correction in the presence of parity-odd sources \cite{Alexander:2009tp,Berti:2015itd} and only observation of GWs from rotating BHs could yield significant correction. A projected bound has been derived in ref. \cite{Yagi:2012vf} considering favorable spin-orientations of BBH mergers which gives six to seven order of magnitude stronger constraint than the bound obtained from solar system experiments.
+
+We now derive the expressions of ppE parameters for dCS gravity. While EdGB BHs have scalar monopole charge, BHs in dCS gravity contain scalar dipole charge which induces modified quadrupolar emission \cite{Yagi:2011xp,Yunes:2016jcc}. This modification results in dissipative and conservative corrections at the same order. Conservative correction yields the correction to Kepler's law as $r=(m\eta^{2/5}/u^2)(1+\delta C_r \eta^{-4/5}u^4)$, comparing with Eq.~\eqref{eq:2k} which gives the amplitude correction to binary seperation as
+\begin{equation}\label{dcs:gamma_r}
+\gamma_r=\eta^{-4/5}\delta C_r\,,
+\end{equation}
+with exponent correction $c_r=4$, where $\delta C_r$ for spin-aligned binaries is given by \cite{Yagi:2012vf}
+\begin{align}
+\delta C_r=\frac{25}{256}\zeta_{\DCS} \frac{\chi_1 \chi_2}{\eta}-\frac{201}{3584}\zeta_{\DCS} m^2\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
+\end{align} 
+
+ \ky{I think we can just show $\gamma_r$ directly instead of (38) and (39).}\st{OK, done.}
+ 
+ %\begin{equation}\label{eq:3.3a}
+ %a=\frac{m}{u^2}(1+\delta C_r v^4)\,,
+ %\end{equation}
+ 
+ \ky{Let's change $\zeta m^2 \left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)$ to $\frac{\zeta}{\eta^2}\left(\frac{m_2}{m_1}\chi_1^2+\frac{m_1}{m_2}\chi_2^2\right)$ so that each piece is dimensionless. Please do the same for (41).}
+\st{I actually don't get  $\frac{\zeta}{\eta^2}\left(\frac{m_2}{m_1}\chi_1^2+\frac{m_1}{m_2}\chi_2^2\right)$ if I do the calculation, let's talk about it in the meeting...........}
+Here, $m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter where $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. The magnitude of the correction to the binary inspiral rate is proportional to the dimensionless dCS coupling parameter $\zeta_{\DCS}=16\pi \bar{\alpha}_{\text{dCS}}^2/m^4$.
+
+Dissipative correction gives frequency evolution as $\dot{f}=\dot{f}_{\GR}(1+\delta C \eta^{-4/5}u^4)$, comparing with Eq. \eqref{eq:2m} which gives
+\begin{equation}\label{dcs:gamma_fdot}
+\gamma_{\dot{f}}=\eta^{-4/5}\delta C\,,
+\end{equation}
+%
+%\begin{equation}\label{eq:3.3b}
+%\dot{f}=\dot{f}_{\GR}\left(1+\delta C v^4\right)\,,
+%\end{equation}
+%
+with $c_{\dot{f}}=4$, where $\delta C$ is given by \cite{Yagi:2012vf}
+ \begin{equation}
+ \delta C= \frac{38525}{39552 }\zeta_{\DCS}\frac{\chi_1 \chi_2}{\eta }-\frac{309845}{553728 }\zeta_{\DCS} m^2\left(\frac{{\chi_1}^2}{{m_1}^2}+\frac{{\chi_2}^2}{{m_2}^2}\right)\,.
+ \end{equation}
+ Using Eqs. \eqref{dcs:gamma_r} and \eqref{dcs:gamma_fdot} in Eqs.~\eqref{eq:2u} and \eqref{eq:2v} respectively, one obtains
+ 
+ \begin{align}
+ \alpha_{\DCS}=\frac{185627}{1107456}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{53408 \eta }{14279}\right) \chi_a^2\right. \nonumber\\ \left.+\left(1-\frac{3708 \eta }{14279}\right) \chi_s^2\right]\,,
+ \end{align}
+with $a=4$, and
+ \begin{align}
+ \beta_{\DCS}=\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 \right.\nonumber\\ \left.+\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]\,,
+ \end{align}
+with $b=-1$. Here, $\chi_{s,a}=(\frac{a_{||1}}{m_1}\pm\frac{a_{||2}}{m_2})/2$  are the symmetric and antisymmetric dimensionless spin combinations\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}} with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, and $\delta_m=(m_1-m_2)/m$ is the dimensionless mass difference.
  
  \subsection{Einstein-$\AE$ther Theory}
  Dissipative correction dominates. From \cite{Hansen:2014ewa},
