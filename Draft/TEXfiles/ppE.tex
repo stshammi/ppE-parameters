@@ -357,29 +357,41 @@ We now show the expressions of ppE parameters for EdGB gravity. The scalar monop
  
   \subsection{dCS Gravity}
   
-dCS gravity is described by Einstein-Hilbert action with a dynamical (pseudo) scalar field which is non-minimally coupled to the Pontryagin densiy or Chern-Simons (CS) term with a coupling constant $\bar{\alpha}_{\DCS}$\cite{Alexander:2009tp,Jackiw:2003pm}. Similar to EdGB gravity, dCS gravity can be obtained as an effective field theory from the compactification of  heterotic string theory \cite{GREEN1984117,McNees:2015srl}. It is also important in the context of particle physics \cite{Alexander:2009tp,Mariz:2004cv,MARIZ2008312,PhysRevD.78.025029}, loop quantum gravity  \cite{PhysRevD.80.104007,Taveras:2008yf}, and inflationary cosmology \cite{Weinberg:2008hq}. Considering a cut-off scale for the energy, the upper bound of the coupling constant $\bar{\alpha}_{\DCS}$ is determined by table-top experiment as $\sqrt{|\bar{\alpha}_{\DCS}|} < \mathcal{O}(10^8 \text{km})$ \cite{Yagi:2012ya}. Same constraint has been found from the measurement of frame-dragging effect by Gravity Probe B and LAGEOS satellites \cite{AliHaimoud:2011fw}.
+DCS gravity is described by Einstein-Hilbert action with a dynamical (pseudo)scalar field which is non-minimally coupled to the Pontryagin density with a coupling constant $\bar{\alpha}_{\DCS}$~\cite{Alexander:2009tp,Jackiw:2003pm}. Similar to EdGB gravity, dCS gravity arises as an effective field theory from the compactification of  heterotic string theory \cite{GREEN1984117,McNees:2015srl}. \sout{It} \ky{Nico told me to avoid starting a sentence with ``it''. It's always a good idea to explicitly say what we're referring to.} Such a theory is also important in the context of particle physics \cite{Alexander:2009tp,Mariz:2004cv,MARIZ2008312,PhysRevD.78.025029}, loop quantum gravity  \cite{PhysRevD.80.104007,Taveras:2008yf}, and inflationary cosmology \cite{Weinberg:2008hq}. Demanding that the critical length scale (below which higher curvature corrections beyond quadratic order cannot be neglected in the action) has to be smaller than the scale probed by table-top experiments, one finds $\sqrt{|\bar{\alpha}_{\DCS}|} < \mathcal{O}(10^8 \text{km})$ \cite{Yagi:2012ya}. Similar constraints have been placed from measurements of the frame-dragging effect by Gravity Probe B and LAGEOS satellites \cite{AliHaimoud:2011fw}.
 
-Since any spherically symmetric solution of GR is a solution of dCS gravity as well \cite{Yunes:2007ss,Berti:2015itd}, it is difficult to distinguish it from GR. Also a large-curvature environment is required to have significant correction from dCS gravity, which makes binary black hole mergers a promising sector for this purpose. A projected bound on $\bar{\alpha}_{\DCS}$ has been calculated in Ref. \cite{Yagi:2012vf} from the numerical analysis of BBH mergers, compared to solar system experiments which gives six to seven orders of magnitude stronger constraint on $\bar{\alpha}_{\DCS}$. Also a numerical study of Extreme-Mass-Ratio Inspirals (EMRI) has been done in Ref. \cite{Canizares:2012ji} and compared solar system bound it gives three orders of magnitude stronger constraint. Since equal-mass and equal-spin binaries do not give any correction for dCS gravity, recent GW observation events GW150914 and GW151226 by Advanced LIGO detectors could not place any constraint on this theory \cite{Yunes:2016jcc}. 
+\ky{Notice that I added a topic sentence.}
+Can GW observations place stronger bounds on the theory? Current GW observations do not allow us to put any meaningful bounds on dCS gravity~\cite{Yunes:2016jcc} (see also~\cite{Yagi:2017zhb}). However, future observations have potential to place bounds on the theory that are six to seven orders of magnitude stronger than current bounds~\cite{Yagi:2012vf}. Such stronger bounds can be realized due to relatively strong gravitational field and large spins that source the pseudoscalar field. Measuring GWs from extreme mass ratio inspirals with LISA can also place bounds that are three orders of magnitude stronger than current bounds~\cite{Canizares:2012is}. 
 
-We now derive the expressions of ppE parameters for dCS gravity. While EdGB BHs have scalar monopole charge, BHs in dCS gravity contain scalar dipole charge which induces modified quadrupolar emission \cite{Yagi:2011xp,Yunes:2016jcc}. This modification results in dissipative and conservative corrections at the same order. Correction to Kepler's law and frequency evolution for dCS gravity is given in Ref. \cite{Yagi:2012vf}, from which we can derive, for slowly rotating spin-aligned binaries
+%Since any spherically symmetric solution of GR is a solution of dCS gravity as well \cite{Yunes:2007ss,Berti:2015itd}, it is difficult to distinguish it from GR. Also a large-curvature environment is required to have significant correction from dCS gravity, which makes binary black hole mergers a promising sector for this purpose. A projected bound on $\bar{\alpha}_{\DCS}$ has been calculated in Ref. \cite{Yagi:2012vf} from the numerical analysis of BBH mergers, compared to solar system experiments which gives six to seven orders of magnitude stronger constraint on $\bar{\alpha}_{\DCS}$. Also a numerical study of Extreme-Mass-Ratio Inspirals (EMRI) has been done in Ref. \cite{Canizares:2012is} and compared solar system bound it gives three orders of magnitude stronger constraint. Since equal-mass and equal-spin binaries do not give any correction for dCS gravity, recent GW observation events GW150914 and GW151226 by Advanced LIGO detectors could not place any constraint on this theory \cite{Yunes:2016jcc}. 
+
+\ky{Good topic sentence!}
+We now derive the expressions of ppE parameters for dCS gravity. While BHs in EdGB gravity possess scalar monopole charges, BHs in dCS gravity possess scalar dipole charges which induce scalar quadrupolar emission~\cite{Yagi:2011xp}. \ky{Scalar emission induces dissipative correction only. Conservative corrections come from somewhere else, as I now explain below.} On the other hand, scalar dipole charges induce a scalar interaction force between two BHs. Each BH also acquires a modification to the quadrupole moment away from the Kerr value. All of these modifications result in both dissipative and conservative corrections entering at the same order in gravitational waveforms. For spin-aligned binaries\footnote{See recent works~\cite{Loutrel:2018rxs,Loutrel:2018ydv} for precession equations in dCS gravity.}, corrections to the Kepler's law and frequency evolution in dCS gravity are given in~\cite{Yagi:2012vf} within the slow-rotation approximation for BHs, from which we can derive
 \begin{align}\label{dcs:gamma_r}
-\gamma_r=\frac{25}{256}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2 -\frac{201}{3584}\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2 \right.\nonumber\\ \left. +\frac{m_2^2}{m^2}\chi_1^2\right)\,,
+\gamma_r=&\frac{25}{256}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2 \nonumber \\ 
+&-\frac{201}{3584}\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2 +\frac{m_2^2}{m^2}\chi_1^2\right)\,,
 \end{align}
 with $c_r=4$, and
  \begin{align}\label{dcs:gamma_fdot}
-\gamma_{\dot{f}}= \frac{38525}{39552}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2-\frac{309845}{553728 }\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2 \right.\nonumber\\ \left.+\frac{m_2^2}{m^2}\chi_1^2\right)\,,
+\gamma_{\dot{f}}=& \frac{38525}{39552}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2 \nonumber \\
+&-\frac{309845}{553728 }\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2+\frac{m_2^2}{m^2}\chi_1^2\right)\,,
  \end{align}
-with $c_{\dot{f}}=4$. Here, $m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter where $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. The magnitude of the correction to the binary inspiral rate is proportional to the dimensionless dCS coupling parameter $\zeta_{\DCS}=16\pi \bar{\alpha}_{\text{dCS}}^2/m^4$.
-Using Eqs. \eqref{dcs:gamma_r} and \eqref{dcs:gamma_fdot} in Eqs.~\eqref{eq:2u} and \eqref{eq:2v} respectively, one obtains
+with $c_{\dot{f}}=4$. Here $\zeta_{\DCS}=16\pi \bar{\alpha}_{\text{dCS}}^2/m^4$ is the dimensionless coupling constant. \ky{I commented out the explanation for $\chi_A$ since we already explain it in the EdGB section. The one for $m_A$ should go in the ST section.}
+%$m_A$ is the individual mass, $\chi_A =\left | S_{A}^{i} \right |/m_A$ is the dimensionless Kerr spin parameter where $S_{A}^{i}$ is the spin angular momentum vector, all relative to the $\mathit{A}\text{th}$ BH. 
+Using Eqs. \eqref{dcs:gamma_r} and \eqref{dcs:gamma_fdot} in Eqs.~\eqref{eq:2u} and \eqref{eq:2v} respectively, one finds
  
  \begin{align}
- \alpha_{\DCS}=\frac{185627}{1107456}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{53408 \eta }{14279}\right) \chi_a^2\right. \nonumber\\ \left.+\left(1-\frac{3708 \eta }{14279}\right) \chi_s^2\right]\,,
+ \alpha_{\DCS}=&\frac{185627}{1107456}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right. \nonumber\\ 
+ &\left. +\left(1-\frac{53408 \eta }{14279}\right) \chi_a^2+\left(1-\frac{3708 \eta }{14279}\right) \chi_s^2\right]\,,
  \end{align}
 with $a=4$, and
  \begin{align}
- \beta_{\DCS}=\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 \right.\nonumber\\ \left.+\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]\,,
+ \beta_{\DCS}=&\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right.\nonumber\\ 
+ &\left. +\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 +\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]\,,
  \end{align}
-with $b=-1$. Here, $\chi_{s,a}=(\frac{a_{||1}}{m_1}\pm\frac{a_{||2}}{m_2})/2$  are the symmetric and antisymmetric dimensionless spin combinations\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}} with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, and $\delta_m=(m_1-m_2)/m$ is the dimensionless mass difference.
+with $b=-1$. Here $\chi_{s,a}=(\chi_1 \pm \chi_2 )/2$ \ky{I've simplified the expression for $\chi_s$ and $\chi_a$. Although we don't explicitly say in my paper with Nico and Frans, the above $\beta$ expression is only valid for spin-aligned binaries.} are the symmetric and antisymmetric combinations of dimensionless spin parameters 
+%\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}.} 
+%with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, 
+and $\delta_m=(m_1-m_2)/m$ is the fractional difference in masses relative to the total mass.
  
  \subsection{Einstein-$\AE$ther Theory}
  Dissipative correction dominates. From \cite{Hansen:2014ewa},
@@ -593,11 +605,7 @@ where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of th
  \begin{equation}\label{eq:g}
  r(t)=r_{\GR}\left[1+\frac{1}{6}A\, p\, \eta^{-\frac{2p}{5}}u^{2p}\right]\,,
  \end{equation}
-where to leading PN order, $r_{\GR}$ is given by the Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
-\begin{equation}\label{eq:i}
-A=\frac{12\gamma_r}{c_r}\eta^{\frac{c_r}{5}}\,, \quad p=\frac{c_r}{2}\,.
-\end{equation}
-For a circular orbit, radial kinetic energy does not exist and the effective potential energy is same as the binding energy of the binary. Using Eq. \eqref{eq:g} in Eq. \eqref{eq:h} and keeping only to leading order in non-GR corrections, the binding energy becomes
+where to leading PN order, $r_{\GR}$ is given by the Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. For a circular orbit, radial kinetic energy does not exist and the effective potential energy is same as the binding energy of the binary. Using Eq. \eqref{eq:g} in Eq. \eqref{eq:h} and keeping only to leading order in non-GR corrections, the binding energy becomes
 \begin{align}\label{eq:j}
 E=-\frac{1}{2}\eta^{-2/5}u^2\left[1-\frac{1}{3}A(2p-5)\eta^{-2p/5}u^{2p}\right]\,,
 \end{align}
@@ -618,10 +626,8 @@ Next, using Eqs.~\eqref{eq:g} and~\eqref{eq:f} to Eq.~\eqref{eq:2e} and keeping 
 \begin{align}\label{eq:o2}
 \tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{1}{6}A(2p^2-4p-3)\eta^{\frac{-2p}{5}}u^{2p}\right]\,.
 \end{align}
-Using Eq. \eqref{eq:i} we can write the GW amplitude in terms of $\gamma_r$, $c_r$, $B$, and $q$ as
-\begin{align}\label{eq:o}
-\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)u^{c_r}\right]\,.
-\end{align}
+
+
 Next, we move onto deriving phase corrections. One can derive the GW phase in the Fourier domain by integrating Eq.~\eqref{eq:2r} twice. Equivalently, one can use the following expression
 \begin{equation}\label{eq:n}
 \Psi(f)=2\pi f t(f)-\phi(f)-\frac{\pi}{4}\,,
@@ -632,22 +638,33 @@ t(f)=&\int \frac{dt}{df} \, df\nonumber\\=&t_0 -\frac{5 \mathcal{M}}{256 u^8}\le
 \end{align}
 with $t_0$ representing the time of coalescence and keeping only the Newtonian term and leading order non-GR corrections. On the other hand, $\phi(f)$ in Eq.~\eqref{eq:n} corresponds to the GW phase in the time domain and can be calculated from Eq.~\eqref{eq:f} as
 \begin{align}\label{eq:m}
-\phi(f)&=\int 2 \pi f dt=\int\frac{2\pi f}{\dot{f}}df\nonumber\\
-&=\phi_0 -\frac{1}{16 u^5}\left[1+\frac{5}{3}A\frac{\left(2 p^2-2 p-3\right)}{(2 p-5)} \eta ^{-\frac{2 p}{5}} u^{2 p}\right. \nonumber \\
+\phi(f)=&\int 2 \pi f dt=\int\frac{2\pi f}{\dot{f}}df\nonumber\\
+=&\phi_0 -\frac{1}{16 u^5}\left[1+\frac{5}{3}A\frac{\left(2 p^2-2 p-3\right)}{(2 p-5)} \eta ^{-\frac{2 p}{5}} u^{2 p}\right. \nonumber \\
 & \left. +\frac{5}{2 q-5}B\eta ^{-\frac{2 q}{5}} u^{2 q}\right]\,,
 \end{align}
 with $\phi_0$ representing the coalescence phase. Using Eqs.~\eqref{eq:l} and~\eqref{eq:m} into~\eqref{eq:n} and writing $\Psi(f)$ as $\Psi_{\GR}(f)+\delta\Psi(f)$, non-GR modifications to the phase can be found as
  \begin{align}\label{eq:p2}
-\delta\Psi(f)=-\frac{5}{32}A\frac{2p^2-2p-3}{(4-p)(5-2p)}\eta^{\frac{-2p}{5}}u^{2p-5}\nonumber\\ -\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,,
+\delta\Psi(f)=&-\frac{5}{32}A\frac{2p^2-2p-3}{(4-p)(5-2p)}\eta^{\frac{-2p}{5}}u^{2p-5}\nonumber\\ &-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,,
  \end{align}
 with $\Psi_{\GR}$ to leading PN order is given by \cite{Blanchet:1995ez}
 \begin{equation}
 \label{eq:Psi_GR}
 \Psi_{\GR}=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}u^{-5}\,.
 \end{equation}
-Again, using Eq. \eqref{eq:i} in Eq. \eqref{eq:p2}, modification to the phase can be written in terms of $\gamma_r$, $c_r$, $B$, and $q$ as
+
+\ky{I've created this new paragraph.}
+We can easily rewrite the above expressions using $\gamma_r$ and $c_r$. 
+Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
+\begin{equation}\label{eq:i}
+A=\frac{12\gamma_r}{c_r}\eta^{\frac{c_r}{5}}\,, \quad p=\frac{c_r}{2}\,.
+\end{equation}
+Using this, we can rewrite the GW amplitude in Eq.~\eqref{eq:o2} as
+\begin{align}\label{eq:o}
+\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{GR} \left[1-\frac{B}{2}\eta^{\frac{-2q}{5}}u^{2q}-\frac{\gamma_r}{c_r}(c^2_r-4c_r-6)u^{c_r}\right]\,.
+\end{align}
+Similarly, one can rewrite the correction to the GW phase in Eq.~\eqref{eq:p2} as
 \begin{align}\label{eq:p}
-\delta\Psi(f)=-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}u^{c_r-5}\nonumber\\ -\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,.
+\delta\Psi(f)=&-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}u^{c_r-5}\nonumber\\ &-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,.
  \end{align}
 
 
