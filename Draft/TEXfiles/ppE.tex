@@ -40,6 +40,8 @@
 \newcommand\ew{\end{widetext}}
 
 \newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
+\newcommand{\BD}{{\mbox{\tiny BD}}}
+\newcommand{\ST}{{\mbox{\tiny ST}}}
 \newcommand{\DCS}{{\mbox{\tiny dCS}}}
 \newcommand{\GR}{{\mbox{\tiny GR}}}
 \newcommand{\GW}{{\mbox{\tiny GW}}}
@@ -76,12 +78,7 @@ Something goes here
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{ppE Waveform}\label{section:ppE}
-
-\ky{One thing to remember: Each paragraph should have a meaning, and the first sentence of each paragraph should be a summary of that paragraph. This is called a topic sentence. You sometimes do this, and sometimes don't. Please keep this in mind and try to have topic sentence in each paragraph.}
-
-
-\ky{At the beginning of each section, it's a good idea to explain what we'll do in that section. I added this paragraph.}
-We begin by reviewing the ppE formalism. The original formalism (that we explain in detail in App.~\ref{appendix}) was developed by considering non-GR corrections to the binding energy $E$ and GW luminosity $\dot E$~\cite{Yunes:2009ke,Chatziioannou:2012rf}. The former (latter) correspond to conservative (dissipative) corrections. Here, we take a slightly different approach and consider corrections to the GW frequency evolution $\dot f$ and the Kepler's law $r(f)$, where $r$ is the orbital separation while $f$ is the GW frequency. This is because these two quantities directly determine the amplitude and phase corrections away from GR, and hence, the final expression are simpler than the original ones. Moreover, non-GR corrections to $\dot f$ and $r(f)$ have already been derived in the literature for many modified theories of gravity.
+We begin by reviewing the ppE formalism. The original formalism (that we explain in detail in App.~\ref{appendix}) was developed by considering non-GR corrections to the binding energy $E$ and GW luminosity $\dot E$~\cite{Yunes:2009ke,Chatziioannou:2012rf}. The former (latter) correspond to conservative (dissipative) corrections. Here, we take a slightly different approach and consider corrections to the GW frequency evolution $\dot f$ and the Kepler's law $r(f)$, where $r$ is the orbital separation while $f$ is the GW frequency. This is because these two quantities directly determine the amplitude and phase corrections away from GR, and hence, the final expressions are simpler than the original ones. Moreover, non-GR corrections to $\dot f$ and $r(f)$ have already been derived in the literature for many modified theories of gravity.
 
 ppE gravitational waveform for a compact binary inspiral in the Fourier domain is given by ~\cite{Yunes:2009ke}
 \begin{equation}\label{eq:2a}
@@ -322,18 +319,26 @@ When dissipative and conservative corrections enter at the same PN order, there 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
  \section{Example Theories}
- \vspace*{20pt}
+
 
 \ky{At the beginning of each subsection below, you need to explain what each theory is, how it's different from GR, why we care about that theory, what are }
 
  \subsection{Scalar-Tensor Theories}
- Dissipative correction dominates.  From \cite{Yunes:2016jcc},
+Scalar-tensor theories of gravity are some of the most well-eshtablished modified gravity theories where one or more scalar field(s) are introduced through non-minimal coupling, i.e., coupling of Ricci scalar in Einstein-Hilbert action with a function of scalar field(s)\cite{Berti:2015itd,Chiba:1997ms,PhysRevD.6.2077}. Such theories arise naturally as the dimensionally reduced effective theories of higher dimensional theories, like Kaluza-Klein \cite{Fujii:2003pa,Overduin:1998pn} and string theories \cite{Fujii:2003pa,Fujii:2004bg}, and also appear in brane-world scenario \cite{Randall:1999vf,Randall:1999ee}. Scalar-tensor theories have implications in cosmology as well since they are viable candidate for explaining dark-energy \cite{Brax:2004qh,PhysRevD.73.083510,PhysRevD.62.123510,PhysRevD.66.023525,Schimd:2004nq}, structure formation \cite{Brax:2005ew}, inflation \cite{Burd:1991ns,Barrow:1990nv,Banerjee:1993ct,Clifton:2011jh}, and primordial nucleosynthesis \cite{Coc:2006rt,Damour:1998ae,Larena:2005tu,Torres:1995je}. They also offer simple ways to self-consistently model possible variations in Newton's constant \cite{Clifton:2011jh}. A protoype scalar-tensor theory is Brans-Dicke theory, where a scalar gravitational field is postulated along with the metric, with an effective strength inversely proportional to the coupling parameter $\omega_{\BD}$ \cite{PhysRev.124.925,Scharre:2001hn}. So far the most stringent bound on $\omega_{\BD}$ has been found from Cassini-Huygens experiment on Shappiro time delay, which gives $\omega_{\BD}>4\times10^4$ \cite{Bertotti:2003rm,Zhang:2017sym}. Another extensively studied scalar-tensor theory is mono-scalar-tensor theory of Damour-Esposito-Far\`ese (DEF) gravity, which predicts nonperturbative scalarization phenomena for neutron stars \cite{Barausse:2012da,PhysRevLett.70.2220}. By combining the observational results from multiple pulsar systems and applying Markov-chain Monte Carlo simulations, the strongest upper bound on the scalarization parameter ($\beta_0$) has been obtained as $\beta_0\gtrsim -4.28$ at $68\%$ confidence level and $\beta_0\gtrsim -4.38$ at $90\%$ confidence level \cite{Shao:2017gwu}.
+
+In dynamic strong field scenario Scalar-tensor theories make predictions that are significantly different from GR predictions, which opens the possibility that such theories could be constrained by GW observation. Indeed, for Brans-Dicke  theory, it has been found that proposed LISA space interferometer could provide 10 times stronger constraint \cite{Scharre:2001hn}, a third-generation ground-based GW detector named Einstein Telescope could yield 100 times stronger constraint \cite{Zhang:2017sym}, while space-based DECIGO/BBO project could place $10^4$ times stronger constraint \cite{Yagi:2009zz} on the coupling parameter $\omega_{\BD}$ compared to the solar-system experiments.
+
+\st{Both BHs and NSs possess scalar hair. So I think I should not have a paragraph only for BHs.}
+So how the BHs in scalar-tensor theories are different from GR BHs? One prominent non-GR feature of Scalar-tensor BHs is that they can evade no-hair theorem and acquire scalar hair supported by time-dependent boundary conditions \cite{Berti:2013gfa}. Such time-dependence could arise either from cosmological evolution, or due to the slow motion of the black hole within the asymptotic spatial gradient in the scalar field \cite{Horbatsch:2011ye}. Because of the scalar charge, inspiriling binary black holes can emit dipole scalar radiation, given that the mass of the scalar particle is smaller than the orbital period ($m \ll \Omega$)\cite{Horbatsch:2011ye}. For scalar-tensor theories containing a single scalar field, such dipole radiation causes non-GR correction to GW phase with ppE paramaeter $\beta$ given by \cite{Jacobson:1999vr,Horbatsch:2011ye,Yunes:2016jcc}
  \begin{equation}
- \beta_{SC}=\frac{-5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
+ \beta_{\ST}=-\frac{5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{\ST}-m_2s_2^{\ST})^2\,,
  \end{equation}
+ with $b=-7$. Here, $\dot{\phi}$ is the growth rate of scalar field, $m_A$ is the individual mass, and $s_A^{\ST}\equiv[1+(1-\chi_A^2)^{1/2}]/2$ are the spin-dependent factors of BH scalar charges \cite{Horbatsch:2011ye} where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. Leading order correction in scalar-tensor theory is of dissipative kind, hence using Eq. \eqref{eq:2w2} we can write the ppE amplitude correction as
+ 
  \begin{equation}
- \alpha_{ST}=\frac{-5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{ST}-m_2s_2^{ST})^2
+ \alpha_{\ST}=-\frac{5}{48}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{\ST}-m_2s_2^{\ST})^2\,,
  \end{equation}
+with $a=-2$. One important fact here is that for scalar-tensor theories with time-varying G, dissipative and conservative corrections enter at the same order and one should follow the formalism of \ref{gdot} in order to calculate ppE parameters for such theories.
  
 
  
@@ -348,7 +353,7 @@ We now show the expressions of ppE parameters for EdGB gravity. The scalar monop
 \begin{equation}
  \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter. $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$,where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
+ Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter and $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$ \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
  \begin{equation}
  \alpha_\EDGB=-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
@@ -357,15 +362,13 @@ We now show the expressions of ppE parameters for EdGB gravity. The scalar monop
  
   \subsection{dCS Gravity}
   
-DCS gravity is described by Einstein-Hilbert action with a dynamical (pseudo)scalar field which is non-minimally coupled to the Pontryagin density with a coupling constant $\bar{\alpha}_{\DCS}$~\cite{Alexander:2009tp,Jackiw:2003pm}. Similar to EdGB gravity, dCS gravity arises as an effective field theory from the compactification of  heterotic string theory \cite{GREEN1984117,McNees:2015srl}. \sout{It} \ky{Nico told me to avoid starting a sentence with ``it''. It's always a good idea to explicitly say what we're referring to.} Such a theory is also important in the context of particle physics \cite{Alexander:2009tp,Mariz:2004cv,MARIZ2008312,PhysRevD.78.025029}, loop quantum gravity  \cite{PhysRevD.80.104007,Taveras:2008yf}, and inflationary cosmology \cite{Weinberg:2008hq}. Demanding that the critical length scale (below which higher curvature corrections beyond quadratic order cannot be neglected in the action) has to be smaller than the scale probed by table-top experiments, one finds $\sqrt{|\bar{\alpha}_{\DCS}|} < \mathcal{O}(10^8 \text{km})$ \cite{Yagi:2012ya}. Similar constraints have been placed from measurements of the frame-dragging effect by Gravity Probe B and LAGEOS satellites \cite{AliHaimoud:2011fw}.
+DCS gravity is described by Einstein-Hilbert action with a dynamical (pseudo)scalar field which is non-minimally coupled to the Pontryagin density with a coupling constant $\bar{\alpha}_{\DCS}$~\cite{Alexander:2009tp,Jackiw:2003pm}. Similar to EdGB gravity, dCS gravity arises as an effective field theory from the compactification of  heterotic string theory \cite{GREEN1984117,McNees:2015srl}. Such a theory is also important in the context of particle physics \cite{Alexander:2009tp,Mariz:2004cv,MARIZ2008312,PhysRevD.78.025029}, loop quantum gravity  \cite{PhysRevD.80.104007,Taveras:2008yf}, and inflationary cosmology \cite{Weinberg:2008hq}. Demanding that the critical length scale (below which higher curvature corrections beyond quadratic order cannot be neglected in the action) has to be smaller than the scale probed by table-top experiments, one finds $\sqrt{|\bar{\alpha}_{\DCS}|} < \mathcal{O}(10^8 \text{km})$ \cite{Yagi:2012ya}. Similar constraints have been placed from measurements of the frame-dragging effect by Gravity Probe B and LAGEOS satellites \cite{AliHaimoud:2011fw}.
 
-\ky{Notice that I added a topic sentence.}
 Can GW observations place stronger bounds on the theory? Current GW observations do not allow us to put any meaningful bounds on dCS gravity~\cite{Yunes:2016jcc} (see also~\cite{Yagi:2017zhb}). However, future observations have potential to place bounds on the theory that are six to seven orders of magnitude stronger than current bounds~\cite{Yagi:2012vf}. Such stronger bounds can be realized due to relatively strong gravitational field and large spins that source the pseudoscalar field. Measuring GWs from extreme mass ratio inspirals with LISA can also place bounds that are three orders of magnitude stronger than current bounds~\cite{Canizares:2012is}. 
 
 %Since any spherically symmetric solution of GR is a solution of dCS gravity as well \cite{Yunes:2007ss,Berti:2015itd}, it is difficult to distinguish it from GR. Also a large-curvature environment is required to have significant correction from dCS gravity, which makes binary black hole mergers a promising sector for this purpose. A projected bound on $\bar{\alpha}_{\DCS}$ has been calculated in Ref. \cite{Yagi:2012vf} from the numerical analysis of BBH mergers, compared to solar system experiments which gives six to seven orders of magnitude stronger constraint on $\bar{\alpha}_{\DCS}$. Also a numerical study of Extreme-Mass-Ratio Inspirals (EMRI) has been done in Ref. \cite{Canizares:2012is} and compared solar system bound it gives three orders of magnitude stronger constraint. Since equal-mass and equal-spin binaries do not give any correction for dCS gravity, recent GW observation events GW150914 and GW151226 by Advanced LIGO detectors could not place any constraint on this theory \cite{Yunes:2016jcc}. 
 
-\ky{Good topic sentence!}
-We now derive the expressions of ppE parameters for dCS gravity. While BHs in EdGB gravity possess scalar monopole charges, BHs in dCS gravity possess scalar dipole charges which induce scalar quadrupolar emission~\cite{Yagi:2011xp}. \ky{Scalar emission induces dissipative correction only. Conservative corrections come from somewhere else, as I now explain below.} On the other hand, scalar dipole charges induce a scalar interaction force between two BHs. Each BH also acquires a modification to the quadrupole moment away from the Kerr value. All of these modifications result in both dissipative and conservative corrections entering at the same order in gravitational waveforms. For spin-aligned binaries\footnote{See recent works~\cite{Loutrel:2018rxs,Loutrel:2018ydv} for precession equations in dCS gravity.}, corrections to the Kepler's law and frequency evolution in dCS gravity are given in~\cite{Yagi:2012vf} within the slow-rotation approximation for BHs, from which we can derive
+We now derive the expressions of ppE parameters for dCS gravity. While BHs in EdGB gravity possess scalar monopole charges, BHs in dCS gravity possess scalar dipole charges which induce scalar quadrupolar emission~\cite{Yagi:2011xp}. On the other hand, scalar dipole charges induce a scalar interaction force between two BHs. Each BH also acquires a modification to the quadrupole moment away from the Kerr value. All of these modifications result in both dissipative and conservative corrections entering at the same order in gravitational waveforms. For spin-aligned binaries\footnote{See recent works~\cite{Loutrel:2018rxs,Loutrel:2018ydv} for precession equations in dCS gravity.}, corrections to the Kepler's law and frequency evolution in dCS gravity are given in~\cite{Yagi:2012vf} within the slow-rotation approximation for BHs, from which we can derive
 \begin{align}\label{dcs:gamma_r}
 \gamma_r=&\frac{25}{256}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2 \nonumber \\ 
 &-\frac{201}{3584}\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2 +\frac{m_2^2}{m^2}\chi_1^2\right)\,,
@@ -388,7 +391,7 @@ with $a=4$, and
  \beta_{\DCS}=&\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right.\nonumber\\ 
  &\left. +\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 +\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]\,,
  \end{align}
-with $b=-1$. Here $\chi_{s,a}=(\chi_1 \pm \chi_2 )/2$ \ky{I've simplified the expression for $\chi_s$ and $\chi_a$. Although we don't explicitly say in my paper with Nico and Frans, the above $\beta$ expression is only valid for spin-aligned binaries.} are the symmetric and antisymmetric combinations of dimensionless spin parameters 
+with $b=-1$. Here $\chi_{s,a}=(\chi_1 \pm \chi_2 )/2$ are the symmetric and antisymmetric combinations of dimensionless spin parameters 
 %\footnote{$\chi_s$ is different from $\chi_{\text{eff}}\equiv (a_{||1}+a_{||2})/m$ in \cite{TheLIGOScientific:2016wfe}.} 
 %with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, 
 and $\delta_m=(m_1-m_2)/m$ is the fractional difference in masses relative to the total mass.
@@ -652,7 +655,6 @@ with $\Psi_{\GR}$ to leading PN order is given by \cite{Blanchet:1995ez}
 \Psi_{\GR}=2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}u^{-5}\,.
 \end{equation}
 
-\ky{I've created this new paragraph.}
 We can easily rewrite the above expressions using $\gamma_r$ and $c_r$. 
 Comparing Eq.~\eqref{eq:g} with Eq.~\eqref{eq:2k} we find
 \begin{equation}\label{eq:i}
