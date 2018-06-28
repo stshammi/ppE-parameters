@@ -20,7 +20,7 @@
 \usepackage{pifont}
 \usepackage{enumitem}
 \usepackage{color}
-\usepackage{ulem}
+%\usepackage{ulem}
 \usepackage{appendix}
 %\usepackage[toc,page]{appendix}
 \usepackage{comment}
@@ -336,33 +336,49 @@ Einstein Telescope, a third generation ground-base detector, can yield constrain
 
 Can BHs also possess scalar hair like NSs in scalar-tensor theories? BH no-hair theorem can be applied to many of scalar-tensor theories that prevents BHs to acquire scalar charges~\cite{Hawking:1972qk,Bekenstein:1995un,Sotiriou:2011dz,Hui:2012qt,Maselli:2015yva} including BD and DEF gravity, though exceptions exist, such as EdGB gravity~\cite{Yunes:2011we,Sotiriou:2013qea,Sotiriou:2014pfa,Silva:2017uqg,Doneva:2017bvd} that we explain in more detail in the next subsection. On the other hand, if the scalar field cosmologically evolves as a function of time, BHs can acquire scalar charges, known as the BH miracle hair growth~\cite{Jacobson:1999vr,Horbatsch:2011ye} (see also~\cite{Healy:2011ef,Berti:2013gfa} for related works). 
 
-\ky{I stop here. I'll check again after you modify this section.}
-
 %So how the BHs in scalar-tensor theories are different from GR BHs? One prominent non-GR feature of Scalar-tensor BHs is that they can evade no-hair theorem and acquire scalar hair supported by time-dependent boundary conditions \cite{Berti:2013gfa}. Such time-dependence could arise either from cosmological evolution, or due to the slow motion of the black hole within the asymptotic spatial gradient in the scalar field \cite{Horbatsch:2011ye}. Because of the scalar charge, inspiriling binary black holes can emit dipole scalar radiation, given that the mass of the scalar particle is smaller than the orbital period ($m \ll \Omega$)\cite{Horbatsch:2011ye}. 
 
-
-Both scalar hair of BHs and spontaneous or dynamic scalarization of NSs give non-GR corrections to GW phase and amplitude, which are captured in ppE parameters. Generic expression of correction to the phase is given by \cite{Freire:2012mg,Wex:2014nva}
+Scalar hair of compact objects in a binary produce scalar dipole radiation, which changes the evolution of the binary and modifies the gravitational waveform from that in GR. Using the orbital decay rate of compact binaries in scalar-tensor theories in~\cite{Freire:2012mg,Wex:2014nva}, one can read off non-GR corrections to $\dot f$ as \ky{Please check}
+\be
+\gamma_{\dot f} = \frac{5}{96} \eta ^{2/5}(\alpha_1-\alpha_2)^2\,,
+\ee
+with $c_{\dot f} = -2$.
+Given that the leading correction to the waveform is the dissipative one in scalar-tensor theories, one can use Eq.~\eqref{eq:2v} to derive the PPE phase correction as
 \be\label{eq:betaST}
-\beta_{\ST}=-\frac{5}{7168}\eta ^{2/5}(\alpha_A-\alpha_B)^2\,,
+\beta_{\ST}=-\frac{5}{7168}\eta ^{2/5}(\alpha_1-\alpha_2)^2\,,
 \ee
-with $b=-7$. Here $\alpha_A$ and $\alpha_B$ represent the scalar charges  of the binary components. Leading order correction in scalar-tensor theory is of dissipative kind, hence we can use Eq. \eqref{eq:2w2} to \eqref{eq:betaST} and obtain the ppE amplitude correction as
+with $b=-7$. Here $\alpha_A$ represents the scalar charge of the $A$th binary component.
+Using further Eq.~\eqref{eq:2w2}, one finds the amplitude correction as
 \be\label{eq:alphaST}
-\alpha_{\ST}=-\frac{5}{192}\eta ^{2/5}(\alpha_A-\alpha_B)^2\,,
+\alpha_{\ST}=-\frac{5}{192}\eta ^{2/5}(\alpha_1-\alpha_2)^2\,,
 \ee
-with $a=-2$. While Eqs. \eqref{eq:betaST} and \eqref{eq:alphaST} are applicable for both BH and NS binaries, for the simplest case of scalar-tensor theories containing a single scalar field, we can write an expression of $\beta$ for BH binaries as  \cite{Jacobson:1999vr,Horbatsch:2011ye,Yunes:2016jcc}
- \begin{equation}\label{eq:betaBH}
- \beta_{\dot{\phi}}=-\frac{5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1s_1^{\ST}-m_2s_2^{\ST})^2\,,
- \end{equation}
-where $\dot{\phi}$ is the growth rate of scalar field, $m_A$ is the individual mass, and $s_A^{\ST}\equiv[1+(1-\chi_A^2)^{1/2}]/2$ are the spin-dependent factors of BH scalar charges \cite{Horbatsch:2011ye} where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared.
-As for the specific case of NS binaries, ppE phase correction in BD theory is given by
-\be\label{eq:betaNS}
-\beta_{\NS}=-\frac{5}{7168}\eta ^{2/5}\kappa_D \mathcal{S}^2\,,
-\ee
-where $\kappa_D$ is a body dependent quantity which quantifies the dipolar self-gravity. $\mathcal{S}=s_p-s_c$ gives the difference in the sensitivites of the pulsar, $s_p$, and the companion, $s_c$. For both Eq. \eqref{eq:betaBH} and Eq. \eqref{eq:betaNS}, correction to the amplitude can calculated from Eq. \eqref{eq:2w2}.
-\st{Although I said ``NS binaries", I think Eq. \eqref{eq:betaNS} applies for NS-NS, NS-WD, and WD-WD binaries. I am not sure though.}
+with $a=-2$. 
 
-It is worth mentioning that dissipative and conservative corrections enter at the same order for scalar-tensor theories with time varying Newton's constant. For such theories Eq. \eqref{eq:betaST} and \eqref{eq:alphaST} do not give the leading order non-GR corrections, and One should follow the formalism of Sec.~\ref{gdot} in order to calculate ppE parameters.
-\st{In that case may be we should not give the example of BD theory above.........}
+\ky{I decided to restructure this paragraph.}
+The scalar charges $\alpha_A$ depend on specific theories and compact objects. For example, in situations where the BH no-hair theorem~\cite{Hawking:1972qk,Bekenstein:1995un,Sotiriou:2011dz} applies, $\alpha_A = 0$. On the other hand, if the scalar field is evolving cosmologically, BHs undergo \emph{miracle hair growth}~\cite{Jacobson:1999vr} and acquire scalar charges given by~\cite{Horbatsch:2011ye}
+\be
+\alpha_A = 2 \, m_A \, \dot \phi\, [1+(1-\chi_A^2)^{1/2}]\,,
+\ee
+where $\dot{\phi}$ is the growth rate of the scalar field, $m_A$ is individual masses and $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. The PPE phase parameter $\beta$ for binary BHs in such a situation was derived in~\cite{Yunes:2016jcc}. Another well-studied example is Brans-Dicke theory, where one can replace $(\alpha_1-\alpha_2)^2$ in Eqs.~\eqref{eq:betaST} and~\eqref{eq:alphaST} as $2 (s_1-s_2)^2/(2+\omega_\BD)$~\cite{Freire:2012mg}. Here $s_A$ is the sensitivity of the $A$th body and roughly equals to its compactness (0.5 for BHs and $\sim 0.2$ for NSs). PPE parameters in this theory has been found in~\cite{Chatziioannou:2012rf}. 
+
+
+%While Eqs. \eqref{eq:betaST} and \eqref{eq:alphaST} are applicable for both BH and NS binaries, for the simplest case of scalar-tensor theories containing a single scalar field, we can write an expression of $\beta$ for BH binaries as  \cite{Jacobson:1999vr,Horbatsch:2011ye,Yunes:2016jcc}
+% \begin{equation}\label{eq:betaBH}
+% \beta_{\dot{\phi}}=-\frac{5}{1792}\dot{\phi}^2\eta^{\frac{2}{5}}(m_1\tilde s_1^{\ST}-m_2\tilde s_2^{\ST})^2\,,
+% \end{equation}
+%where $\dot{\phi}$ is the growth rate of scalar field, $m_A$ is the individual mass, and $\tilde s_A^{\ST}\equiv[1+(1-\chi_A^2)^{1/2}]/2$ are the spin-dependent factors of BH scalar charges \cite{Horbatsch:2011ye} where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared.
+%As for the specific case of NS binaries, ppE phase correction in BD theory is given by
+%\be\label{eq:betaNS}
+%\beta_{\BD}=-\frac{5}{3584}\frac{\eta ^{2/5}}{2+\omega_\BD} (s_1^\BD-s_2^\BD)^2\,,
+%\ee
+%where $s_A^\BD$ are sensitivities. For both Eq. \eqref{eq:betaBH} and Eq. \eqref{eq:betaNS}, correction to the amplitude can calculated from Eq. \eqref{eq:2w2}.
+%\st{Although I said ``NS binaries", I think Eq. \eqref{eq:betaNS} applies for NS-NS, NS-WD, and WD-WD binaries. I am not sure though.}
+
+\ky{I modified this paragraph. Please check.}
+In some of scalar-tensor theories, the gravitational constant $G$ is a function of the scalar field, and thus it can vary with time if the scalar field is cosmologically evolving. As we will see in Sec.~\ref{gdot}, such an effect enters at -4PN order in gravitational waveforms, and hence, the effect of scalar dipole radiation discussed here (entering at -1PN order) becomes subdominant in terms of a PN order counting. However, we note that these effects are completely independent and should be treated separately. For example, the latter -1PN effect can dominate the former -4PN effect if the scalar field is almost time independent.
+
+%It is worth mentioning that dissipative and conservative corrections enter at the same order for scalar-tensor theories with time varying Newton's constant. For such theories Eq. \eqref{eq:betaST} and \eqref{eq:alphaST} do not give the leading order non-GR corrections, and One should follow the formalism of Sec.~\ref{gdot} in order to calculate ppE parameters.
+%\st{In that case may be we should not give the example of BD theory above.........}
  
   \subsection{EdGB Gravity}
 EdGB gravity is a well-known extension of GR, which emerges naturally in the framework of low-energy effective string theories  and gives one of the simplest viable high-energy modifications to GR \cite{Moura:2006pz,Pani:2009wy}. It also arises as a special case of Horndeski gravity \cite{Zhang:2017unx,Berti:2015itd}, which is the most generic scalar-tensor theory with at most second-order derivatives in the field equations. One obtains the EdGB action by adding a quadratic-curvature term to the Einstein-Hilbert action, where the scalar field (dilaton) is non-minimally coupled to the Gauss-Bonnet term with a coupling constant $\bar{\alpha}_\EDGB$ \cite{Kanti:1995vq}. A stringent upper bound on such a coupling constant has been placed using the orbital decay measurement of a BH low-mass X-ray binary (LMXB) as $\sqrt{|\bar{\alpha}_\EDGB|} < 1.9\times10^5$ cm~\cite{Yagi:2012gp}. A similar upper bound has been placed from the existence of BHs~\cite{Pani:2009wy}. Equation-of-state-dependent bounds from the maximum mass of neutron stars have also been derived in~\cite{pani-EDGB-NS}. 
@@ -372,9 +388,9 @@ BHs in EdGB theory are of particular interest since they are fundamentally diffe
 
 We now show the expressions of ppE parameters for EdGB gravity. The scalar monopole charge of EdGB BHs in binaries generates scalar dipole radiation, which leads to an earlier coalescence of BH binaries compared to GR. Such scalar radiation modifies the GW phase with the ppE parameter $\beta$ as~\cite{Yunes:2016jcc,Yagi:2011xp}
 \begin{equation}
- \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
+ \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2\tilde s_2^\EDGB-m_2^2\tilde s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
- Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter and $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$ \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
+ Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter and $s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $\tilde s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$ \cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq. \eqref{eq:2w2} to calculate the amplitude ppE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
  \begin{equation}
  \alpha_\EDGB=-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2s_2^\EDGB-m_2^2s_1^\EDGB)^2}{m^4\eta^{\frac{18}{5}}}\,.
  \end{equation}
