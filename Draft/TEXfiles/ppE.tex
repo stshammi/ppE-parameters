@@ -9,7 +9,7 @@
 \usepackage{dcolumn}
 \usepackage[dvips]{graphicx}
 \usepackage{graphics}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
 \usepackage{latexsym}
 \usepackage{rotating}
 \usepackage[colorlinks=true]{hyperref}
@@ -22,6 +22,7 @@
 \usepackage{color}
 %\usepackage{ulem}
 \usepackage{appendix}
+\usepackage[utf8]{inputenc}
 %\usepackage[toc,page]{appendix}
 \usepackage{comment}
 %% Try to control orphans, widows, and extra whitespace
@@ -41,6 +42,9 @@
 
 \newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
 \newcommand{\BD}{{\mbox{\tiny BD}}}
+\newcommand{\PPE}{{\mbox{\tiny ppE}}}
+\newcommand{\KG}{{\mbox{\tiny KG}}}
+\newcommand{\EA}{{\mbox{\tiny EA}}}
 \newcommand{\ST}{{\mbox{\tiny ST}}}
 \newcommand{\NS}{{\mbox{\tiny NS}}}
 \newcommand{\DCS}{{\mbox{\tiny dCS}}}
@@ -338,7 +342,7 @@ Can BHs also possess scalar hair like NSs in scalar-tensor theories? BH no-hair 
 
 %So how the BHs in scalar-tensor theories are different from GR BHs? One prominent non-GR feature of Scalar-tensor BHs is that they can evade no-hair theorem and acquire scalar hair supported by time-dependent boundary conditions \cite{Berti:2013gfa}. Such time-dependence could arise either from cosmological evolution, or due to the slow motion of the black hole within the asymptotic spatial gradient in the scalar field \cite{Horbatsch:2011ye}. Because of the scalar charge, inspiriling binary black holes can emit dipole scalar radiation, given that the mass of the scalar particle is smaller than the orbital period ($m \ll \Omega$)\cite{Horbatsch:2011ye}. 
 
-Scalar hair of compact objects in a binary produce scalar dipole radiation, which changes the evolution of the binary and modifies the gravitational waveform from that in GR. Using the orbital decay rate of compact binaries in scalar-tensor theories in~\cite{Freire:2012mg,Wex:2014nva}, one can read off non-GR corrections to $\dot f$ as \ky{Please check}
+Scalar hair of compact objects in a binary produce scalar dipole radiation, which changes the evolution of the binary and modifies the gravitational waveform from that in GR. Using the orbital decay rate of compact binaries in scalar-tensor theories in~\cite{Freire:2012mg,Wex:2014nva}, one can read off non-GR corrections to $\dot f$ as
 \be
 \gamma_{\dot f} = \frac{5}{96} \eta ^{2/5}(\alpha_1-\alpha_2)^2\,,
 \ee
@@ -354,7 +358,7 @@ Using further Eq.~\eqref{eq:2w2}, one finds the amplitude correction as
 \ee
 with $a=-2$. 
 
-\ky{I decided to restructure this paragraph.}
+
 The scalar charges $\alpha_A$ depend on specific theories and compact objects. For example, in situations where the BH no-hair theorem~\cite{Hawking:1972qk,Bekenstein:1995un,Sotiriou:2011dz} applies, $\alpha_A = 0$. On the other hand, if the scalar field is evolving cosmologically, BHs undergo \emph{miracle hair growth}~\cite{Jacobson:1999vr} and acquire scalar charges given by~\cite{Horbatsch:2011ye}
 \be
 \alpha_A = 2 \, m_A \, \dot \phi\, [1+(1-\chi_A^2)^{1/2}]\,,
@@ -374,8 +378,8 @@ where $\dot{\phi}$ is the growth rate of the scalar field, $m_A$ is individual m
 %where $s_A^\BD$ are sensitivities. For both Eq. \eqref{eq:betaBH} and Eq. \eqref{eq:betaNS}, correction to the amplitude can calculated from Eq. \eqref{eq:2w2}.
 %\st{Although I said ``NS binaries", I think Eq. \eqref{eq:betaNS} applies for NS-NS, NS-WD, and WD-WD binaries. I am not sure though.}
 
-\ky{I modified this paragraph. Please check.}
-In some of scalar-tensor theories, the gravitational constant $G$ is a function of the scalar field, and thus it can vary with time if the scalar field is cosmologically evolving. As we will see in Sec.~\ref{gdot}, such an effect enters at -4PN order in gravitational waveforms, and hence, the effect of scalar dipole radiation discussed here (entering at -1PN order) becomes subdominant in terms of a PN order counting. However, we note that these effects are completely independent and should be treated separately. For example, the latter -1PN effect can dominate the former -4PN effect if the scalar field is almost time independent.
+
+In some of scalar-tensor theories, the gravitational constant $G$ is a function of the scalar field, and thus it can vary with time if the scalar field is cosmologically evolving. As we will see in Sec.~\ref{gdot}, such an effect enters at -4PN order in gravitational waveforms, and hence, the effect of scalar dipole radiation discussed here (entering at -1PN order) becomes subdominant in terms of a PN order counting. However, we note that these effects are completely independent and should be treated separately. For example, in compact stellar binaries the latter -1PN effect can dominate the former -4PN effect if the scalar field is almost time independent.
 
 %It is worth mentioning that dissipative and conservative corrections enter at the same order for scalar-tensor theories with time varying Newton's constant. For such theories Eq. \eqref{eq:betaST} and \eqref{eq:alphaST} do not give the leading order non-GR corrections, and One should follow the formalism of Sec.~\ref{gdot} in order to calculate ppE parameters.
 %\st{In that case may be we should not give the example of BD theory above.........}
@@ -433,23 +437,47 @@ with $b=-1$. Here $\chi_{s,a}=(\chi_1 \pm \chi_2 )/2$ are the symmetric and anti
 %with $a_{||A}$ representing the projection of the (dimensional) spin vector $\vec{a}_A$ onto the unit orbital angular momentum vector, 
 and $\delta_m=(m_1-m_2)/m$ is the fractional difference in masses relative to the total mass.
  
- \subsection{Einstein-$\AE$ther Theory}
- Dissipative correction dominates. From \cite{Hansen:2014ewa},
- \begin{equation}
- \beta_{\AE}=-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{3584 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}
- \end{equation}
- \begin{equation}
- \alpha_{\AE}=-\frac{5 \eta ^{2/5} \left(s_1-s_2\right){}^2 \left(\left(c_{14}-2\right) w_0^3-w_1^3\right)}{96 c_{14} w_0^3 w_1^3 \left(\text{$G_N$} \left(s_1-1\right) \left(s_2-1\right)\right){}^{4/3}}
- \end{equation}
+ \subsection{Einstein-$\AE$ther Theory and Khronometric Theory}
  
- \subsection{KG Theory}
- Dissipative correction dominates. From \cite{Hansen:2014ewa},
- \begin{equation}
- \alpha_{KG}=-\frac{5 \sqrt{\alpha^{KG}}\bigg(\frac{(\beta^{KG}-1)(2+\beta^{KG}+3\lambda^{KG})}{(\alpha^{KG}-2)(\beta^{KG}+\lambda^{KG})}\bigg)^{3/2}\eta ^{2/5} (\text{$s_1$}-\text{$s_2$})^2}{96 (\text{$G_N$} (\text{$s_1$}-1) (\text{$s_2$}-1))^{4/3}}
- \end{equation}
- \begin{equation}
- \beta_{KG}=-\frac{5 \sqrt{\alpha^{KG}}\bigg(\frac{(\beta^{KG}-1)(2+\beta^{KG}+3\lambda^{KG})}{(\alpha^{KG}-2)(\beta^{KG}+\lambda^{KG})}\bigg)^{3/2}\eta ^{2/5} (\text{$s_1$}-\text{$s_2$})^2}{3584(\text{$G_N$} (\text{$s_1$}-1) (\text{$s_2$}-1))^{4/3}}
- \end{equation}
+  Einstein-$\AE$ther (EA) theory is a vector-tensor theory of gravitation, where along with the metric, the spacetime is endowed with a dynamical timelike unit vector field ($\AE$ther) \cite{Jacobson:2000xp,Jacobson:2008aj}. Such a vector field specifies a particular rest frame at each point of spacetime, and hence breaks the local Lorentz symmetry \cite{Jacobson:2000xp,Jacobson:2008aj}. Magnitude of Lorentz violation is determined by four coupling parameters of the theory: $c_{\pm}$ are the two independent parameters, and the remaining two can be expressed in terms of the former two\cite{Foster:2005dk,Jacobson:2008aj}. One of the motivations for studying EA theory is that it offers diffeomorphism invariant physics with preferred frame effects, and allows one to construct a Lorentz-violating theory without abandoning the framework of GR \cite{Jacobson:2008aj}. Also, such theories are candidates of low-energy descriptions of quantum gravity, since a number of approaches suggest that Lorentz symmetry might be broken in quantum gravity \cite{Blas:2014aca,Horava:2009uw}. The presence of a Lorentz-violating vector field can have significant impact on cosmology, such as the renormalization of Newton's constant \cite{Carroll:2004ai},  and changing purtabtions in early universe which can leave imprint on CMB \cite{Kanno:2006ty,Lim:2004js,Li:2007vz}.
+
+%Both EA theory an khronometri gravity pass all test, given that the coupling parameters are small.
+ 
+
+
+ 
+ Lorentz-violating theories predict interesting non-GR phenomena which include extra gravitational degrees of freedom. In particular, along with the spin-2 gravitational perturbation of GR, EA theory predicts the existence of spin-1 and spin-0 perturbations \cite{Foster:2006az,Jacobson:2004ts,PhysRevD.76.084033}. Such modes of perturbation propagate at speeds that are functions of coupling parameters $c_i$, and in general differ from the speed of light \cite{Jacobson:2004ts}. Static and spherically symmetric NS solutions exist in EA theory \cite{Eling:2007xh,Eling:2006df}, as well as solutions representing isolated non-spining NSs moving slowly relative to $\AE$ther \cite{Yagi:2013ava}. For a certain parameter range and depending on the nuclear equation of state, such solutions lead to lower maximum neutron star masses, and larger surface redshifts for a particular mass \cite{Eling:2007xh}. As for the BHs, the requirement of a causal black hole implies that along with the metric horizon, BHs in EA theory should be furnished with spin-0, spin-1, and spin-2 horizons \cite{Eling:2006ec}. Depending on the propagation speed of the corresponding field, these horzions lie at different locations \cite{Berti:2015itd,Eling:2006ec}. Although time-independent, sphercially symmetric black hole solutions have been obtained numerically, rotating black hole solutions in EA theory are yet to be found \cite{Eling:2006ec}.
+ 
+ 
+Khronometric theory is a variant of EA theory, where the $\AE$ther field is restricted to be hypersurface-orthogonal. Such a theory arises as a low-energy limit of Ho\v{r}ava gravity, a power-counting renormalizable quantum gravity model with only spatial diffeomorphism invariance \cite{Blas:2009qj,Berti:2015itd,Horava:2009uw,Nishioka:2009iq,Visser:2009fg}. The restriction of hyepersurface-orthogonality implies that instead of four coupling parameters, the theory can be expressed as a function of three coupling parameters. Similar to EA theory, khronometric theory has only two independent parameters ($\beta_{\KG}$,$\lambda_{\KG}$), and the third parameter can be expressed in terms of the former two. Although most of the predictions of EA theory are carried over to khronometric theory, there are few exceptions. Because of the hypersurface-orthogonality constraint, there is no propagating gravitational vector mode in khronometric theory. Spherically symmetric solutions for khronometric theory are identical to those of EA theory, hence the properties of non-rotating  NS in EA theory also applies to khronometric theory \cite{Berti:2015itd}. As for the BHs, the spin-1 horizon for the spin-1 field is absent, since there is no propagating vector mode \cite{Berti:2015itd}.
+
+Both EA and khronometric theory predict two (dimensionless) preferred-frame PPN parameters in weak field \cite{Foster:2005dk}, which can be constrained  from solar system experiments to very small values of $|\alpha_1| \lesssim 10^{-4}$ (from  orbital polarization effect bounded by lunar laser ranging and binary pulsar observations) and $|\alpha_2| \lesssim 10^{-7}$ (from a spin precession effect bounded by the alignment of the solar spin with the ecliptic) \cite{Bailey:2006fd,Foster:2005dk,Will:2005va}. More relativistic Lorentz-violating effects are controlled by ($c_+,c_-$) and ($\beta_{\KG},\lambda_{\KG}$) in EA theory and in khronometric theory respectively \cite{Yagi:2013qpa}. Stringent constraints on these parameters have been obtained by binary pulsar observations \cite{Yagi:2013ava,Yagi:2013qpa} and cosmological observations \cite{Audren:2014hza,Audren:2013dwa} as $c_+ \lesssim 0.03$, $c_- \lesssim 0.03$ for EA theory, and, $\beta_{\KG} \lesssim 0.005$ and $\lambda_{\KG} \lesssim 0.1$ for khronometric theory \cite{Hansen:2014ewa}. Further constraints come from the requirement that Big Bang nucleosynthesis elemental abundances are in agreement with the observations, and such constraints are much stronger for khronometric theory than that of EA theory \cite{Audren:2013dwa}. In addition to the observational constraints, theoretical constraints come from the requirement of positive energy \cite{Eling:2005zq} and the absence of gravitational Cherenkov radiation \cite{Elliott:2005va}.
+ 
+ 
+ 
+How stringent are the constraints on Lorentz-violation which are attainable from GW observations? Provided that the GW signal is from non-spinning NS binaries, numerical study shows that the second-generation detectors alone cannot place bounds on Lorentz violation that are more stringent than the current binary pulsar bounds \cite{Hansen:2014ewa}. However, third-generation ground and space-based detectors would be able to place constraints that are comparable, and in some cases, stronger than current bounds approximately by factor of 2 \cite{Hansen:2014ewa}. If the GW signal has a coincident electromagnetic counterpart, even when using  the second generation detector, constraints on  $c_+$ and $\beta_{\KG}$ can be obtained which are at least 10 orders of magnitude more stringent than the current binary pulsar constraint \cite{Hansen:2014ewa}.  Indeed, recent gravitational-wave event GW170817 \cite{TheLIGOScientific:2017qsa} and gamma-ray burst GRB 170817A \cite{Monitor:2017mdv} placed constraints on $c_+$ and $\beta_{\KG}$ that are 13 orders of magnitude stronger than the binary pulsar constraints \cite{Gumrukcuoglu:2017ijh,Oost:2018tcv}. Projected constraints in black hole binaries are not available, since such analysis requires the black hole sensitivites beforehand, which are yet to be obtained in Lorentz-violating theories \cite{Hansen:2014ewa}.
+
+Now we move on to the derivation of ppE parameters in EA and khronometric theories. The propagation of scalar and vector modes is responsible for dipole radiation and loss of angular momentum in binary systems. Such non-GR effects increase the rate of orbital decay and lead to  ppE phase correction in EA theory as \cite{Hansen:2014ewa}
+ \begin{align}
+ \beta_{\EA}=-&\frac{5}{3584}\eta ^{2/5} (s_1-s_2)^2 \times \nonumber\\
+ &\frac{((c_{14}-2) (w_0^{\EA})^3-(w_1^{\EA})^3)}{c_{14} (w_0^{\EA})^3 (w_1^{\EA})^3 (G_N (s_1-1) (s_2-1))^{4/3}}\,,
+ \end{align}
+with $b=-7$. Here, $w_0^{\EA}$, $w_1^{\EA}$, and $w_2^{\EA}$ are propagation speeds of the spin-0, spin-1, and spin-2 modes respectively, $G_N$ is the Newtonian gravitational constant measured locally by Cavendish-type experiments, and $c_{14}\equiv c_1+c_4$. Leading order correction in Lorentz-violating theories comes from the dissipative sector \cite{Hansen:2014ewa}, hence using Eq. \eqref{eq:2w2} ppE amplitude correction can be written as
+ \begin{align}
+ \alpha_{\EA}=-&\frac{5}{96}\eta ^{2/5} (s_1-s_2)^2 \times \nonumber\\
+ & \frac{((c_{14}-2) (w_0^{\EA})^3-(w_1^{\EA})^3)}{c_{14} (w_0^{\EA})^3 (w_1^{\EA})^3 (G_N (s_1-1) (s_2-1))^{4/3}}\,,
+ \end{align}
+ with $a=-2$.  Similar to EA theory, ppE parameters in khronometric theory can be found as \cite{Hansen:2014ewa}
+ \begin{align}
+ \beta_{\PPE, \KG}=-&\frac{5}{3584}\eta ^{2/5}\sqrt{\alpha_{\KG}}\frac{(s_1-s_2)^2}{(G_N (s_1-1) (s_2-1))^{4/3}} \times \nonumber\\
+ &\left(\frac{(\beta_{\KG}-1)(2+\beta_{\KG}+3\lambda_{\KG})}{(\alpha_{\KG}-2)(\beta_{\KG}+\lambda_{\KG})}\right)^{3/2}\,,
+ \end{align}
+ with $b=-7$, and
+ \begin{align}
+ \alpha_{\PPE, \KG}=-&\frac{5}{96} \eta ^{2/5}\sqrt{\alpha_{\KG}}\frac{(s_1-s_2)^2}{(G_N (s_1-1) (s_2-1))^{4/3}} \times \nonumber\\
+ &\left(\frac{(\beta_{\KG}-1)(2+\beta_{\KG}+3\lambda_{\KG})}{(\alpha_{\KG}-2)(\beta_{\KG}+\lambda_{\KG})}\right)^{3/2}\,,
+ \end{align}
+ with $a=-2$. Here $\alpha_{\KG}$ is a coupling parameter which can be expressed in terms of ($\beta_{\KG},\lambda_{\KG}$) when saturating solar system bounds as $\alpha_{\KG}\equiv \alpha_1 (\beta_{\KG}-1)/4+2\beta_{\KG}$, where $\alpha_1$ is the ppN parameter predicted by khronometric theory.
 
  \subsection{Non-Commutative Gravity}
  Dissipative and conservative correction enters at same order. \cite{Kobakhidze:2016cqh}
