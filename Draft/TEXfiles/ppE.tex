@@ -84,6 +84,54 @@ Something goes here
 
 \ky{Also, we should mention that we focus on modifications in the generation of GWs and PPE parameters for modifications in the propagation of GWs can be found in~\cite{Mirshekari:2011yq,Yunes:2016jcc,Nishizawa:2017nef}.}
 
+{
+%\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+%\renewcommand{\arraystretch}{1.2}
+\begingroup
+\begin{table*}[htb]
+\begin{centering}
+\begin{tabular}{c|c|c|c|c}
+\hline
+\hline
+\noalign{\smallskip}
+\multirow{2}{*}{Theories}&\multicolumn{4}{c}{ppE Parameters}\\ 
+&  $\beta$ & $b$ & $\alpha$   & $a$  \\ \hline
+Scalar-Tensor Theories & $-\frac{5}{7168}\eta ^{2/5}(\alpha_1-\alpha_2)^2$&-7&$-\frac{5}{192}\eta ^{2/5}(\alpha_1-\alpha_2)^2$&-2\\ \hline
+EdGB Gravity&$-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2\tilde s_2^\EDGB-m_2^2\tilde s_1^\EDGB)^2}{m^4\eta^{18/5}}$&-7&$-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2 \tilde s_2^\EDGB-m_2^2 \tilde s_1^\EDGB)^2}{m^4\eta^{18/5}}$&-2\\ \hline
+dCS Gravity& $\begin{aligned}
+&\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right.\nonumber\\ 
+ &\left. +\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 +\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]
+\end{aligned} $ &-1& $\begin{aligned}
+&\frac{185627}{1107456}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right. \nonumber\\ 
+ &\left. +\left(1-\frac{53408 \eta }{14279}\right) \chi_a^2+\left(1-\frac{3708 \eta }{14279}\right) \chi_s^2\right]
+\end{aligned} $&4\\ \hline
+Einstein-\AE ther Theory& $\begin{aligned}
+&-\frac{5}{3584}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2\nonumber\\
+ & \times \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [(1-s_1^\EA) (1-s_2^\EA)]^{4/3}}
+\end{aligned}$  & -7 & $\begin{aligned}
+&-\frac{5}{96}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2 \nonumber\\
+ & \times  \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}}
+\end{aligned}$& -2\\ \hline
+Khronometric Theory&$\begin{aligned}
+&-\frac{5}{96} \eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
+ & \times \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}
+\end{aligned}$&-7&$\begin{aligned}
+&-\frac{5}{96} \eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
+ & \times \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}\
+\end{aligned}$&-2 \\ \hline 
+Noncommutative Gravity & $-\frac{75}{256}\eta ^{-4/5}(2 \eta -1) \Lambda ^2$ &-1& $-\frac{3}{8}\eta ^{-4/5}(2 \eta -1) \Lambda ^2$ &4\\ \hline
+Varying-G Theories&$-\frac{75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)$& -13 & $-\frac{5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)$ &-8\\ 
+\noalign{\smallskip}
+\hline
+\hline
+\end{tabular}
+\end{centering}
+\caption{ppE parameters in different modified theories of gravity. $\beta$ and $b$ give the non-GR corrections to GW phase, while $\alpha$ and $a$ give the non-GR corrections to GW amplitude in Fourier space.}
+\label{table:ppE}
+\end{table*}
+\endgroup
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{ppE Waveform}\label{section:ppE}
 We begin by reviewing the ppE formalism. The original formalism (that we explain in detail in App.~\ref{appendix}) was developed by considering non-GR corrections to the binding energy $E$ and GW luminosity $\dot E$~\cite{Yunes:2009ke,Chatziioannou:2012rf}. The former (latter) correspond to conservative (dissipative) corrections. Here, we take a slightly different approach and consider corrections to the GW frequency evolution $\dot f$ and the Kepler's law $r(f)$, where $r$ is the orbital separation while $f$ is the GW frequency. This is because these two quantities directly determine the amplitude and phase corrections away from GR, and hence, the final expressions are simpler than the original ones. Moreover, non-GR corrections to $\dot f$ and $r(f)$ have already been derived in the literature for many modified theories of gravity.
@@ -561,13 +609,13 @@ where $t_0$ is the time of coalescence. Here we assumed that the spatial variati
  \end{equation}
  which is derived from the conservation of specific angular momentum $j\equiv\sqrt{Gmr}$. Evolution of orbital angular frequency can be obtained from Kepler's third law as
  \begin{equation}\label{eq:3.7a}
- \dot{\Omega}=\frac{1}{2\Omega r^3}\left(m\dot{G}_0+\dot{m}_0G-3mG\frac{\dot{r}}{a}\right)\,.
+ \dot{\Omega}=\frac{1}{2\Omega r^3}\left(m\dot{G}_0+\dot{m}_0G-3mG\frac{\dot{r}}{r}\right)\,.
  \end{equation}
 Using binary seperation shift $\dot{r}\equiv \dot{r}_{\GW}+\dot{r}_H$ in Eq. \eqref{eq:3.7a}, we can find the GW frequency evolution upto 2PN order as
 \begin{align} \label{eq:3.7b}
  \dot{f}=\frac{\dot{\Omega}}{\pi}=& \frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\left[1+\frac{5}{48 G^{8/3}\eta}(\dot{m}_0G+ \right.\nonumber\\ & \left. m\dot{G}_0)x^{-4} -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x+4\pi x^{3/2}\right.\nonumber\\ & \left. + \left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right]\,,
 \end{align}
-where $x=v^2=(\pi M f)^{2/3}$ is the squared velocity of the relative motion. Here we considered only leading order correction to frequency evolution which enters in -4PN order. We can integrate Eq. \eqref{eq:3.7b} to obtain time before coalescence $t(f)$ and the GW phase $\phi(f)\equiv \int 2 \pi f dt \equiv \int\frac{2\pi f}{\dot{f}}df$ as
+where $x=v^2=(\pi m f)^{2/3}$ is the squared velocity of the relative motion. Here we considered only leading order correction to frequency evolution which enters in -4PN order. We can integrate Eq. \eqref{eq:3.7b} to obtain time before coalescence $t(f)$ and the GW phase $\phi(f)\equiv \int 2 \pi f dt \equiv \int\frac{2\pi f}{\dot{f}}df$ as
 
 \bw
 \begin{align}
@@ -590,7 +638,7 @@ The GW phase in the Fourier space is given by,
 
 From Eq. \eqref{eq:3.7c}, $b=-13$  and we can find $\beta$ as
  \begin{align}\label{eq:beta_gdot}
- \beta_{\dot{G}}=\frac{-75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
+ \beta_{\dot{G}}=-\frac{75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
   \end{align}
  \ew
 In order to calculate $\alpha$ we have to write the amplitude in Fourier space explicitlty in terms of $G$ and the binary mass parameters, which is already given in Eq. \eqref{eq:2e}. Further using Kepler's law to Eq. \eqref{eq:2e} gives,
@@ -609,7 +657,7 @@ Using Eqs. \eqref{eq:3.7a2}, \eqref{eq:3.7a3}, and \eqref{eq:3.7a4} in Eq. \eqre
 \end{equation}
 where
 \begin{equation}\label{eq:3.7d2}
- \alpha_{\dot{G}}=\frac{-5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
+ \alpha_{\dot{G}}=-\frac{5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)\,.
  \end{equation}
 \st{I added this paragraph and the next one}. ppE parameters in Eqs. \eqref{eq:beta_gdot} and \eqref{eq:3.7d2} do not match with the previous work on varying-G theories in Ref. \cite{Yunes:2009bv}. The discrepancy arises for two reasons: the masses of the binary components were kept constant in \cite{Yunes:2009bv}, and a term was missing in the energy-balance equation. The assumption of constant mass is not applicable for compact stellar binaries, where the gravitational self-energy is not negligible. The second reason is explained in App. \ref{appendix_2}, where we derived the GW frequency evolution from energy-balance law. \st{I still do not know if the first argument applies for black holes, since the binding energy of a black hole does not really make sense. I have to think about it. Also I need to contact Nico to make sure whether Brans-Dicke theory is varying-G theory or not. If BD theory has time-varying G, then at least we have one example varying-G theory where mass of a black hole is also a variable. For now I keep it as `compact stellar binary'}
 
@@ -621,10 +669,8 @@ Eqs. \eqref{eq:beta_gdot} and \eqref{eq:3.7d2} can be used to constrain varying-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{comment}
-  \newpage
- \section{Table}
 \begin{tabular}{ |p{1cm}|p{6.9cm}|p{0.4cm}|p{6cm}|p{0.3cm}|}
- \hline
+\hline
  \multicolumn{5}{|c|}{ppE Parameters}\\
  \hline
  \tiny Theories& $\beta$ & $b$ & $\alpha$& a\\
@@ -654,6 +700,8 @@ Eqs. \eqref{eq:beta_gdot} and \eqref{eq:3.7d2} can be used to constrain varying-
 \end{tabular}
 \end{comment}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
 \label{sec:conclusions}
@@ -663,7 +711,7 @@ Eqs. \eqref{eq:beta_gdot} and \eqref{eq:3.7d2} can be used to constrain varying-
 We would like to thank Nicol\' as Yunes for fruitful discussions.
 K.Y. would like to acknowledge networking support by the COST Action GWverse CA16104.
 
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% 
  \appendix 
  
  \section{Original ppE Formalism}
