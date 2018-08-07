@@ -144,40 +144,54 @@ PPE waveforms due to modifications in the propagation sector can be found in Ref
 
 %5. Organization of paper.
 
-
-
 {
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
 \renewcommand{\arraystretch}{2.}
 \begingroup 
 \begin{table*}[htb]
 \begin{centering}
-\begin{tabular}{c|c|c}
+\begin{tabular}{c|c|c|c}
 \hline
 \hline
 \noalign{\smallskip}
-\multirow{2}{*}{Theories}&\multicolumn{2}{c}{PPE Phase Parameters}\\ \cline{2-3}
-& Magnitude ($\beta$)   & Exponent ($b$)  \\ \hline
+\multirow{2}{*}{Theories}&\multicolumn{2}{c|}{PPE Phase Parameters} & \multirow{2}{*}{Binary Type}\\ \cline{2-3}
+& Magnitude ($\beta$)   & Exp. ($b$) &  \\ \hline
  %Theories&Magnitude Correction,$\beta$ & Exponent Correction,$b$\\ \hline
-Scalar-Tensor Theories~\cite{Horbatsch:2011ye}&$-\frac{5}{7168}\eta ^{2/5}(\alpha_1-\alpha_2)^2$&-7\\ \hline
-EdGB Gravity~\cite{Yagi:2011xp}&$-\frac{5}{7168}\zeta_\EDGB\frac{\left(m_1^2\tilde s_2^\EDGB-m_2^2\tilde s_1^\EDGB\right)^2}{m^4\eta^{18/5}}$&-7\\ \hline
+Scalar-Tensor Theories~\cite{Scharre:2001hn,Berti:2004bd}&$-\frac{5}{7168}\eta ^{2/5}(\alpha_1-\alpha_2)^2$& $-7$ & Any\\ \hline
+EdGB Gravity~\cite{Yagi:2011xp}&$-\frac{5}{7168}\zeta_\EDGB\frac{\left(m_1^2\tilde s_2^\EDGB-m_2^2\tilde s_1^\EDGB\right)^2}{m^4\eta^{18/5}}$&$-7$ & Any\\ \hline
 dCS Gravity~\cite{Yagi:2012vf,Yunes:2016jcc}&$\frac{1549225}{11812864}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{16068 \eta }{61969}\right)\chi_a^2 +\left(1-\frac{231808 \eta }{61969}\right)\chi_s^2\right]
-$&-1\\ \hline
-Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $-\frac{5}{3584}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2\frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [(1-s_1^\EA) (1-s_2^\EA)]^{4/3}}$  & -7\\ \hline
-Khronometric Theory~\cite{Hansen:2014ewa}&$-\frac{5}{96} \eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}$&-7\\ \hline 
-Noncommutative Gravity~\cite{Kobakhidze:2016cqh}& $-\frac{75}{256}\eta ^{-4/5}(2 \eta -1) \Lambda ^2$ &-1\\ \hline
-Varying-G Theories~\cite{Yunes:2009bv}&$\mathbf{-\frac{75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)}$&$ \mathbf{-13}$\\ 
+$&$-1$ & BH/BH\\ \hline
+Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $-\frac{5}{3584}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[(1-s_1^\EA) (1-s_2^\EA)]^{4/3}} \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}$  & $-7$ & Any\\ \hline
+Khronometric Theory~\cite{Hansen:2014ewa}&$-\frac{5}{96} \eta ^{2/5}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}}  \sqrt{\bar \alpha_{\KG}}\left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}$&$-7$ & Any\\ \hline 
+Noncommutative Gravity~\cite{Kobakhidze:2016cqh}& $-\frac{75}{256}\eta ^{-4/5}(2 \eta -1) \Lambda ^2$ &$-1$ &  BH/BH\\ \hline
+Varying-G Theories~\cite{Yunes:2009bv}&$\mathbf{-\frac{75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)}$&$ \mathbf{-13}$ & Any\\ 
 \noalign{\smallskip}
 \hline
 \hline
 \end{tabular}
 \end{centering}
-\caption{PPE corrections to GW phase in various modified theories of gravity. PPE gravitational waveform in Fourier space is given by $\tilde{h}(f)\equiv\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}$ with $u\equiv(\pi \mathcal{M}f)^{1/3}$, where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\mathcal{M}\equiv(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass and $\eta\equiv(m_1m_2/m^2)$ is the symmetric mass ratio of the binary with component masses $m_1$ and $m_2$ and total mass $m\equiv m_1+m_2$. Non-GR correction to GW phase is $\delta\Psi\equiv\beta u^b$, where $\beta$ is the magnitude correction (second coulmn) and $b$ is the exponent correction (third column). The expressions in boldface are derived in this paper for the first time. The mass, sensitivity, and scalar charge of the $A$th binary component are reperesented by $m_A$, $s_A$, and $\alpha_A$ respectively. $\alpha_A$ depend on specific theories and compact objects, while sensitivities $s_A$ roughly equal to the compactness of the bodies (0.5 for BHs and $\sim 0.2$ for NSs). $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ and $\zeta_{\DCS}\equiv 16\pi \bar{\alpha}_{\text{dCS}}^2/m^4$ are the dimensionless coupling constants in EdGB and dCS gravity respectively. $\tilde s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges in EdGB gravity given by $\tilde s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$, where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. $\chi_{s,a}\equiv(\chi_1 \pm \chi_2 )/2$ are the symmetric and antisymmetric combinations of dimensionless spin parameters and $\delta_m\equiv(m_1-m_2)/m$ is the fractional difference in masses relative to the total mass. Einstein-\AE ther theory and khronometric gravity are the Lorentz violating theories where the amount of Lorentz violation is controlled by $(c_1,c_2,c_3,c_4)$ and $(\bar \alpha_{\KG}, \bar \beta_{\KG}, \bar \lambda_{\KG})$ respectively. $\omega_s$ is the propagation speed of spin-s mode in EA theory given by Eqs.~\eqref{eq:Prop_Speed_EA_1}-\eqref{eq:Prop_Speed_EA_3}, and $c_{14}\equiv c_1+c_4$. The representative parameter in noncommutative gravity is $\Lambda^2\equiv\theta^{0i} \theta_{0i}/(l_p^2 t_p^2)$, where $l_p$ and $t_p$ are the Planck length and time respectively. $\theta^{0i}$ are the time-spatial components of a real constant antisymmetric tensor controlling the quantum fuzziness of the spacetime coordinates. Subscript $0$ in varying-G theories denotes the quantity measured at time $t=t_0$ with $t_0$ being the time of coalescence. A dot over a quantity is simply the time derivative of the quantity within the approximation of no spatial variation.
+\caption{PPE corrections to the GW phase $\delta\Psi\equiv\beta u^b$ in Fourier space in various modified theories of gravity, where $\beta$ is the magnitude correction (second coulmn) and $b$ is the exponent correction (third column). $u\equiv(\pi \mathcal{M}f)^{1/3}$, where $\mathcal{M}$ and $\eta$ are the chirp mass and the symmetric mass ratio of the binary respectively. 
+The expressions in dCS and noncommutative gravity only applies to binary BHs, while those in other theories apply to any compact binaries (last column).
+%A PPE gravitational waveform in Fourier space is given by $\tilde{h}(f)\equiv\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}$ with $u\equiv(\pi \mathcal{M}f)^{1/3}$, where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\mathcal{M}$ is the chirp mass and $\eta$ is the symmetric mass ratio of the binary. 
+%with component masses $m_1$ and $m_2$ and total mass $m\equiv m_1+m_2$. 
+%Non-GR correction to GW phase is $\delta\Psi\equiv\beta u^b$, where $\beta$ is the magnitude correction (second coulmn) and $b$ is the exponent correction (third column). 
+%The expressions in boldface are derived in this paper for the first time. 
+The mass, sensitivity, and scalar charge of the $A$th binary component are reperesented by $m_A$, $s_A$, and $\alpha_A$ respectively. 
+%$\alpha_A$ depend on specific theories and compact objects, while sensitivities $s_A$ roughly equal to the compactness of the bodies (0.5 for BHs and $\sim 0.2$ for NSs). 
+$\zeta_\EDGB$ and $\zeta_{\DCS}$ are the dimensionless coupling constants in EdGB and dCS gravity respectively. $\tilde s_{A}^\EDGB$ are the spin-dependent factors of the scalar charges in EdGB gravity, given below Eq.~\eqref{eq:beta-EdGB} for BHs while 0 for ordinary stars. 
+%$\tilde s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$, where $\chi_A$ is the magnitude of the spin angular momentum of the $\mathit{A}\text{th}$ body normalized by its mass squared. 
+$\chi_{s,a}$ are the symmetric and antisymmetric combinations of dimensionless spin parameters and $\delta_m$ is the fractional difference in masses relative to the total mass $m$. The amount of Lorentz violation in Einstein-\AE ther theory and khronometric gravity is controlled by $(c_1,c_2,c_3,c_4)$ and $(\bar \alpha_{\KG}, \bar \beta_{\KG}, \bar \lambda_{\KG})$ respectively. $w_s$ is the propagation speed of spin-s mode in EA theory given by Eqs.~\eqref{eq:Prop_Speed_EA_1}-\eqref{eq:Prop_Speed_EA_3}, and $c_{14}\equiv c_1+c_4$. The representative parameter in noncommutative gravity is $\Lambda$. 
+%$\Lambda^2\equiv\theta^{0i} \theta_{0i}/(l_p^2 t_p^2)$, where $l_p$ and $t_p$ are the Planck length and time respectively. $\theta^{0i}$ are the time-spatial components of a real constant antisymmetric tensor controlling the quantum fuzziness of the spacetime coordinates. 
+Subscript $0$ in varying-G theories denotes the quantity measured at the time of coalescence $t_0$, while a dot refers to a time derivative.  
+%A dot over a quantity is simply the time derivative of the quantity within the approximation of no spatial variation.
+\ky{I added the fourth column.}
 }
 \label{table:ppE_phase}
 \end{table*}
 \endgroup
 }
+
+
 {
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
 \renewcommand{\arraystretch}{2.}
@@ -190,21 +204,23 @@ Varying-G Theories~\cite{Yunes:2009bv}&$\mathbf{-\frac{75 \mathcal{M}_0}{851968 
 \noalign{\smallskip}
 \multirow{2}{*}{Theories}&\multicolumn{2}{c}{PPE Amplitude Parameters}\\ \cline{2-3}
 & Magnitude ($\alpha$)& Exponent ($a$)  \\ \hline
-Scalar-Tensor Theories &$\mathbf{-\frac{5}{192}\eta ^{2/5}(\alpha_1-\alpha_2)^2}$&$\mathbf{-2}$\\ \hline
+Scalar-Tensor Theories~\cite{Arun:2012hf,Chatziioannou:2012rf,Liu:2018sia} &$-\frac{5}{192}\eta ^{2/5}(\alpha_1-\alpha_2)^2$&$-2$\\ \hline
 EdGB Gravity&$\mathbf{-\frac{5}{192}\zeta_\EDGB\frac{\left(m_1^2 \tilde s_2^\EDGB-m_2^2 \tilde s_1^\EDGB \right)^2}{m^4\eta^{18/5}}}$&$\mathbf{-2}$\\ \hline
 dCS Gravity&$\mathbf{
 \frac{185627}{1107456}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s+\left(1-\frac{53408 \eta }{14279}\right) \chi_a^2+\left(1-\frac{3708 \eta }{14279}\right) \chi_s^2\right]}
-$&$\mathbf{4}$\\ \hline
-Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $\mathbf{-\frac{5}{96}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2\frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}}}$& $\mathbf{-2}$\\ \hline
-Khronometric Theory~\cite{Hansen:2014ewa}&$\mathbf{-\frac{5}{96} \eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}}$&$\mathbf{-2}$ \\ \hline 
-Noncommutative Gravity& $\mathbf{-\frac{3}{8}\eta ^{-4/5}(2 \eta -1) \Lambda ^2}$ &$\mathbf{4}$\\ \hline
+$&$\mathbf{+4}$\\ \hline
+Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $\mathbf{-\frac{5}{96}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}} \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}}$& $\mathbf{-2}$\\ \hline
+Khronometric Theory~\cite{Hansen:2014ewa}&$\mathbf{-\frac{5}{96} \eta ^{2/5\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} }\sqrt{\bar \alpha_{\KG}}\left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}}$&$\mathbf{-2}$ \\ \hline 
+Noncommutative Gravity& $\mathbf{-\frac{3}{8}\eta ^{-4/5}(2 \eta -1) \Lambda ^2}$ &$\mathbf{+4}$\\ \hline
 Varying-G Theories~\cite{Yunes:2009bv}& $\mathbf{-\frac{5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)}$ &$\mathbf{-8}$\\ 
 \noalign{\smallskip}
 \hline
 \hline
 \end{tabular}
 \end{centering}
-\caption{PPE corrections to GW amplitude in various modified theories of gravity. PPE waveform in Fourier space is given by $\tilde{h}(f)\equiv\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}$, where non-GR correction to the amplitude is parametrized by magnitude $\alpha$ (second column)and exponent $a$ (third column). All other terms have same meanings as Table~\ref{table:ppE_phase}.}
+\caption{PPE corrections to the GW amplitude $|\tilde h| = |\tilde{h}_{\GR}| (1+\alpha u^a)$ in Fourier space in various modified theories of gravity with the magnitude $\alpha$ (second column) and the exponent $a$ (third column), and $|\tilde{h}_{\GR}|$ representing the amplitude in GR. The meaning of other parameters are the same as in Table~\ref{table:ppE_phase}. The expressions in boldface correspond to either those derived here for the first time, corrected expressions from previous literature, or an extension of a previous analysis. 
+\ky{Amplitude corrections to ST theories have already been derived in some literature.}
+}
 \label{table:ppE_amp}
 \end{table*}
 \endgroup
@@ -303,7 +319,7 @@ Comparing this with the PPE waveform in Eq.~\eqref{eq:2a}, we find
 
 When conservative corrections dominate, $c_r = c_{\dot f}$ and there is an explicit relation between $\gamma_{r}$ and $\gamma_{\dot f}$. Though finding such a relation is quite involved and one needs to go back to the original PPE formalism as explained in App.~\ref{appendix}. Non-GR corrections to the GW amplitude in such a formalism is shown in Eq.~\eqref{eq:o}. Setting the dissipative correction to zero, one finds 
 %Correction to $\dot{f}$ is not independent of correction to the binary seperation $a$, since both dissipatve and conservative corrections contribute to the correction of $\dot{f}$. In App.~\ref{appendix}, we derived the expressions of $\dot{f}$ and ppE amplitude in Fourier space showing contribution of dissipative and conservative corrections explicitly.\st{plagiarigm alert: It's not ``our" derivation, right? What would be the best way to refer to it?} From Eq.~\eqref{eq:o}, setting $B=0$ we find the ppE parameters for conservative dominant correction as
-\ky{I changed $c_r$ to $a$ in the $\alpha$ expression below. I also added $c_{\dot f}$ in the $a$ expression.}
+%\ky{I changed $c_r$ to $a$ in the $\alpha$ expression below. I also added $c_{\dot f}$ in the $a$ expression.}
 \begin{align}\label{eq:2u}
 \alpha=-\frac{\gamma_r}{a}(a^2-4a-6)\,, \quad a=c_r = c_{\dot f}\,.
 \end{align} 
@@ -454,8 +470,9 @@ When dissipative and conservative corrections enter at the same PN order, there 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
  \section{Example Theories}
-\st{I added the following sentences.}
-In this section we consider some viable modified theories of gravity where non-GR corrections arise from generation mechanisms. We briefly discuss the theories, describing their difference with GR and their importances. We derive the PPE parameters for each theory following the formalism of Sec.~\ref{section:ppE}. Among the various example theories we present here, dissipative correction dominates in scalar-tensor theories, EdGB gravity, Einstein-\AE ther theory, and khronometric gravity. Dissipative and conservative corrections enter at the same order in dCS gravity, noncommutative gravity, and varying-G theories. So far we do not know about a theory where conservative correction dominates over the dissipatve one.
+In this section we consider some viable modified theories of gravity where non-GR corrections arise from generation mechanisms. We briefly discuss each theory, describing differences from GR and its importance. We derive the PPE parameters for each theory following the formalism in Sec.~\ref{section:ppE}. Among the various example theories we present here, dissipative corrections dominate in scalar-tensor theories, EdGB gravity, Einstein-\AE ther theory, and khronometric gravity. On the other hand, dissipative and conservative corrections enter at the same PN order in dCS gravity, noncommutative gravity, and varying-G theories. \ky{I edited the following sentence.} We do not consider any theories where conservative corrections dominate dissipative ones, though such a situation can be realized for e.g. equal-mass and equal-spin binaries in dCS gravity, where the scalar quadrupolar radiation is suppressed and dominant corrections arise from the scalar dipole interaction and quadrupole moment corrections in the conservative sector.
+
+
 
  \subsection{Scalar-Tensor Theories}
 Scalar-tensor theories are one of the most well-established modified theories of gravity where at least one scalar field is introduced through a non-minimal coupling to gravity~\cite{Berti:2015itd,Chiba:1997ms,PhysRevD.6.2077}. Such theories arise naturally from the dimensional reduction of higher dimensional theories, such Kaluza-Klein theory~\cite{Fujii:2003pa,Overduin:1998pn} and string theories~\cite{polchinski1,polchinski2}.
@@ -509,7 +526,7 @@ We now show the expressions of PPE parameters for EdGB gravity. The scalar monop
 \label{eq:beta-EdGB}
  \beta_\EDGB=-\frac{5}{7168}\zeta_\EDGB\frac{(m_1^2\tilde s_2^\EDGB-m_2^2\tilde s_1^\EDGB)^2}{m^4\eta^{18/5}}\,.
  \end{equation}
- Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter and $\tilde s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $\tilde s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$~\cite{Berti:2018cxi,Prabhu:2018aun}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq.~\eqref{eq:2w2} to calculate the amplitude PPE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
+ Here, $\zeta_\EDGB\equiv 16 \pi \bar{\alpha}_\EDGB^2/m^4$ is the dimensionless EdGB coupling parameter and $\tilde s_{A}^\EDGB$ are the spin-dependent factors of the BH scalar charges given by $\tilde s_{A}^\EDGB\equiv 2(\sqrt{1-{\chi_A}^2}-1+{\chi_A}^2)/{\chi_A}^2~$~\cite{Berti:2018cxi,Prabhu:2018aun}\footnote{$\tilde s_A^\EDGB$ are zero for ordinary stars like neutron stars~\cite{Yagi:2011xp,Yagi:2015oca}.}. In EdGB gravity, the leading order correction to the phase enters through the correction of GW eneregy flux, and hence the theory corresponds to a dissipative-dominated case. We can then use Eq.~\eqref{eq:2w2} to calculate the amplitude PPE parameter $\alpha_\EDGB$ from $\beta_\EDGB$ as  
  \begin{equation}
  \alpha_\EDGB=-\frac{5}{192}\zeta_\EDGB\frac{(m_1^2 \tilde s_2^\EDGB-m_2^2 \tilde s_1^\EDGB)^2}{m^4\eta^{18/5}}\,.
  \end{equation}
@@ -584,8 +601,8 @@ Let us now derive PPE parameters in EA and khronometric theories. The propagatio
 Regarding EA theory, the PPE phase correction is given by~\cite{Hansen:2014ewa} 
  \begin{align}
  \label{eq:phase-EA}
- \beta_{\EA}=&-\frac{5}{3584}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2\nonumber\\
- & \times \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [(1-s_1^\EA) (1-s_2^\EA)]^{4/3}}\,,
+ \beta_{\EA}=&-\frac{5}{3584}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[(1-s_1^\EA) (1-s_2^\EA)]^{4/3}}\nonumber\\
+ & \times \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}\,,
  \end{align}
 with $b=-7$. Here $w_s$ is the propagation speed of the spin-$s$ mode in EA theory given by~\cite{Jacobson:2008aj}  
 \ba \label{eq:Prop_Speed_EA_1}
@@ -601,19 +618,19 @@ $s_A$ in Eq.~\eqref{eq:phase-EA} is the sensitivity of the $A$-th body and has b
 Given that the leading order correction in EA theory arises from the dissipative sector~\cite{Hansen:2014ewa}, we can use Eq.~\eqref{eq:2w2} to find the PPE amplitude correction as\footnote{Eqs.~\eqref{eq:amp-EA} and~\eqref{eq:amp-KG} correct errors in the first version of~\cite{Hansen:2014ewa}.}
  \begin{align}
  \label{eq:amp-EA}
- \alpha_{\EA}=&-\frac{5}{96}\eta ^{2/5} (s_1^\EA-s_2^\EA)^2 \nonumber\\
- & \times  \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3 [ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}}\,,
+ \alpha_{\EA}=&-\frac{5}{96}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}} \nonumber\\
+ & \times  \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}\,,
  \end{align}
  with $a=-2$.  Similar to EA theory, PPE parameters in khronometric theory is given by~\cite{Hansen:2014ewa}
  \begin{align}
- \beta_{\KG}=&-\frac{5}{3584}\eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
- & \times \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}\,,
+ \beta_{\KG}=&-\frac{5}{3584}\eta ^{2/5}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
+ & \times \sqrt{\bar \alpha_{\KG}}\left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}\,,
  \end{align}
  with $b=-7$, and
  \begin{align}
  \label{eq:amp-KG}
- \alpha_{\KG}=&-\frac{5}{96} \eta ^{2/5}\sqrt{\bar \alpha_{\KG}}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
- & \times \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}\,,
+ \alpha_{\KG}=&-\frac{5}{96} \eta ^{2/5}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} \nonumber\\
+ & \times\sqrt{\bar \alpha_{\KG}} \left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}\,,
  \end{align}
  with $a=-2$.
  
