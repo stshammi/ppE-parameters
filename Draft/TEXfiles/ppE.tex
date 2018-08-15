@@ -681,103 +681,170 @@ The above phase correction has already been used to derive bounds on noncommutat
  
 Many of modified theories of gravity that violate the strong equivalence principle~\cite{DiCasola:2013iia,Will:2014kxa,0264-9381-7-10-007} predict that locally measured gravitational constant ($G$) might vary with time~\cite{uzan:2010pm}. Since the gravitational self-energy of a body is a function of gravitational constant, in a theory where $G$ is time dependent, masses of compact bodies are also time dependent~\cite{PhysRevLett.65.953}. The rate at which the mass of an object varies with time is proportional to the rate of change of gravitational coupling constant~\cite{PhysRevLett.65.953}. \st{I added this sentence}Such variation of mass causes the compact bodies experience anomalous acceleration, which results in a time-evolution of angular momentum~\cite{PhysRevLett.65.953}. Existing experiments that search for variation in $G$ at present time (i.e., at very small redshift) include lunar laser ranging observations~\cite{Williams:2004qba}, pulsar timing observations~\cite{Deller:2008jx,Kaspi:1994hp}, radar observation of planets and spacecraft~\cite{Pitjeva2005}, and surface temperature observation of PSR J0437-4715~\cite{Jofre:2006ug}. Another class of constraints on long-term variation of $G$ come from Big Bang Nucleosynthesis (BBN) calculations~\cite{Bambi:2005fi,Copi:2003xd} and helioseismology~\cite{0004-637X-498-2-871}. Most restrictive bound on $|\dot{G}/G|$ coming from either kind of experiments is of the order $\lesssim 10^{-13} \,\mathrm{yr}^{-1}$~\cite{Yunes:2009bv}.
 
-\st{I added this paragraph. It would be great if you can read the rest of varying-G section, and also appendix B}
-More than one gravitational constants can appear in different arenas of a theory. Here we introduce two diferent kinds of gravitational constants, one that arises in the dissipative sector and another in the conservative sector. The constant which enters in the GW luminosity through Einstein equation, i.e, the constant in Eq.~\eqref{eq:2h2} is the one we refer to as dissipative gravitational constant ($G_D$), while the conservative one ($G_C$) is the constant that appears in the Kepler's law or binding energy of the binary. These two constants are same in GR, but they can be different in some modified theories. An example of such a theory is Brans-Dicke theory with a cosmologically evolving scalar field~\cite{Will2006}.
+More than one gravitational constants can appear in different arenas of a gravitational theory. Here we introduce two different kinds of gravitational constant, one that arises in the dissipative sector and another in the conservative sector. The constant which enters in the GW luminosity through Einstein equations, i.e. the constant in Eq.~\eqref{eq:2h2}, is the one we refer to as dissipative gravitational constant ($G_D$), while that enters in Kepler's law or binding energy of the binary is what we refer as the conservative one ($G_C$). These two constants are the same in GR, but they can be different in some modified theories. An example of such a theory is Brans-Dicke theory with a cosmologically evolving scalar field~\cite{Will2006}. 
 
-The formalism presented in Sec.~\ref{section:ppE} required $G$ and the masses to be constant, and hence not applicable to varying-G theories. In order to calculate PPE paramaters for such theories, we will rather promote binary masses, specific angular momentum, and the gravitational constants to a time dependent form in the following way
+\ky{I added this paragraph.}
+PPE parameters for varying-$G$ theories have previously been derived in~\cite{Yunes:2009bv} for $G_D = G_C$. Here, we improve the analysis by considering the two different types of gravitational constant and including variation in masses, which is inevitable for strongly self-gravitating objects when $G$ varies~\cite{PhysRevLett.65.953}.
+We also correct small errors in~\cite{Yunes:2009bv}. We follow the analysis of~\cite{Yagi:2011yu} that derives gravitational waveforms from BH binaries with varying mass effects using the specific angular momentum. We present another derivation using the energy balance argument used in~\cite{Yunes:2009bv}.
+
+The formalism presented in Sec.~\ref{section:ppE} assumes that $G$ and the masses to be constant, and hence are not applicable to varying-$G$ theories. Thus, we will derive PPE parameters in varying-$G$ theories by promoting the PPE formalism to admit time variation in the gravitational constants and masses as
+% In order to calculate PPE parameters for such theories, we will promote binary masses, specific angular momentum, and the gravitational constants to a time dependent form in the following way
  \begin{eqnarray}\label{eq:3.7a2}
- m_1(t)\approx m_{1,0}+\dot{m}_{1,0}(t-t_0)\,, \\
- \label{eq:3.7a3}  m_2(t)\approx m_{2,0}+\dot{m}_{2,0}(t-t_0)\,, \\
- \label{eq:3.7a3-2}  j(t)\approx j_0+\dot{j}_0(t-t_0)\,, \\
+ m_A(t)\approx m_{A,0}+\dot{m}_{A,0}(t-t_0)\,, \\
+ %\label{eq:3.7a3}  m_2(t)\approx m_{2,0}+\dot{m}_{2,0}(t-t_0)\,, \\
+% \label{eq:3.7a3-2}  j(t)\approx j_0+\dot{j}_0(t-t_0)\,, \\
    \label{eq:3.7a4}  G_C(t)\approx  G_{C,0}+\dot{G}_{C,0}(t-t_0)\,, \\
    \label{eq:3.7a4-2}  G_D(t)\approx  G_{D,0}+(1+\delta)\dot{G}_{C,0}(t-t_0)\, , 
  \end{eqnarray}
-where $t_0$ is the time of coalescence. \st{Added next two sentences}Here we assumed that the spatial variations of $G_C$ and $G_D$ are small compared to the variation in time. $\delta$ gives the relation between the rates at which $G_C$ and $G_D$ vary in time, and could be a function of the parameters of a theory. Subscript $0$ denotes the quantity measured at time $t=t_0$. The variation of specific angular momentum $\dot{j}_0$ is due to the anomalous acceleration of the object and does not contribute to the emission of gravitational wave. Total mass of the binary varies as
- \begin{equation}
- m(t)=m_0+\dot{m}_0(t-t_0)\,.
- \end{equation}
-$\dot{j}_0$ and $\dot{m_0}$ can be written in terms binary masses and sensitivities as~\cite{PhysRevLett.65.953}
-\begin{equation}\label{eq:3.7a4-3}
-\dot{j}_0=\frac{m_{1,0}s_{1,0}+m_{2,0}s_{2,0}}{m_{1,0}+m_{2,0}}\frac{\dot{G}_C}{G_C}j_0\,,
-\end{equation}
-and
-\begin{equation}\label{eq:3.7a4-4}
-\dot{m}_0=-\frac{m_{1,0}s_{1,0}+m_{2,0}s_{2,0}}{m_{1,0}+m_{2,0}}\frac{\dot{G}_C}{G_C}m_0\,,
-\end{equation}
-respectively. $s_{i,0}$ is the sensitivity of the i-th object at the time of coalescence and is defined as
+where $t_0$ is the time of coalescence. Here we assumed that the spatial variations of $G_C$ and $G_D$ are small compared to the variation in time. $\delta$ gives the fractional difference between the rates at which $G_C$ and $G_D$ vary in time, and could be a function of parameters in a theory. Subscript $0$ denotes that the quantity is measured at time $t=t_0$. 
+%
+Other time variations to consider are those in the specific angular momentum $j_0$ and the total mass $m$:
+\ba
+\label{eq:3.7a3-2}  j(t)\approx j_0+\dot{j}_0(t-t_0)\,, \\
+m(t)=m_0+\dot{m}_0(t-t_0)\,.
+ \ea
+%$\dot{j}_0$ is due to the anomalous acceleration of the object and does not contribute to the emission of gravitational wave. 
+%Total mass of the binary varies as
+% \begin{equation}
+% m(t)=m_0+\dot{m}_0(t-t_0)\,.
+% \end{equation}
+$\dot{j}_0$ and $\dot{m_0}$ can be written in terms of binary masses and sensitivities defined by
 \begin{equation}
-s_i=-\frac{G_C}{m_i}\frac{\delta m_i}{\delta G_C}.
+s_A=-\frac{G_C}{m_A}\frac{\delta m_A}{\delta G_C}.
 \end{equation}
-GW emission makes the orbital seperation $r$ smaller with the orbital decay rate given by~\cite{PhysRevD.49.2658}
+as~\cite{PhysRevLett.65.953} \ky{I think you're missing the subscript 0 in $G_C$ and $\dot G_C$. Please make sure to fix this throughout.}
+\begin{eqnarray}\label{eq:3.7a4-3}
+\dot{j}_0&=&\frac{m_{1,0}s_{1,0}+m_{2,0}s_{2,0}}{m_{1,0}+m_{2,0}}\frac{\dot{G}_C}{G_C}j_0\,, \\
+%\end{equation}
+%and
+%\begin{equation}
+\label{eq:3.7a4-4}
+\dot{m}_0&=&-\frac{m_{1,0}s_{1,0}+m_{2,0}s_{2,0}}{m_{1,0}+m_{2,0}}\frac{\dot{G}_C}{G_C}m_0\,,
+\end{eqnarray}
+respectively. 
+%$s_{i,0}$ is the sensitivity of the i-th object at the time of coalescence and is defined as
+%\begin{equation}
+%s_i=-\frac{G_C}{m_i}\frac{\delta m_i}{\delta G_C}.
+%\end{equation}
+
+Next, we explain how the binary evolution is affected by the variation of the above parameters. 
+First, GW emission makes the orbital separation $r$ decay with the rate given by~\cite{PhysRevD.49.2658}
  \begin{equation}
- \dot{r}_{\GW}=-\frac{64}{5}\frac{G_D G_C^2 \mu m^2}{r^3}\,,
+ \dot{r}_{\GW}=-\frac{64}{5}\frac{G_D G_C^2 \mu m^2}{r^3}\,.
  \end{equation}
- in $c=1$ units. On the other hand, time variation of mass, gravitaional coupling constant, and specific angular momentum changes $r$ at a rate of 
+Second, time variation of mass, gravitational constant and specific angular momentum changes $r$ at a rate of \ky{Aren't you missing $r$ on the rhs?}
  \begin{equation}
  \dot{r}_H=-\left(\frac{\dot{G}_{C,0}}{G_C}+\frac{\dot{m}_0}{m}-2\frac{\dot{j}_0}{j}\right)\,,
  \end{equation}
- which is derived by taking time derivative of specific angular momentum $j\equiv\sqrt{G_Cmr}$. Evolution of orbital angular frequency can be obtained from Kepler's third law as
+ which is derived by taking a time derivative of the specific angular momentum $j\equiv\sqrt{G_Cmr}$. Having the evolution of $r$ at hand, one can derive the evolution of the orbital angular frequency using Kepler's third law as
  \begin{equation}\label{eq:3.7a}
  \dot{\Omega}=\frac{1}{2\Omega r^3}\left(m\dot{G}_{C,0}+\dot{m}_0G_C-3mG_C\frac{\dot{r}}{r}\right)\,.
  \end{equation}
-Using binary seperation shift $\dot{r}\equiv \dot{r}_{\GW}+\dot{r}_H$ and implementing Eqs.~\eqref{eq:3.7a4-3} and~\eqref{eq:3.7a4-4} in Eq.~\eqref{eq:3.7a}, we can find the GW frequency evolution upto 2PN order as
-\bw
-\begin{align} \label{eq:3.7b}
- \dot{f}=\frac{\dot{\Omega}}{\pi}=\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1+\frac{5}{96 G_C^{5/3}G_D\eta}[2m-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})]\dot{G}_{C,0} x^{-4} -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x  \right. \nonumber\\ \left.+4\pi x^{3/2}+\left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right\}\,,
-\end{align}
-\ew
-where $x=v^2=(\pi m f)^{2/3}$ is the squared velocity of the relative motion. Here we considered only leading order correction to frequency evolution which enters in -4PN order.\st{I added next two sentences} $G_{C,0}$ and $G_{D,0}$ differ only by a constant quantity, and such difference will eneter in higher PN order corrections. We will ignore such corrections and simply use $G_{D,0}\equiv G_{C,0}\equiv G_0$ from now on. We can integrate Eq.~\eqref{eq:3.7b} to obtain time before coalescence $t(f)$ and the GW phase $\phi(f)\equiv \int 2 \pi f dt \equiv \int\frac{2\pi f}{\dot{f}}df$ as
+Using the evolution of the binary separation $\dot{r}\equiv \dot{r}_{\GW}+\dot{r}_H$, together with Eqs.~\eqref{eq:3.7a4-3} and~\eqref{eq:3.7a4-4}, in Eq.~\eqref{eq:3.7a}, we can find the GW frequency evolution as \ky{The purpose of this paper is to derive PPE parameters and for that, we don't need to present expressions valid to 2PN. I removed higher order PN terms.}
+%\bw
+%\begin{eqnarray} \label{eq:3.7b}
+% \dot{f}=\frac{\dot{\Omega}}{\pi}&=&\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1+\frac{5}{96 G_C^{5/3}G_D\eta}[2m-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})]\dot{G}_{C,0} x^{-4} -\left(\frac{743}{336}+\frac{11}{4}\eta\right)x  \right. \nonumber\\ 
+% &&\left. +4\pi x^{3/2}+\left(\frac{34103}{18144}+\frac{13661}{2016}\eta+\frac{59}{18}\eta^2\right)x^2 \right\}\,,
+%\end{eqnarray}
+%\ew
+\allowdisplaybreaks
+\begin{eqnarray} 
+\label{eq:3.7b}
+ \dot{f}&=&\frac{\dot{\Omega}}{\pi} \nonumber \\
+ &=&\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1 \right. \nonumber \\
+ && \left. +\frac{5}{96}\frac{\dot{G}_{C,0} G_C}{G_D\eta}[2m-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})] x^{-4}  \right\}\,, \nonumber \\
+\end{eqnarray}
+where $x=v^2=(\pi G_C  m f)^{2/3}$ \ky{I included $G_C$ in the definition of $x$ and removed unnecessary $G_C$'s throughout.} is the squared velocity of the relative motion. Here we only considered the leading correction to the frequency evolution entering at -4PN order. 
+\ky{Let's show here the expression for $\dot f$ where we've substituted Eqs.(48)-(50). Otherwise, the below sentences don't make sense since $G_{C,0}$ and $G_{D,0}$ don't appear in the above expression yet...}
+Notice that $G_{C,0}$ and $G_{D,0}$ differ only by a constant quantity, and such a difference will enter in $\dot f$ at 0PN order which is much higher than the $-4$PN corrections. We will thus ignore such corrections and simply use $G_{D,0}= G_{C,0}\equiv G_0$ from now on. 
 
-\bw
-\begin{align}
-t(f)=t_0 -\frac{5}{256}\mathcal{M}_0{G_0}^{-5/3}{u_0}^{-8}\left\{1 \right. & \left. -\frac{5\dot{G}_{C,0}}{1536{G_0}^{8/3}\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4}\right.\nonumber\\&\left. +\frac{4}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right)x_0 -\frac{32}{5}\pi x_0^{3/2}+2\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^2\right)x_0^2 \right\}\,,
-\end{align}
-and
-\begin{align}
-\phi(f)=\phi_0  -\frac{1}{16}{G_0}^{-5/3}{u_0}^{-5}\left\{1 \right. & \left. -\frac{25\dot{G}_{C,0}}{9984{G_0}^{8/3} \eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4} \right.\nonumber\\& \left. +\frac{5}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right){x_0} -10 \pi x_0^{3/2} +5\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^{2}\right)x_0^2\right\}\,.
-\end{align}
+Based on the above binary evolution, we now derive corrections to the GW phase.
+We integrate Eq.~\eqref{eq:3.7b} to obtain time before coalescence $t(f)-t_0$ and the GW phase $\phi(f)\equiv \int 2 \pi f dt = \int (2\pi f/\dot{f})df$ as
 
+%\bw
+%\begin{eqnarray}
+%t(f)&=&t_0 -\frac{5}{256}\mathcal{M}_0{G_0}^{-5/3}{u_0}^{-8}\left\{1 -\frac{5\dot{G}_{C,0}}{1536{G_0}^{8/3}\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4}\right.\nonumber\\
+%&&\left. +\frac{4}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right)x_0 -\frac{32}{5}\pi x_0^{3/2}+2\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^2\right)x_0^2 \right\}\,,
+%\end{eqnarray}
+%and
+%\begin{eqnarray}
+%\phi(f)&=&\phi_0  -\frac{1}{16}{G_0}^{-5/3}{u_0}^{-5}\left\{1  -\frac{25\dot{G}_{C,0}}{9984{G_0}^{8/3} \eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4} \right.\nonumber\\
+%&& \left. +\frac{5}{3}\left(\frac{743}{336}+\frac{11}{4}{\eta_0}\right){x_0} -10 \pi x_0^{3/2} +5\left(\frac{3058673}{1016064}+\frac{5029}{1008}{\eta_0}+\frac{617}{144}{\eta_0}^{2}\right)x_0^2\right\}\,.
+%\end{eqnarray}
+%
+\allowdisplaybreaks
+\begin{eqnarray}
+t(f)&=&t_0 -\frac{5}{256}G_0 \mathcal{M}_0{u_0}^{-8}\left\{1 \right. \nonumber \\ 
+&& \left. -\frac{5}{1536}\frac{\dot{G}_{C,0}}{\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 \right. \right. \nonumber \\
+&& \left. \left. -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4} \right\}\,, \\
+%\end{eqnarray}
+%and
+%\begin{eqnarray}
+\phi(f)&=&\phi_0  -\frac{1}{16}{u_0}^{-5}\left\{1  \right. \nonumber \\ 
+&& \left.  -\frac{25}{9984}\frac{\dot{G}_{C,0}}{\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 \right. \right. \nonumber \\
+&& \left. \left. -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4} \right\}\,,
+\end{eqnarray}
+with $u_0 \equiv (\pi G_0 \mathcal{M}_0 f)^\frac{1}{3}$ \ky{I included $G_0$ in the def of $u_0$ and removed unnecessary $G_0$'s throughout.}
 
 %where the subscript $0$ denotes the quantity measured at time of coalescence.
-The GW phase in the Fourier space is given by,
+The GW phase in the Fourier space is then given by
+%\begin{align}\label{eq:3.7c}
+%\Psi(f)=&2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
+%=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}u_0^{-5}\left\{1-\frac{25\dot{G}_{C,0}}{19968{G_0}^{8/3}\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0\right. \right.\nonumber\\ &\left.\left.-41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0}-16\pi x_0^{3/2} \right. \nonumber\\ &\left. +\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right)x_0^2\right\}\,.
+%\end{align}
+\bw
 \begin{align}\label{eq:3.7c}
 \Psi(f)=&2\pi ft(f)-\phi(f)-\frac{\pi}{4}\nonumber\\
-=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}u_0^{-5}\left\{1-\frac{25\dot{G}_{C,0}}{19968{G_0}^{8/3}\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0\right. \right.\nonumber\\ &\left.\left.-41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4}+\left(\frac{3715}{756} +\frac{55}{9}{\eta_0}\right){x_0}-16\pi x_0^{3/2} \right. \nonumber\\ &\left. +\left(\frac{15293365}{508032}+\frac{27145}{504}{\eta_0}+\frac{3085}{72}{\eta_0}^2\right)x_0^2\right\}\,.
+=&2\pi f t_0-\phi_0-\frac{\pi}{4}+\frac{3}{128}{G_0}^{-5/3}u_0^{-5}\left\{1-\frac{25}{19968}\frac{\dot{G}_{C,0}}{\eta_0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0-41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]x_0^{-4} \right\}\,.
 \end{align}
-From Eq.~\eqref{eq:3.7c}, $b=-13$  and we can find $\beta$ as
- \begin{align}\label{eq:beta_gdot}
- \beta_{\dot{G}}=-\frac{25}{851968}\eta_0^{3/5}{G_0}^{-13/3}\dot{G}_{C,0}\left[11m_0+3(s_{1,0}+s_{2,0}-\delta)m_0 -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]\,.
-  \end{align}
+\ew
+From Eq.~\eqref{eq:3.7c}, one finds the PPE phase parameters as $b=-13$ and \ky{I think $11m_0$ should be $14m_0$. If you agree, please also correct $t$, $\phi$ and $\Psi$ above.}
+ \begin{eqnarray}\label{eq:beta_gdot}
+ \beta_{\dot{G}}&=&-\frac{25}{851968}\dot{G}_{C,0}\,\eta_0^{3/5}\left[11m_0 +3(s_{1,0}+s_{2,0}-\delta)m_0 \right. \nonumber \\
+ && \left. -41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]\,. 
+  \end{eqnarray}
 
-
-In order to calculate $\alpha$ we have to write the amplitude in Fourier space explicitlty in terms of $G$ and the binary mass parameters, which is already given in Eq.~\eqref{eq:2e}. Further using Kepler's law to Eq.~\eqref{eq:2e} gives,
+Next, we derive the PPE amplitude parameters.
+Using Kepler's law to Eq.~\eqref{eq:2e}, one finds
 %For a two-body quasi-circular orbit we can write metric perturbation as~\cite{Blanchet:2002av}
  %\begin{equation}
 %\bar{h}^{ij}(t)\propto \frac{G(t)}{D_L}\frac{d^2 }{d t^2}Q^{ij}\,,
  %\end{equation}
 %which gives the amplitude in Fourier space
-\begin{align}\label{eq:3.7d}
-\tilde{\mathcal{A}}(f)\propto\frac{1}{\sqrt{\dot{f}}}\frac{G_D(t)}{D_L}\mu(t) r(t)^2f^2\propto\frac{1}{\sqrt{\dot{f}}}G_D(t){G_C(t)}^{2/3}\mu(t){m(t)}^{2/3} \,.
-\end{align} 
+\begin{eqnarray}\label{eq:3.7d}
+\tilde{\mathcal{A}}(f)&\propto&\frac{1}{\sqrt{\dot{f}}}\frac{G_D(t)}{D_L}\mu(t) r(t)^2f^2 \nonumber \\
+&\propto&\frac{1}{\sqrt{\dot{f}}}G_D(t){G_C(t)}^{2/3}\mu(t){m(t)}^{2/3} \,.
+\end{eqnarray} 
 %Here $Q^{ij}$ is the quadruple moment tensor and $D_L$ is the luminosity distance
-Using Eqs.~\eqref{eq:3.7a2}-\eqref{eq:3.7a4-2} in Eq.~\eqref{eq:3.7d} and keeping only leading order correction terms, we can write the amplitude in Fourier space as
-\begin{equation}
-\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR}\left(1+\alpha_{\dot{G}}u_0^{-8}\right)\,,
-\end{equation}
-where
-\begin{align}\label{eq:3.7d2}
- \alpha_{\dot{G}}=\frac{5}{512}\eta_0^{3/5}{G_0}^{-13/3}\dot{G}_{C,0}\left[-7m_0+(s_{1,0}+s_{2,0}-\delta)m_0+13 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]\,.
- \end{align}
- \ew
-\st{I added this paragraph and the next one}PPE parameters in varying-G theories have been derived previously in Ref.~\cite{Yunes:2009bv} considering the case where dissipative and conservative gravitational constants vary at the same rate. Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not match with those of Ref.~\cite{Yunes:2009bv} in the limit of $\delta=0$. The discrepancy arises for two reasons: the masses of the binary components were kept constant in~\cite{Yunes:2009bv}, and a term was missing in the energy-balance equation. The assumption of constant mass is not applicable for compact binaries, where the gravitational self-energy is not negligible. The second reason is explained in App.~\ref{appendix_2}, where we derived the GW frequency evolution from energy-balance law. 
+Using furhter Eqs.~\eqref{eq:3.7a2}-\eqref{eq:3.7a4-2} in Eq.~\eqref{eq:3.7d}, we find the amplitude PPE parameters as $a = -8$ and \ky{I think $-7m_0$ should be $-6m_0$.}
+%\begin{equation}
+%\tilde{\mathcal{A}}(f)=\tilde{\mathcal{A}}_{\GR}\left(1+\alpha_{\dot{G}}u_0^{-8}\right)\,,
+%\end{equation}
+%where
+\begin{eqnarray}
+\label{eq:3.7d2}
+ \alpha_{\dot{G}}&=&\frac{5}{512}\eta_0^{3/5}\dot{G}_{C,0}\left[-7m_0+(s_{1,0}+s_{2,0}-\delta)m_0 \right. \nonumber \\
+ && \left.+13 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]\,.
+ \end{eqnarray}
+ %\ew
 
-Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} can be used to constrain varying-G theories with GW observations. Projected GW bounds have been calculated in Ref.~\cite{Yunes:2009bv} which gives $|\dot{G}_0/G_0| \lesssim 10^{-11}\, \mathrm{yr}^{-1}$, considering a single merger event. Although GW bound is less restrictive compared to the existing bounds, it is unique in the sense that it can provide constraints at intermediate redshifts, while the existing bounds are for very small and large redshifts~\cite{Yunes:2009bv}. Furthermore, GW constraint gives $\dot{G}_0/G_0$ at the location of merger event, which means a sufficient number of GW observations can be used to construct a constraint map of $\dot{G}_0/G_0$ as a function of sky angles and redshifts~\cite{Yunes:2009bv}. Recent events GW150914 and GW151226 place constraint on variation of G which is actually weaker than the current constraints~\cite{Yunes:2016jcc}. However, GW constraints that could be placed by future spaceborne detectors, such as eLISA~\cite{Seoane:2013qna} and DECIGO~\cite{PhysRevLett.87.221103}, are supposed to be many orders of magnitude stronger compared to the aLIGO bound~\cite{Yunes:2009bv}.
+Let us comment on how the above new PPE parameters in varying $G$ theories differ from those obtained previously in~\cite{Yunes:2009bv}. The latter considers $G_D = G_C$ (which corresponds to $\delta = 0$) and $s_A = 0$ (which is only true for weakly-gravitating objects). However, the above expressions for PPE parameters do not reduce to those in~\cite{Yunes:2009bv} under these limits. This is because Ref.~\cite{Yunes:2009bv} did not take into account the fact that the binding energy is not conserved in the absence of GW emission in varying-$G$ theories. In Appendix~\ref{appendix_2}, we show that the correct application of the energy balance law does indeed lead to the above PPE expressions.
+ 
+
+
+% considering the case where dissipative and conservative gravitational constants vary at the same rate. Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not match with those of Ref.~\cite{Yunes:2009bv} in the limit of $\delta=0$. The discrepancy arises for two reasons: the masses of the binary components were kept constant in~\cite{Yunes:2009bv}, and a term was missing in the energy-balance equation. The assumption of constant mass is not applicable for compact binaries, where the gravitational self-energy is not negligible. The second reason is explained in App.~\ref{appendix_2}, where we derived the GW frequency evolution from energy-balance law. 
+
+Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} can be used to constrain varying-$G$ theories with GW observations. Recent GW events (GW150914 and GW151226) place constraints on variation of G which are much weaker than the current constraints~\cite{Yunes:2016jcc}. 
+Projected GW bounds have been calculated in Ref.~\cite{Yunes:2009bv} (see~\cite{Chamberlain:2017fjl} \ky{This reference also derives bounds on Lorentz-violating theories, so I think we should comment on this paper in our Lorentz-violating section.} for an updated forecast of future GW bounds on $\dot G$) which gives $|\dot{G}_0/G_0| \lesssim 10^{-11}\, \mathrm{yr}^{-1}$, considering a single merger event. Although GW bound is less restrictive compared to the existing bounds~\cite{Will2006}, it is unique in the sense that it can provide constraints at intermediate redshifts, while the existing bounds are for very small and large redshifts~\cite{Yunes:2009bv}. Furthermore, GW constraints give $\dot{G}_0/G_0$ at the location of merger events, which means that a sufficient number of GW observations can be used to construct a 3D constraint map of $\dot{G}_0/G_0$ as a function of sky locations and redshifts~\cite{Yunes:2009bv}. %However, one expects that future space-borne detectors, such as eLISA~\cite{Seoane:2013qna} and DECIGO~\cite{PhysRevLett.87.221103}, can place constraints that are many orders of magnitude stronger compared to the aLIGO bound~\cite{Yunes:2009bv,}.
  
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusions}
+
+\ky{To be checked later}
+
 %PPE waveform & Example Theories
 We derived non-GR corrections to GW phase and amplitude in various modified theories of gravity. In the aim of doing so, we revisited the standard PPE formalism considering generic corrections to GW frequency evolution and Kepler's third law. Such a formalism yields the expressions of PPE parameters which are simpler compared to the original formalism~\cite{Yunes:2016jcc} and hence one requires less effort while implementing them in various theories. We calculated PPE amplitude parameters for the first time in EdGB gravity, dCS gravity, and noncommutative gravity. Whereas some errors in the expressions of PPE amplitude parameters in Einstein- \AE ther and khronometric theories in previous literature~\cite{Hansen:2014ewa} were corrected.
 
@@ -809,7 +876,7 @@ First, let us introduce the conservative corrections. We modify the reduced effe
  \begin{equation}\label{eq:h}
  V_{\text{eff}}=\left(-\frac{m}{r}+\frac{{L}^2_{z}}{2\mu^2r^2}\right)\left[1+A \left(\frac{m}{r}\right)^p\right]\,,
  \end{equation}
-where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of the angular momentum. $A$ and $p$ show the magnitude and exponent of the non-GR correction term respectively. Such a modification to the effective potential also modifies the Kepler's law. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and equating it to zero gives the modified Kepler's law as
+where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of the angular momentum. $A$ and $p$ show the magnitude and exponent of the non-GR correction term respectively. Such a modification to the effective potential also modifies Kepler's law. Taking the radial derivative of $V_{\text{eff}}$ in Eq.~\eqref{eq:h} and equating it to zero gives modified Kepler's law as
  \begin{equation}
  \Omega^2=\frac{m}{r^3} \left[1+\frac{1}{2} A \, p\left(\frac{m}{r}\right)^p\right]\,.
  \end{equation}
@@ -817,7 +884,7 @@ where $m$ is the total mass of the binary and $L_{z}$ is the $z$-component of th
  \begin{equation}\label{eq:g}
  r(t)=r_{\GR}\left[1+\frac{1}{6}A\, p\, \eta^{-\frac{2p}{5}}u^{2p}\right]\,,
  \end{equation}
-where to leading PN order, $r_{\GR}$ is given by the Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. For a circular orbit, radial kinetic energy does not exist and the effective potential energy is same as the binding energy of the binary. Using Eq.~\eqref{eq:g} in Eq.~\eqref{eq:h} and keeping only to leading order in non-GR corrections, the binding energy becomes
+where to leading PN order, $r_{\GR}$ is given by Kepler's law as $r_{\GR}=(m/\Omega^2)^{1/3}$. For a circular orbit, radial kinetic energy does not exist and the effective potential energy is same as the binding energy of the binary. Using Eq.~\eqref{eq:g} in Eq.~\eqref{eq:h} and keeping only to leading order in non-GR corrections, the binding energy becomes
 \begin{align}\label{eq:j}
 E=-\frac{1}{2}\eta^{-2/5}u^2\left[1-\frac{1}{3}A(2p-5)\eta^{-2p/5}u^{2p}\right]\,,
 \end{align}
@@ -880,12 +947,13 @@ Similarly, one can rewrite the correction to the GW phase in Eq.~\eqref{eq:p2} a
 
 \section{GW Frequency Evolution From Energy-Balance Law in Varying-G Theories} \label{appendix_2}
 
- 
-We now show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying the energy balance law used in Ref.~\cite{Yunes:2009bv}. Total energy of the binary is given by $E=-(G_C\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution, we can use Kepler's law to rewrite the binding energy as 
+\ky{To be checked later}
+
+In this appendix, we show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying and correcting the energy balance law used in Ref.~\cite{Yunes:2009bv}. We begin by considering the total energy of a binary given by $E=-(G_C\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution due to $\dot G$, we  use Kepler's law to rewrite the binding energy as 
  \begin{equation}\label{eq:3.7e}
  E(f,G_C,m_1,m_2)=-\frac{1}{2}\mu (G_Cm\Omega)^{2/3}\,,
  \end{equation}
- where $\Omega=\pi f$ is the orbital angular frequency. Using~\eqref{eq:3.7a2} -~\eqref{eq:3.7a4-2} in ~\eqref{eq:3.7e}, the rate of change of energy becomes
+ where $\Omega=\pi f$ is the orbital angular frequency. Taking a time derivative of the above expression and using Eqs.~\eqref{eq:3.7a2}-\eqref{eq:3.7a4-2} in Eq.~\eqref{eq:3.7e}, the rate of change of the binding energy becomes
  \begin{align}\label{eq:3.7j}
  \frac{d E}{d t}=\frac{\pi^{2/3}}{6f^{1/3}G_C^{1/3}m^{4/3}}\left[-3fG_Cm(\dot{m}_1m_2+m_1\dot{m}_2)\right.\nonumber\\ \left.-2m^3\eta(G_C\dot{f}+f\dot{G}_C)+m^2fG_C\eta\dot{m}\right]\,.
  \end{align}
@@ -911,7 +979,6 @@ Solving Eqs.~\eqref{eq:3.7i} and~\eqref{eq:3.7j} we can find frequency evolution
  \end{align} 
 where $u=(\pi \mathcal{M}f)^{1/3}$. Including higher order GR corrections we can write frequency evolution upto 2PN order, which matches with Eq.~\eqref{eq:3.7b}.
 
-\st{I added this paragraph}
 Along with the constancy of masses, the last term in Eq.~\eqref{eq:3.7g} was also missing in~\cite{Yunes:2009bv}. Consequently, our PPE parameters in Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not agree with Ref.~\cite{Yunes:2009bv} even when we take the limit of no variation in mass. Despite the discrepancy, as an order of magnitude we expect the projected bound on $\dot{G}_0/G_0$ calculated in Ref.~\cite{Yunes:2009bv} to be correct.
  %\begin{align}
 % \dot{f}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\bigg[1+\frac{5\eta^{3/5}}{48 G^{8/3}}(\dot{M}G+M\dot{G})u^{-8}-(\frac{743}{336\eta^{2/5}}+\frac{11}{4}\eta^{3/5})u^2\\+4\pi\eta^{-3/5}u^3+(\frac{34103}{18144\eta^{4/5}}+\frac{13661}{2016}\eta^{1/5}+\frac{59}{18}\eta^{6/5})u^4\bigg]
