@@ -1,0 +1,168 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ppE.aux
+The style file: apsrev4-1.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated field_info (elt_size=4) to 14620 items from 5000.
+Database file #1: ppENotes.bib
+Database file #2: bibfile.bib
+Repeated entry---line 717 of file bibfile.bib
+ : @article{Kleihaus:2011tg
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 807 of file bibfile.bib
+ : @article{Pani:2009wy
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1111 of file bibfile.bib
+ : @article{Berti:2015itd
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1243 of file bibfile.bib
+ : @article{Yunes:2016jcc
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1758 of file bibfile.bib
+ : @article{PhysRev.124.925
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1772 of file bibfile.bib
+ : @article{Scharre:2001hn
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1917 of file bibfile.bib
+ : @article{Sotiriou:2014pfa
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1932 of file bibfile.bib
+ : @article{Yunes:2011we
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2456 of file bibfile.bib
+ : @article{Yagi:2013ava
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2490 of file bibfile.bib
+ : @article{Foster:2005dk
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3793 of file bibfile.bib
+ : @article{Clifton:2011jh
+ :                        ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 3987 of file bibfile.bib
+ : @article{Damour:1998ae
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4001 of file bibfile.bib
+ : @article{Coc:2006rt
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4031 of file bibfile.bib
+ : @article{Will:2014kxa
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4072 of file bibfile.bib
+ : @article{Freire:2012mg
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4149 of file bibfile.bib
+ : @article{Wex:2014nva
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4294 of file bibfile.bib
+ : @article{Abbott:2016blz
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4311 of file bibfile.bib
+ : @article{Abbott:2016nmj
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4432 of file bibfile.bib
+ : @article{Sampson:2014qqa
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4449 of file bibfile.bib
+ : @article{Yunes:2009ke
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4494 of file bibfile.bib
+ : @article{Seoane:2013qna
+ :                        ,
+I'm skipping whatever remains of this entry
+control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
+control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
+Warning--jnrlst (dependency: not reversed) set 1
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+Warning--missing journal in article
+Warning--missing journal in Wex:2014nva
+Warning--missing journal in Akrami:2018odb
+Warning--missing journal in Abbott:2005bi
+Warning--missing journal in Abuter:2018drb
+Warning--missing journal in Ezquiaga:2018btd
+Warning--missing journal in Liu:2018sia
+Warning--missing journal in Archibald:2018oxs
+Warning--missing journal in Silva:2017uqg
+Warning--missing journal in Doneva:2017bvd
+Warning--missing journal in Huang:2018pbu
+Warning--missing journal in Prabhu:2018aun
+Warning--missing journal in Loutrel:2018rxs
+Warning--missing journal in Loutrel:2018ydv
+Warning--missing journal in Seoane:2013qna
+You've used 260 entries,
+            5847 wiz_defined-function locations,
+            3798 strings with 72498 characters,
+and the built_in function-call counts, 256622 in all, are:
+= -- 17261
+> -- 6029
+< -- 1600
++ -- 1948
+- -- 1413
+* -- 40957
+:= -- 25283
+add.period$ -- 258
+call.type$ -- 260
+change.case$ -- 1045
+chr.to.int$ -- 243
+cite$ -- 275
+duplicate$ -- 23999
+empty$ -- 19237
+format.name$ -- 3595
+if$ -- 50754
+int.to.chr$ -- 26
+int.to.str$ -- 267
+missing$ -- 3020
+newline$ -- 1044
+num.names$ -- 774
+pop$ -- 9413
+preamble$ -- 1
+purify$ -- 1290
+quote$ -- 0
+skip$ -- 9200
+stack$ -- 0
+substring$ -- 6876
+swap$ -- 23029
+text.length$ -- 672
+text.prefix$ -- 0
+top$ -- 10
+type$ -- 3543
+warning$ -- 16
+while$ -- 765
+width$ -- 0
+write$ -- 2519
+(There were 21 error messages)
