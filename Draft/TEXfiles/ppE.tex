@@ -846,10 +846,12 @@ Projected GW bounds have been calculated in Ref.~\cite{Yunes:2009bv} (see~\cite{
 \ky{To be checked later}
 
 %PPE waveform & Example Theories
-We derived non-GR corrections to GW phase and amplitude in various modified theories of gravity. In the aim of doing so, we revisited the standard PPE formalism considering generic corrections to GW frequency evolution and Kepler's third law. Such a formalism yields the expressions of PPE parameters which are simpler compared to the original formalism~\cite{Yunes:2016jcc} and hence one requires less effort while implementing them in various theories. We calculated PPE amplitude parameters for the first time in EdGB gravity, dCS gravity, and noncommutative gravity. Whereas some errors in the expressions of PPE amplitude parameters in Einstein- \AE ther and khronometric theories in previous literature~\cite{Hansen:2014ewa} were corrected.
+We derived non-GR corrections to GW phase and amplitude in various modified theories of gravity. In the aim of doing so, we revisited the standard PPE formalism considering generic corrections to GW frequency evolution and Kepler's third law. Such a formalism yields the expressions of PPE parameters which are simpler compared to the original formalism~\cite{Yunes:2016jcc}. %and hence one requires less effort while implementing them in various theories. 
+We calculated PPE amplitude parameters for the first time in EdGB gravity, dCS gravity, and noncommutative gravity. Whereas some errors in the expressions of PPE amplitude parameters in Einstein- \AE ther and khronometric theories in previous literature~\cite{Hansen:2014ewa} were corrected.
 
 %Varying-G theories
-The formulation of PPE parameters as described above does not account for theories with a variable gravitational constant. We derive PPE parameters in such theories independently, arguing that there are two different gravitational constants entering in PPE corrections. We refer to the gravitational constant that eneters in GW luminosity through Einstein equation as dissipative gravitational constant, while the gravational constant appearing in Kepler's law is the conservative gravitational constant. While the latter could be a function of the former, they are not necessarily same in the context of modified theories of gravity. The time-variation in conservative gravitational constant leads to a variation in mass and angular momentum of compact objects. Hence we promoted the two gravitatinal constants, binary masses, and their angular momentum to time-dependent forms in order to derive PPE waveform. Our work extends the previous work in Ref.~\cite{Yunes:2009bv} where dissipatve and conservative gravitational constants were considered to be same, and also fixes an error in their energy-balance equation.
+The formulation of PPE parameters as described above does not account for theories with a variable gravitational constant. We derive PPE parameters in such theories independently, arguing that there are two different gravitational constants entering in PPE corrections. We refer to the gravitational constant that enters in GW luminosity through the Einstein equations as dissipative gravitational constant, while the gravitational constant entering in Kepler's law is the conservative gravitational constant. %While the latter could be a function of the former, they are not necessarily same in the context of modified theories of gravity. 
+The time-variation in the conservative gravitational constant leads to a variation in masses and angular momentums of compact binaries. Hence we promoted the two gravitational constants, binary masses, and their angular momentum to time-dependent forms in order to derive PPE waveforms. Our work extends the previous work of Ref.~\cite{Yunes:2009bv} where dissipative and conservative gravitational constants were considered to be the same, and also corrects an error in their energy-balance equation.
 
 
 %Future Prospect
@@ -947,7 +949,7 @@ Similarly, one can rewrite the correction to the GW phase in Eq.~\eqref{eq:p2} a
 
 \section{GW Frequency Evolution From Energy-Balance Law in Varying-G Theories} \label{appendix_2}
 
-\ky{To be checked later}
+\ky{I restructured this section. Please check.}
 
 In this appendix, we show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying and correcting the energy balance law used in Ref.~\cite{Yunes:2009bv}. We begin by considering the total energy of a binary given by $E=-(G_C\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution due to $\dot G$, we  use Kepler's law to rewrite the binding energy as 
  \begin{equation}\label{eq:3.7e}
@@ -957,29 +959,46 @@ In this appendix, we show an alternative approach to find $\dot f$ in Eq.~\eqref
  \begin{align}\label{eq:3.7j}
  \frac{d E}{d t}=\frac{\pi^{2/3}}{6f^{1/3}G_C^{1/3}m^{4/3}}\left[-3fG_Cm(\dot{m}_1m_2+m_1\dot{m}_2)\right.\nonumber\\ \left.-2m^3\eta(G_C\dot{f}+f\dot{G}_C)+m^2fG_C\eta\dot{m}\right]\,.
  \end{align}
-In GR, such time variation in the binding energy needs to be balanced with the GW luminosity emitted from the system. In varying-$G$ theories, there is an additional contribution due to the variation in $G$, masses, and the angular momentum. Namely, the binding energy is not conserved even in the absence of GW emission. To estimate such additional contribution, we rewrite the binding energy in terms of specific angular momentum as
- \begin{equation}\label{eq:3.7f}
- E(G_C,m_1,m_2,j)=-\frac{G_C^2 \mu  m^2}{2 j^2}\,.
- \end{equation}
-Taking the time variation of the above binding energy and adding the GW luminosity, the energy-balance equation for varying-$G$ theories then becomes
- \begin{equation}\label{eq:3.7g}
-\frac{d E}{d t}=-\dot{E}_{GW}+\frac{\partial E}{\partial j}\dot{j}_0+\frac{\partial E}{\partial m_1}\dot{m_1}_0+\frac{\partial E}{\partial m_2}\dot{m_2}_0+\frac{\partial E}{\partial G_C}\dot{G_C}_0\,,
- \end{equation}
- where $E$ is given by Eq.~\eqref{eq:3.7f}, $\dot{j}_0$ is the loss of angular momentum due to the variation of $G_C$ and is given by Eq.~\eqref{eq:3.7a4-3}, and $\dot{E}_{GW}$ is the energy radiated by GWs. Using the quadruple formula, $ \dot{E}_{GW}$ can be found as
+ 
+We can use the following energy balance argument to derive $\dot f$. 
+In GR, the time variation in the binding energy is balanced with the GW luminosity $\dot{E}_{\GW}$ emitted from the system given by
  \begin{equation}\label{eq:3.7h}
- \dot{E}_{GW}=\frac{1}{5}G_D\left \langle\dddot{Q}_{ij}\dddot{Q}_{ij}-\frac{1}{3}(\dddot{Q}_{kk})^2\right \rangle=\frac{32}{5} r^4 G_D \mu ^2 \Omega ^6\,.
+ \dot{E}_{\GW}=\frac{1}{5}G_D\left \langle\dddot{Q}_{ij}\dddot{Q}_{ij}-\frac{1}{3}(\dddot{Q}_{kk})^2\right \rangle=\frac{32}{5} r^4 G_D \mu ^2 \Omega ^6\,.
  \end{equation}
-Using Eqs.~\eqref{eq:3.7f} and~\eqref{eq:3.7h} in Eq.~\eqref{eq:3.7g},
+In varying-$G$ theories, there is an additional contribution $\dot E_{\dot G}$ due to the variation in $G$, masses, and the angular momentum. Namely, the binding energy is not conserved even in the absence of GW emission and the energy balance law is modified as
+\begin{equation}
+\label{eq:3.7g}
+\frac{d E}{d t}=-\dot{E}_{\GW} + \dot E_{\dot G}\,.
+\end{equation}
+%
+ To estimate such additional contribution, we rewrite the binding energy in terms of the specific angular momentum as
+ \begin{equation}\label{eq:3.7f}
+ E(G_C,m_1,m_2,j)=-\frac{G_C^2\, \mu \, m^2}{2 j^2}\,.
+ \end{equation}
+Taking the time variation of this leads to
+\begin{equation}
+\label{eq:EGdot}
+\dot E_{\dot G}=\frac{\partial E}{\partial j}\dot{j}_0+\frac{\partial E}{\partial m_1}\dot{m_1}_0+\frac{\partial E}{\partial m_2}\dot{m_2}_0+\frac{\partial E}{\partial G_C}\dot{G_C}_0\,,
+ \end{equation}
+where $\dot{j}_0$, purely due to the variation of $G_C$, is given by Eq.~\eqref{eq:3.7a4-3}. 
+
+% \begin{equation}\label{eq:3.7g}
+%\frac{d E}{d t}=-\dot{E}_{\GW}+\frac{\partial E}{\partial j}\dot{j}_0+\frac{\partial E}{\partial m_1}\dot{m_1}_0+\frac{\partial E}{\partial m_2}\dot{m_2}_0+\frac{\partial E}{\partial G_C}\dot{G_C}_0\,,
+% \end{equation}
+
+We are now in a position to derive the frequency evolution. 
+Using Eqs.~\eqref{eq:3.7h},~\eqref{eq:3.7f} and~\eqref{eq:EGdot} in Eq.~\eqref{eq:3.7g}, one finds \ky{Can you please put this in a form of leading $\times$ (1+correction)?}
  \begin{align}\label{eq:3.7i}
 \frac{d E}{d t}=&-\frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G_C^{4/3}G_D m^{10/3}+\frac{1}{j^3} G_C^2\eta m^3\dot{j}_0 \nonumber\\&-\frac{1}{j^2}G_C m^3\eta\dot{G}_{C,0}-\frac{G_C^2}{2 j^2} \left[m(\eta  m+m_1)\dot{m}_{2,0}\right.\nonumber\\& \left.-m (\eta  m+m_2)\dot{m}_{1,0}\right]
  \end{align}
-Solving Eqs.~\eqref{eq:3.7i} and~\eqref{eq:3.7j} we can find frequency evolution upto -4PN order as
+Substituting this further into Eq.~\eqref{eq:3.7j} and solving for $\dot f$, one finds the frequency evolution as
  \begin{align} 
- \dot{f}=\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1+\frac{5\eta^{3/5}}{96 G_C^{5/3}G_D}[2m\right.\nonumber\\ \left.-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})]\dot{G}_{C,0} u^{-8}\right\}\,,
+ \dot{f}=&\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1+\frac{5}{96}\frac{G_C}{G_D} \dot{G}_{C,0} \eta^{3/5}[2m\right.\nonumber\\ 
+ & \left.-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})] u^{-8}\right\}\,,
  \end{align} 
-where $u=(\pi \mathcal{M}f)^{1/3}$. Including higher order GR corrections we can write frequency evolution upto 2PN order, which matches with Eq.~\eqref{eq:3.7b}.
+where $u=(\pi G_C \mathcal{M}f)^{1/3}$, in agreement with Eq.~\eqref{eq:3.7b}.
 
-Along with the constancy of masses, the last term in Eq.~\eqref{eq:3.7g} was also missing in~\cite{Yunes:2009bv}. Consequently, our PPE parameters in Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not agree with Ref.~\cite{Yunes:2009bv} even when we take the limit of no variation in mass. Despite the discrepancy, as an order of magnitude we expect the projected bound on $\dot{G}_0/G_0$ calculated in Ref.~\cite{Yunes:2009bv} to be correct.
+Along with the constancy of masses, the last term in Eq.~\eqref{eq:3.7g} was also missing in~\cite{Yunes:2009bv}. Consequently, our PPE parameters in Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not agree with Ref.~\cite{Yunes:2009bv} even when we take the limit of no time variation in masses. Difference in $\beta_{\dot G}$ is smaller than 20\% while $\alpha_{\dot G}$ differs by a factor of 7. Despite the discrepancy, we expect the projected bounds on $\dot{G}_0/G_0$ calculated in Ref.~\cite{Yunes:2009bv} to be qualitatively correct.
  %\begin{align}
 % \dot{f}=\frac{96}{5}\pi^{8/3}G^{5/3}\mathcal{M}^{5/3}f^{11/3}\bigg[1+\frac{5\eta^{3/5}}{48 G^{8/3}}(\dot{M}G+M\dot{G})u^{-8}-(\frac{743}{336\eta^{2/5}}+\frac{11}{4}\eta^{3/5})u^2\\+4\pi\eta^{-3/5}u^3+(\frac{34103}{18144\eta^{4/5}}+\frac{13661}{2016}\eta^{1/5}+\frac{59}{18}\eta^{6/5})u^4\bigg]
 % \end{align}
