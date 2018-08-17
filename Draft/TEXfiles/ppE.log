@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.8.24)  16 AUG 2018 03:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.8.24)  16 AUG 2018 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -864,18 +864,18 @@ Underfull \hbox (badness 4556) in paragraph at lines 708--716
  []
 
 [10] [11] [12]
-Overfull \hbox (14.4938pt too wide) in paragraph at lines 919--919
+Overfull \hbox (14.4938pt too wide) in paragraph at lines 912--912
 [] 
  []
 
 [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 960.
+(hyperref)                removing `math shift' on input line 953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 960.
+(hyperref)                removing `math shift' on input line 953.
 
 (./ppE.bbl [14]
 Underfull \hbox (badness 7540) in paragraph at lines 56--62
@@ -1135,10 +1135,10 @@ m/n/9 , L67 (2008)[][],
  []
 
 ) [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1019.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1012.
  (./ppE.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1019.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1019.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1012.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1012.
 
 Package rerunfilecheck Info: File `ppE.out' has not changed.
 (rerunfilecheck)             Checksum: 21B2E163D5D01E4AE0E57BA746A653F0;1348.
