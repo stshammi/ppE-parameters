@@ -133,6 +133,10 @@ At least in scalar-tensor theories, amplitude of a scalar polarization is of hig
 %In our paper we rederive those mappings using a different choice of parametrization, which significantly simplifies the previously derived results. 
 %We rather choose corrections to frequency evolution and orbital seperation as our variables, and express ppE parameters in terms of those. We then consider a collection of example theories and show the ppE amplitude and phase corrections as functions of representative parameters of each theory, as summarized in Table~\ref{table:ppE}.
 
+%Varying-$G$ theory
+\st{I added this paragraph}
+We also derive non-GR corrections in varying-$G$ theories, considering a PPE formalism with variable gravitational constants. Although there is only one gravitational constant in GR, many modified theories allow more than one gravitational constants that appear in different sectors. We consider two different gravitational constants, one entering in the GW luminosity and another in the Keplers's third law or the binding energy. We also promote the binary  masses and the specific angular momentum to time-dependent functions in terms of the sensitivites~\cite{PhysRevLett.65.953}. Our work extends the previous work in Ref.~\cite{Yunes:2009bv} where dissipative and conservative constants were taken to be the same and the masses of the binary components were constants. Furthermore, we illustrate the energy-balance law for varying-$G$ theories, taking into account the nonconservation of binding energy in the absence of gravitational radiation, a fact which was missing in the analysis of Ref.~\cite{Yunes:2009bv}.
+
 
 %3 propagation and generation mechanisms
 Non-GR corrections can enter in the GW waveform through activation of different theoretical mechanisms, which can be classified as generation mechanisms and propagation mechanisms~\cite{Yunes:2016jcc}. Generation mechanisms take place close to the source (binary), while propagation mechanisms occur in the far-zone and accumulate as the waves propagate. In this paper, we focus on the former. PPE parameters in various modified theories of gravity are summarized in Table~\ref{table:ppE_phase} and Table~\ref{table:ppE_amp}.
@@ -141,10 +145,9 @@ Some of amplitude corrections were derived here for the first time. We also corr
 Corrections to propagation effects have been used to place bounds on the mass of the graviton~\cite{Monitor:2017mdv}.
 PPE waveforms due to modifications in the propagation sector can be found in Refs.~\cite{Mirshekari:2011yq,Yunes:2016jcc,Nishizawa:2017nef}, which have been used for GW150914, GW151226~\cite{Yunes:2016jcc} and GW170104~\cite{Abbott:2017vtc}. 
 
-%Varying-$G$ theory(An exception to our formalism)
-
-%5. Organization of paper.
-
+\st{I added this paragraph}
+%5. Organization of the paper.
+The rest of the paper is organized as follows: In Sec.~\ref{section:ppE}, we revisit the standard PPE formalism. In Sec.~\ref{section:Example}, we derive the PPE parameters in some example theories following the formalism of Sec.~\ref{section:ppE}. In Sec.~\ref{gdot}, we derive the PPE parameters in varying-$G$ theories. We summerize our work and discuss possible future prospects in Sec.~\ref{conclusions}. App.~\ref{appendix} discusses the original PPE formalism. In App.~\ref{appendix_2}, we derive the frequency evolution in varying-$G$ theories from energy-balance law. We use the geometrized units $G=c=1$ throught this paper except varying-$G$ theories. We keep the factors of $G$ in some of the equations in Sec.~\ref{section:ppE} so as to utilize them in varying-$G$ theories of Sec.~\ref{gdot}.
 {
 \newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
 \renewcommand{\arraystretch}{2.}
@@ -165,13 +168,13 @@ $&$-1$ & BH/BH\\ \hline
 Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $-\frac{5}{3584}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[(1-s_1^\EA) (1-s_2^\EA)]^{4/3}} \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}$  & $-7$ & Any\\ \hline
 Khronometric Theory~\cite{Hansen:2014ewa}&$-\frac{5}{96} \eta ^{2/5}\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}}  \sqrt{\bar \alpha_{\KG}}\left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}$&$-7$ & Any\\ \hline 
 Noncommutative Gravity~\cite{Kobakhidze:2016cqh}& $-\frac{75}{256}\eta ^{-4/5}(2 \eta -1) \Lambda ^2$ &$-1$ &  BH/BH\\ \hline
-Varying-$G$ Theories~\cite{Yunes:2009bv}&$\mathbf{-\frac{75 \mathcal{M}_0}{851968 {G_0}^{10/3}}\left(\frac{11 \dot{G}_0}{3 G_0}+ \frac{17 \dot{m}_0}{3m_0}- \frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)}$&$ \mathbf{-13}$ & Any\\ 
+Varying-$G$ Theories~\cite{Yunes:2009bv}&$\mathbf{-\frac{25}{851968}\eta_0^{3/5}\dot{G}_{C,0}\left[11m_0 +3(s_{1,0}+s_{2,0}-\delta)m_0-41 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]}$&$ \mathbf{-13}$ & Any\\ 
 \noalign{\smallskip}
 \hline
 \hline
 \end{tabular}
 \end{centering}
-\caption{PPE corrections to the GW phase $\delta\Psi\equiv\beta u^b$ in Fourier space in various modified theories of gravity, where $\beta$ is the magnitude correction (second coulmn) and $b$ is the exponent correction (third column). $u\equiv(\pi \mathcal{M}f)^{1/3}$, where $\mathcal{M}$ and $\eta$ are the chirp mass and the symmetric mass ratio of the binary respectively. 
+\caption{PPE corrections to the GW phase $\delta\Psi\equiv\beta u^b$ in Fourier space in various modified theories of gravity, where $\beta$ is the magnitude correction (second coulmn) and $b$ is the exponent correction (third column). \st{I changed these two sentences}$u\equiv(\pi G_C \mathcal{M}f)^{1/3}$, where $\mathcal{M}$ and $\eta$ are the chirp mass and the symmetric mass ratio of the binary respectively, and $G_C$ is the conservative gravitational constant appearing in Kepler's third law. $G_C\equiv 1$ in all theories except for the varying-$G$ ones. 
 The expressions in dCS and noncommutative gravity only applies to binary BHs, while those in other theories apply to any compact binaries (last column).
 %A PPE gravitational waveform in Fourier space is given by $\tilde{h}(f)\equiv\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}$ with $u\equiv(\pi \mathcal{M}f)^{1/3}$, where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\mathcal{M}$ is the chirp mass and $\eta$ is the symmetric mass ratio of the binary. 
 %with component masses $m_1$ and $m_2$ and total mass $m\equiv m_1+m_2$. 
@@ -185,7 +188,7 @@ $\chi_{s,a}$ are the symmetric and antisymmetric combinations of dimensionless s
 %$\Lambda^2\equiv\theta^{0i} \theta_{0i}/(l_p^2 t_p^2)$, where $l_p$ and $t_p$ are the Planck length and time respectively. $\theta^{0i}$ are the time-spatial components of a real constant antisymmetric tensor controlling the quantum fuzziness of the spacetime coordinates. 
 Subscript $0$ in varying-G theories denotes the quantity measured at the time of coalescence $t_0$, while a dot refers to a time derivative.  
 %A dot over a quantity is simply the time derivative of the quantity within the approximation of no spatial variation.
-}
+\st{I added this sentence}$\delta$ is the fractional difference between the rates at which dissipative and conservative gravitational constants change in time, while the dissipative gravitational constant is defined as the one that enters in GW luminosity through Eq.~\eqref{eq:2h2}.}
 \label{table:ppE_phase}
 \end{table*}
 \endgroup
@@ -212,7 +215,7 @@ $&$\mathbf{+4}$\\ \hline
 Einstein-\AE ther Theory~\cite{Hansen:2014ewa}& $\mathbf{-\frac{5}{96}\eta ^{2/5} \frac{(s_1^\EA-s_2^\EA)^2}{[ (1-s_1^\EA) (1-s_2^\EA)]^{4/3}} \frac{(c_{14}-2) w_0^3-w_1^3}{c_{14} w_0^3 w_1^3}}$& $\mathbf{-2}$\\ \hline
 Khronometric Theory~\cite{Hansen:2014ewa}&$\mathbf{-\frac{5}{96} \eta ^{2/5\frac{(s_1^\KG-s_2^\KG)^2}{[(1-s_1^\KG) (1-s_2^\KG)]^{4/3}} }\sqrt{\bar \alpha_{\KG}}\left[\frac{(\bar \beta_{\KG}-1)(2+\bar \beta_{\KG}+3\bar \lambda_{\KG})}{(\bar \alpha_{\KG}-2)(\bar \beta_{\KG}+\bar \lambda_{\KG})}\right]^{3/2}}$&$\mathbf{-2}$ \\ \hline 
 Noncommutative Gravity& $\mathbf{-\frac{3}{8}\eta ^{-4/5}(2 \eta -1) \Lambda ^2}$ &$\mathbf{+4}$\\ \hline
-Varying-$G$ Theories~\cite{Yunes:2009bv}& $\mathbf{-\frac{5\mathcal{M}_0}{512 {G_0}^{5/3}} \left(\frac{7 \dot{G}_0}{ G_0} + \frac{5\dot{m}_0}{m_0}+\frac{m_{1,0}\dot{m}_{2,0}+\dot{m}_{1,0}m_{2,0}}{{m_0}^2 \eta0}\right)}$ &$\mathbf{-8}$\\ 
+Varying-$G$ Theories~\cite{Yunes:2009bv}& $\mathbf{\frac{5}{512}\eta_0^{3/5}\dot{G}_{C,0}\left[-7m_0+(s_{1,0}+s_{2,0}-\delta)m_0+13 (m_{1,0}s_{1,0}+m_{2,0}s_{2,0})\right]}$ &$\mathbf{-8}$\\ 
 \noalign{\smallskip}
 \hline
 \hline
@@ -235,7 +238,7 @@ PPE gravitational waveform for a compact binary inspiral in the Fourier domain i
 \tilde{h}(f)=\tilde{h}_{\GR}(1+\alpha u^a)e^{i\delta\Psi}\,,
 \end{equation}
 % 
-where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\alpha u^a$ corresponds to the non-GR correction to the GW amplitude while  $\delta \Psi$ is that to the GW phase with 
+where $\tilde{h}_{\GR}$ is the gravitational waveform in GR. $\alpha u^a$ corresponds to the non-GR correction to the GW amplitude while  $\delta \Psi$ is that to the GW phase with {section:ppE}
 \begin{equation}
 u=(\pi \mathcal{M} f)^\frac{1}{3}\,.
 \end{equation}
@@ -468,7 +471,7 @@ When dissipative and conservative corrections enter at the same PN order, there 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
- \section{Example Theories}
+ \section{Example Theories}\label{section:Example}
 In this section we consider some viable modified theories of gravity where non-GR corrections arise from generation mechanisms. We briefly discuss each theory, describing differences from GR and its importance. We derive the PPE parameters for each theory following the formalism in Sec.~\ref{section:ppE}. Among the various example theories we present here, dissipative corrections dominate in scalar-tensor theories, EdGB gravity, Einstein-\AE ther theory, and khronometric gravity. On the other hand, dissipative and conservative corrections enter at the same PN order in dCS gravity, noncommutative gravity, and varying-G theories. We do not consider any theories where conservative corrections dominate dissipative ones, though such a situation can be realized for e.g. equal-mass and equal-spin binaries in dCS gravity, where the scalar quadrupolar radiation is suppressed and dominant corrections arise from the scalar dipole interaction and quadrupole moment corrections in the conservative sector.
 
 
@@ -635,7 +638,6 @@ Given that the leading order correction in EA theory arises from the dissipative
  
 Above corrections to the gravitational waveform can be used to compute current and projected future bounds on the theories with GW observations, provided one knows what sensitivities are for compact objects in binaries. Unfortunately, such sensitivities have not been calculated for BHs, and hence, one cannot derive bounds on the theories from recent binary BH merger events. Instead, Ref.~\cite{Yunes:2016jcc} used the next-to-leading 0PN correction that is independent of the sensitivities and derived bounds from GW150914 and GW151226, though such bounds are weaker than those from binary pulsar observations~\cite{Yagi:2013ava,Yagi:2013qpa}. On the other hand, Ref.~\cite{Hansen:2014ewa} includes both the leading and next-to-leading corrections to the waveform and estimate projected future bounds with GWs from binary NSs. The authors found that bounds from second-generation ground-based detectors are less stringent that existing bounds even with their design sensitivities.
 %However, third-generation ground-based ones and space-borne interferometers can place constraints that are comparable, and in some cases, stronger than current bounds approximately by a factor of 2~\cite{Hansen:2014ewa}.
-\st{I added this sentence-}
 However, third-generation ground-based ones and space-borne interferometers can place constraints that are comparable, and in some cases, two orders of magnitude stronger compared to the current bounds~\cite{Chamberlain:2017fjl,Hansen:2014ewa}.
   
 %How stringent are the constraints on Lorentz-violation which are attainable from GW observations? Provided that the GW signal is from non-spinning NS binaries, numerical study shows that the second-generation detectors alone cannot place bounds on Lorentz violation that are more stringent than the current binary pulsar bounds~\cite{Hansen:2014ewa}. However, third-generation ground and space-based detectors would be able to place constraints that are comparable, and in some cases, stronger than current bounds approximately by factor of 2~\cite{Hansen:2014ewa}. If the GW signal has a coincident electromagnetic counterpart, even when using  the second generation detector, constraints on  $c_+$ and $\bar \beta_{\KG}$ can be obtained which are at least 10 orders of magnitude more stringent than the current binary pulsar constraint~\cite{Hansen:2014ewa}.  Indeed, recent gravitational-wave event GW170817~\cite{TheLIGOScientific:2017qsa} and gamma-ray burst GRB 170817A~\cite{Monitor:2017mdv} placed constraints on $c_+$ and $\beta_{\KG}$ that are 13 orders of magnitude stronger than the binary pulsar constraints~\cite{Gumrukcuoglu:2017ijh,Oost:2018tcv}. Projected constraints in black hole binaries are not available, since such analysis requires the black hole sensitivites beforehand, which are yet to be obtained in Lorentz-violating theories~\cite{Hansen:2014ewa}.
@@ -846,10 +848,10 @@ Projected GW bounds have been calculated in Ref.~\cite{Yunes:2009bv} (see~\cite{
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions}
+\section{Conclusions}\label{conclusions}
 
 %PPE waveform & Example Theories
-We derived non-GR corrections to the GW phase and amplitude in various modified theories of gravity. We achieve this by revisiting the standard PPE formalism and considered generic corrections to the GW frequency evolution and Kepler's third law that have been derived in many non-GR theories. Such a formalism yields the expressions of PPE parameters which are simpler compared to the original formalism~\cite{Yunes:2009ke,Chatziioannou:2012rf}. %and hence one requires less effort while implementing them in various theories. 
+We derived non-GR corrections to the GW phase and amplitude in various modified theories of gravity. We achieved this by revisiting the standard PPE formalism and considered generic corrections to the GW frequency evolution and Kepler's third law that have been derived in many non-GR theories. Such a formalism yields the expressions of PPE parameters which are simpler compared to the original formalism~\cite{Yunes:2009ke,Chatziioannou:2012rf}. %and hence one requires less effort while implementing them in various theories. 
 We derived PPE amplitude parameters for the first time in EdGB, dCS and noncommutative gravity. 
 We also correct some errors in the expressions of PPE amplitude parameters in Einstein- \AE ther and khronometric theories in previous literature~\cite{Hansen:2014ewa}.
 
@@ -955,9 +957,6 @@ Similarly, one can rewrite the correction to the GW phase in Eq.~\eqref{eq:p2} a
  \end{align}
 
 \section{GW Frequency Evolution From Energy-Balance Law in Varying-$G$ Theories} \label{appendix_2}
-
-\ky{I restructured this section. Please check.}
-
 In this appendix, we show an alternative approach to find $\dot f$ in Eq.~\eqref{eq:3.7b} by applying and correcting the energy balance law used in Ref.~\cite{Yunes:2009bv}. We begin by considering the total energy of a binary given by $E=-(G_C\mu m)/2r$. In order to calculate the leading order correction to the frequency evolution due to $\dot G$, we  use Kepler's law to rewrite the binding energy as 
  \begin{equation}\label{eq:3.7e}
  E(f,G_C,m_1,m_2)=-\frac{1}{2}\mu (G_Cm\Omega)^{2/3}\,,
@@ -994,16 +993,16 @@ where $\dot{j}_0$, purely due to the variation of $G_C$, is given by Eq.~\eqref{
 % \end{equation}
 
 We are now in a position to derive the frequency evolution. 
-Using Eqs.~\eqref{eq:3.7h},~\eqref{eq:3.7f} and~\eqref{eq:EGdot} in Eq.~\eqref{eq:3.7g}, one finds \ky{Can you please put this in a form of leading $\times$ (1+correction)?}
+Using Eqs.~\eqref{eq:3.7h},~\eqref{eq:3.7f} and~\eqref{eq:EGdot} in Eq.~\eqref{eq:3.7g}, one finds
  \begin{align}\label{eq:3.7i}
-\frac{d E}{d t}=&-\frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G_C^{4/3}G_D m^{10/3}+\frac{1}{j^3} G_C^2\eta m^3\dot{j}_0 \nonumber\\&-\frac{1}{j^2}G_C m^3\eta\dot{G}_{C,0}-\frac{G_C^2}{2 j^2} \left[m(\eta  m+m_1)\dot{m}_{2,0}\right.\nonumber\\& \left.-m (\eta  m+m_2)\dot{m}_{1,0}\right]
+\frac{dE}{dt}=&-\frac{32}{5} \pi ^{10/3} f^{10/3} \eta ^2 G_C^{4/3}G_D m^{10/3}\left[1+ \frac{5 G_C^2 \eta^{3/5} m}{64G_D} \right. \nonumber\\ & \left. \times \left(\frac{\dot{m}_0}{m}+\frac{\dot{m}_{1,0}}{m_1}+\frac{\dot{m_{2,0}}}{m_2}-2\frac{\dot{j}_0}{j}+2\frac{\dot{G}_{C,0}}{G_C}\right)u^{-8}\right]\,,
  \end{align}
-Substituting this further into Eq.~\eqref{eq:3.7j} and solving for $\dot f$, one finds the frequency evolution as
+where $u=(\pi G_C \mathcal{M}f)^{1/3}$. Substituting this further into Eq.~\eqref{eq:3.7j} and solving for $\dot f$, one finds the frequency evolution as
  \begin{align} 
  \dot{f}=&\frac{96}{5}\pi^{8/3}G_C^{2/3}G_D\mathcal{M}^{5/3}f^{11/3}\left\{1+\frac{5}{96}\frac{G_C}{G_D} \dot{G}_{C,0} \eta^{3/5}[2m\right.\nonumber\\ 
  & \left.-5(m_{1,0}s_{1,0}+m_{2,0}s_{2,0})] u^{-8}\right\}\,,
  \end{align} 
-where $u=(\pi G_C \mathcal{M}f)^{1/3}$, in agreement with Eq.~\eqref{eq:3.7b}.
+in agreement with Eq.~\eqref{eq:3.7b}.
 
 Along with the constancy of masses, the last term in Eq.~\eqref{eq:3.7g} was also missing in~\cite{Yunes:2009bv}. Consequently, our PPE parameters in Eqs.~\eqref{eq:beta_gdot} and~\eqref{eq:3.7d2} do not agree with Ref.~\cite{Yunes:2009bv} even when we take the limit of no time variation in masses. Difference in $\beta_{\dot G}$ is smaller than 20\% while $\alpha_{\dot G}$ differs by a factor of 7. Despite the discrepancy, we expect the projected bounds on $\dot{G}_0/G_0$ calculated in Ref.~\cite{Yunes:2009bv} to be qualitatively correct.
  %\begin{align}
