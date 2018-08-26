@@ -169,7 +169,7 @@ The mass, sensitivity, and scalar charge of the $A$th binary component are repre
 $\zeta_\EDGB$ and $\zeta_{\DCS}$ are the dimensionless coupling constants in Einstein-dilaton Gauss-Bonnet (EdGB) and dCS gravity respectively. $\tilde s_{A}^\EDGB$ are the spin-dependent factors of the scalar charges in EdGB gravity, given below Eq.~\eqref{eq:beta-EdGB} for BHs while 0 for ordinary stars. 
 $\chi_{s,a}$ are the symmetric and antisymmetric combinations of dimensionless spin parameters and $\delta_m$ is the fractional difference in masses relative to the total mass $m$. The amount of Lorentz violation in Einstein-\AE ther theory and khronometric gravity is controlled by $(c_1,c_2,c_3,c_4)$ and $(\bar \alpha_{\KG}, \bar \beta_{\KG}, \bar \lambda_{\KG})$ respectively. $w_s$ is the propagation speed of the spin-$s$ modes in Einstein-\AE ther theory given by Eqs.~\eqref{eq:Prop_Speed_EA_1}-\eqref{eq:Prop_Speed_EA_3}, and $c_{14}\equiv c_1+c_4$. The representative parameter in noncommutative gravity is $\Lambda$. 
 The subscript $0$ in varying-$G$ theories denotes that the quantity is measured at the time of coalescence $t_0$, while a dot refers to a time derivative.  
-$\delta_\Gdot$ \ky{I changed $\delta$ to $\delta_\Gdot$ throughout.} is the fractional difference between the rates at which conservative and dissipative  gravitational constants change in time. The former is $G_C$ as already explained while the dissipative gravitational constant is defined as the one that enters in the GW luminosity through Eq.~\eqref{eq:2h2}.
+$\delta_\Gdot$ is the fractional difference between the rates at which conservative and dissipative  gravitational constants change in time. The former is $G_C$ as already explained while the dissipative gravitational constant is defined as the one that enters in the GW luminosity through Eq.~\eqref{eq:2h2}.
 The boldface expression indicates that it has been derived here for the first time.
 }
 \label{table:ppE_phase}
@@ -231,7 +231,6 @@ $\mathcal{M}=(m_1m_2)^{3/5}/(m_1+m_2)^{1/5}$ is the chirp mass with component ma
 \end{equation}
 $\alpha$, $\beta$, $a$, and $b$ are called the PPE parameters. When $(\alpha,\beta)\equiv(0,0)$, Eq.~\eqref{eq:2a} reduces to the waveform in GR.
 
-\ky{I added this paragraph.}
 One can count the PN order of non-GR corrections in the waveform as follows. A correction term is said to be of $n$~PN relative to GR if the \emph{relative} correction is proportional $u^{2n}$. Thus, the amplitude correction in Eq.~\eqref{eq:2a} is of $a/2$~PN order. On the other hand, given that the leading GR phase is proportional to $u^{-5}$ (see Eq.~\eqref{eq:Psi_GR}), the phase correction in Eq.~\eqref{eq:2b} is of $(b+5)/2$~PN order.
 
 As we mentioned earlier, the PPE modifications in Eq.~\eqref{eq:2a} enter through corrections to the orbital separation and the frequency evolution.
@@ -336,7 +335,7 @@ Using further Eq.~\eqref{eq:2s} to Eq.~\eqref{eq:2q} gives
 \frac{d^2\Psi}{d \Omega^2}=\frac{5}{48}\mathcal{M}^2u^{-11}(1-\gamma_{\dot{f}}u^{c_{\dot{f}}})\,.
 \end{equation}
 
-We are now ready to derive $\Psi$ and extract the PPE parameters $\beta$ and $b$. Using $\Omega = \pi f$, we can integrate Eq.~\eqref{eq:2r} twice to find \ky{I removed commas from some of the equations, especially if they are followed by ``for'' or ``with''.}
+We are now ready to derive $\Psi$ and extract the PPE parameters $\beta$ and $b$. Using $\Omega = \pi f$, we can integrate Eq.~\eqref{eq:2r} twice to find
 \be
 \label{eq:Psi}
 \Psi = \Psi_\GR  -\frac{15 \text{$\gamma_{\dot{f}} $}}{16 (\text{$c_{\dot{f}}$}-8) (\text{$c_{\dot{f}}$}-5)} u^{c_{\dot{f}}-5}
@@ -612,6 +611,7 @@ $\dot{j}_0$ and $\dot{m_0}$ can be written in terms of binary masses and sensiti
 \begin{equation}
 s_A=-\frac{G_C}{m_A}\frac{\delta_\Gdot m_A}{\delta_\Gdot G_C}\,,
 \end{equation}
+\st{I think the deltas in above equation are just derivative symbols.}
 as~\cite{PhysRevLett.65.953}
 \begin{eqnarray}\label{eq:3.7a4-3}
 \dot{j}_0&=&\frac{m_{1,0}s_{1,0}+m_{2,0}s_{2,0}}{m_{1,0}+m_{2,0}}\frac{\dot{G}_{C,0}}{G_{C,0}}j_0\,, \\
@@ -800,8 +800,7 @@ Similarly, one can rewrite the correction to the GW phase in Eq.~\eqref{eq:p2} a
 \begin{align}\label{eq:p}
 \delta\Psi(f)=&-\frac{15}{8}\frac{\gamma_r}{c_r}\frac{c_r^2-2c_r-6}{(8-c_r)(5-c_r)}u^{c_r-5}\nonumber\\ &-\frac{15}{32}B\frac{1}{(4-q)(5-2q)}\eta^{-\frac{2q}{5}}u^{2q-5}\,.
  \end{align}
-\ky{I added the following sentence.}
- On the other hand, rewriting the above expressions further in terms of $\gamma_{\dot f}$ and $c_{\dot f}$ is not so trivial in general since corrections to the frequency evolution in Eq.~\eqref{eq:f} involves two independent terms instead of one.
+On the other hand, rewriting the above expressions further in terms of $\gamma_{\dot f}$ and $c_{\dot f}$ is not so trivial in general since corrections to the frequency evolution in Eq.~\eqref{eq:f} involves two independent terms instead of one.
  
 
 \section{GW Frequency Evolution From Energy Balance Law in Varying-$G$ Theories} \label{appendix_2}
@@ -811,7 +810,7 @@ In this appendix, we show an alternative approach to find $\dot f$ in varying-$G
  \end{equation}
  where $\Omega=\pi f$ is the orbital angular frequency. Taking a time derivative of the above expression and using Eqs.~\eqref{eq:3.7a2}--\eqref{eq:3.7a4-2} in Eq.~\eqref{eq:3.7e}, the rate of change of the binding energy becomes
  \begin{align}\label{eq:3.7j}
- \frac{d E}{d t}=\frac{\pi^{2/3}}{6f^{1/3}G_C^{1/3}m^{4/3}}\left[-3fG_Cm(\dot{m}_1m_2+m_1\dot{m}_2)\right.\nonumber\\ \left.-2m^3\eta(G_C\dot{f}+f\dot{G}_C)+m^2fG_C\eta\dot{m}\right]\,.
+ \frac{d E}{d t}=\frac{\pi^{2/3}}{6f^{1/3}G_C^{1/3}m^{4/3}}\left[-3fG_Cm(\dot{m}_{1,0}m_2+m_1\dot{m}_{2,0})\right.\nonumber\\ \left.-2m^3\eta(G_C\dot{f}+f\dot{G}_C)+m^2fG_C\eta\dot{m}\right]\,.
  \end{align}
  
 We can use the following energy balance argument to derive $\dot f$. 
@@ -832,7 +831,7 @@ In varying-$G$ theories, there is an additional contribution $\dot E_\Gdot$ due 
 Taking the time variation of this leads to
 \begin{equation}
 \label{eq:EGdot}
-\dot E_\Gdot=\frac{\partial E}{\partial j}\dot{j}_0+\frac{\partial E}{\partial m_1}\dot{m_1}_0+\frac{\partial E}{\partial m_2}\dot{m_2}_0+\frac{\partial E}{\partial G_C}\dot{G_C}_0\,,
+\dot E_\Gdot=\frac{\partial E}{\partial j}\dot{j}_0+\frac{\partial E}{\partial m_1}\dot{m}_{1,0}+\frac{\partial E}{\partial m_2}\dot{m}_{2,0}+\frac{\partial E}{\partial G_C}\dot{G}_{C,0}\,,
  \end{equation}
 where $\dot{j}_0$ is given by Eq.~\eqref{eq:3.7a4-3} and originates purely from the variation of $G_C$ (i.e.~no GW emission). 
 
