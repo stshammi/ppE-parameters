@@ -1,0 +1,105 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[prd,aps,twocolumn,nofootinbib,showpacs,superscriptaddress]{revtex4-1}
+\documentclass[prd,twocolumn,nofootinbib]{revtex4-1}
+%\documentclass[prd,aps,nofootinbib,showpacs]{revtex4-1}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{dcolumn}
+\usepackage[dvips]{graphicx}
+\usepackage{graphics}
+%\usepackage[latin1]{inputenc}
+\usepackage{latexsym}
+\usepackage{rotating}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{xspace} % Sensible space treatment at end of simple macros
+\usepackage[usenames]{color}
+\usepackage{mathrsfs}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{color}
+%\usepackage{ulem}
+\usepackage{appendix}
+\usepackage[utf8]{inputenc}
+%\usepackage[toc,page]{appendix}
+\usepackage{comment}
+%% Try to control orphans, widows, and extra whitespace
+\widowpenalty=1000
+\clubpenalty=1000
+\raggedbottom
+
+\definecolor {darkgreen}{rgb}{0.2,0.7,0.2}
+\definecolor{purple}{rgb}{0.5,0,0.5}
+
+\newcommand\be{\begin{equation}}
+\newcommand\ba{\begin{eqnarray}}
+\newcommand\ee{\end{equation}}
+\newcommand\ea{\end{eqnarray}}
+\newcommand\bw{\begin{widetext}}
+\newcommand\ew{\end{widetext}}
+
+\newcommand{\EDGB}{{\mbox{\tiny EdGB}}}
+\newcommand{\BD}{{\mbox{\tiny BD}}}
+\newcommand{\NC}{{\mbox{\tiny NC}}}
+\newcommand{\PPE}{{\mbox{\tiny ppE}}}
+\newcommand{\KG}{{\mbox{\tiny kh}}}
+\newcommand{\EA}{{\mbox{\tiny EA}}}
+\newcommand{\ST}{{\mbox{\tiny ST}}}
+\newcommand{\NS}{{\mbox{\tiny NS}}}
+\newcommand{\DCS}{{\mbox{\tiny dCS}}}
+\newcommand{\GR}{{\mbox{\tiny GR}}}
+\newcommand{\Gdot}{{\mbox{\tiny $\dot G$}}}
+\newcommand{\GW}{{\mbox{\tiny GW}}}
+\newcommand{\ky}[1]{\textcolor{blue}{\it{\textbf{ky: #1}}} }
+\newcommand{\st}[1]{\textcolor{cyan}{\it{\textbf{st: #1}}} }
+
+
+\begin{document}
+\title{Erratum: Parameterized Post-Einsteinian Gravitational Waveforms in \\ Various Modified Theories of Gravity}
+
+\author{Sharaban Tahura}
+\affiliation{Department of Physics, University of Virginia, Charlottesville, Virginia 22904, USA.}
+
+\author{Kent Yagi}
+\affiliation{Department of Physics, University of Virginia, Charlottesville, Virginia 22904, USA.}
+
+
+\date{\today}
+
+
+
+
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+An error was found in~\cite{Yagi:2012vf}, which corrects Eq.~(32) of~\cite{Tahura:2018zuq} as
+%
+ \begin{align}\label{dcs:gamma_fdot}
+\gamma_{\dot{f}}=& \frac{11975}{12288}\eta^{-9/5}\zeta_{\DCS}\chi_1 \chi_2 \nonumber \\
+&-\frac{96305}{172032 }\eta^{-14/5}\zeta_{\DCS} \left(\frac{m_1^2}{m^2}\chi_2^2+\frac{m_2^2}{m^2}\chi_1^2\right)\,.
+ \end{align}
+ %
+This further corrects Eqs.~(33,34) of~\cite{Tahura:2018zuq} as
+%
+\allowdisplaybreaks
+ \begin{align}
+ \label{eq:alpha}
+ \alpha_{\DCS}=&\frac{57713}{344064}\eta ^{-14/5}\zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right. \nonumber\\ 
+ &\left. +\left(1-\frac{14976 \eta }{57713}\right) \chi_a^2+\left(1-\frac{215876 \eta }{57713}\right) \chi_s^2\right]\,, \\
+% \end{align}
+% \begin{align}
+\label{eq:beta}
+ \beta_{\DCS}=&\frac{481525}{3670016}\eta ^{-14/5} \zeta_{\DCS} \left[-2 \delta_m \chi_a \chi_s \right.\nonumber\\ 
+ &\left. +\left(1-\frac{4992 \eta }{19261}\right)\chi_a^2 +\left(1-\frac{72052 \eta }{19261}\right)\chi_s^2\right]\,.
+ \end{align}
+ %
+Equation~\eqref{eq:beta} agrees with Eq.~(3) of~\cite{Nair:2019iur} to quadratic order in spin. The 
+DCS rows in Tables~I and II are corrected to Eqs.~\eqref{eq:beta} and~\eqref{eq:alpha} above respectively.
+
+ 
+ \bibliography{bibfile}
+\end{document}
